@@ -1,0 +1,900 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Morpion_2",
+        "CanvasBufferSize": 9600,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "Background",
+            "Width": 640,
+            "Height": 480,
+            "LockPosition": true,
+            "Filename": "__generated\\dark_theme_images_backgrounds_800x480_asphalt.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "Grille_main",
+            "X": 80,
+            "Y": 134,
+            "Width": 480,
+            "Height": 330,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "Grille"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Titre",
+            "X": 244,
+            "Y": 14,
+            "Width": 153,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_CZXE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Quitter",
+            "X": 519,
+            "Y": 82,
+            "Width": 71,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_OAW0",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Recommencer",
+            "X": 27,
+            "Y": 82,
+            "Width": 142,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_CEIK",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Joueur",
+            "X": 250,
+            "Y": 70,
+            "Width": 140,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_HD7Q",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Quit",
+            "X": 506,
+            "Y": 14,
+            "Width": 96,
+            "Height": 68,
+            "LockPosition": true,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 96,
+                "Height": 68,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Restart",
+            "X": 50,
+            "Y": 14,
+            "Width": 96,
+            "Height": 68,
+            "LockPosition": true,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 96,
+                "Height": 68,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Button_2_2",
+            "X": 404,
+            "Y": 358,
+            "Width": 156,
+            "Height": 106,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 156,
+                "Height": 106,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Button_2_1",
+            "X": 242,
+            "Y": 358,
+            "Width": 156,
+            "Height": 106,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 156,
+                "Height": 106,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Button_2_0",
+            "X": 80,
+            "Y": 358,
+            "Width": 156,
+            "Height": 106,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 156,
+                "Height": 106,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Button_1_2",
+            "X": 404,
+            "Y": 246,
+            "Width": 156,
+            "Height": 106,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 156,
+                "Height": 106,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Button_1_1",
+            "X": 241,
+            "Y": 246,
+            "Width": 156,
+            "Height": 106,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 156,
+                "Height": 106,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Button_1_0",
+            "X": 80,
+            "Y": 245,
+            "Width": 156,
+            "Height": 106,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 156,
+                "Height": 106,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Button_0_2",
+            "X": 404,
+            "Y": 134,
+            "Width": 156,
+            "Height": 106,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 156,
+                "Height": 106,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Button_0_1",
+            "X": 241,
+            "Y": 134,
+            "Width": 156,
+            "Height": 106,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 156,
+                "Height": 106,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Button_0_0",
+            "X": 80,
+            "Y": 134,
+            "Width": 156,
+            "Height": 106,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 156,
+                "Height": 106,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "Croix_1",
+            "X": -156,
+            "Y": 401,
+            "Width": 156,
+            "Height": 106,
+            "CustomContainerDefinitionName": "Croix"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "Cercle_1",
+            "X": 640,
+            "Y": 351,
+            "Width": 156,
+            "Height": 106,
+            "CustomContainerDefinitionName": "Cercle"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "Cercle_2",
+            "X": 640,
+            "Y": 245,
+            "Width": 156,
+            "Height": 106,
+            "CustomContainerDefinitionName": "Cercle"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "Croix_2",
+            "X": -156,
+            "Y": 292,
+            "Width": 156,
+            "Height": 106,
+            "CustomContainerDefinitionName": "Croix"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "Cercle_3",
+            "X": 640,
+            "Y": 139,
+            "Width": 156,
+            "Height": 106,
+            "CustomContainerDefinitionName": "Cercle"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "Croix_3",
+            "X": -156,
+            "Y": 186,
+            "Width": 156,
+            "Height": 106,
+            "CustomContainerDefinitionName": "Croix"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "Cercle_4",
+            "X": 640,
+            "Y": 33,
+            "Width": 156,
+            "Height": 106,
+            "CustomContainerDefinitionName": "Cercle"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "Croix_4",
+            "X": -156,
+            "Y": 80,
+            "Width": 156,
+            "Height": 106,
+            "CustomContainerDefinitionName": "Croix"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "Croix_5",
+            "X": -156,
+            "Y": -26,
+            "Width": 156,
+            "Height": 106,
+            "CustomContainerDefinitionName": "Croix"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Restart_Game",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Restart"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "restart_button"
+            }
+          },
+          {
+            "InteractionName": "Quit_Game",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Quit"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "quit_button"
+            }
+          },
+          {
+            "InteractionName": "Name_Player",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "XY_Player"
+            }
+          },
+          {
+            "InteractionName": "Button_0_0",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Button_0_0"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "button_0_0"
+            }
+          },
+          {
+            "InteractionName": "Button_0_1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Button_0_1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "button_0_1"
+            }
+          },
+          {
+            "InteractionName": "Button_0_2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Button_0_2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "button_0_2"
+            }
+          },
+          {
+            "InteractionName": "Button_1_0",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Button_1_0"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "button_1_0"
+            }
+          },
+          {
+            "InteractionName": "Button_1_1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Button_1_1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "button_1_1"
+            }
+          },
+          {
+            "InteractionName": "Button_1_2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Button_1_2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "button_1_2"
+            }
+          },
+          {
+            "InteractionName": "Button_2_0",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Button_2_0"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "button_2_0"
+            }
+          },
+          {
+            "InteractionName": "Button_2_1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Button_2_1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "button_2_1"
+            }
+          },
+          {
+            "InteractionName": "Button_2_2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Button_2_2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "button_2_2"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "Grille",
+        "Width": 480,
+        "Height": 330,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "Verticale_2",
+            "Y": 218,
+            "Width": 480,
+            "Height": 6,
+            "Filename": "__generated\\dark_theme_images_dividers_horizontal_small_thick_light.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "Verticale_1",
+            "X": 156,
+            "Width": 6,
+            "Height": 330,
+            "Filename": "__generated\\dark_theme_images_dividers_horizontal_small_thick_light.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "Horizontale_2",
+            "X": 318,
+            "Width": 6,
+            "Height": 330,
+            "Filename": "__generated\\dark_theme_images_dividers_horizontal_small_thick_light.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "Horizontale_1",
+            "Y": 106,
+            "Width": 480,
+            "Height": 6,
+            "Filename": "__generated\\dark_theme_images_dividers_horizontal_small_thick_light.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "Croix",
+        "Width": 156,
+        "Height": 106,
+        "Components": [
+          {
+            "Type": "Line",
+            "Name": "line1_2",
+            "Width": 156,
+            "Height": 106,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "EndX": 156.0,
+            "EndY": 106.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "line1",
+            "Width": 156,
+            "Height": 106,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartX": 156.0,
+            "EndY": 106.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "Cercle",
+        "X": 123,
+        "Y": 51,
+        "Width": 156,
+        "Height": 106,
+        "Components": [
+          {
+            "Type": "Circle",
+            "Name": "circle1",
+            "Width": 156,
+            "Height": 106,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "CenterX": 78.0,
+            "CenterY": 53.0,
+            "Radius": 50.0,
+            "LineWidth": 5.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "Name": "Morpion",
+    "Resolution": {
+      "Width": 640,
+      "Height": 480
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Morpion_2",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 640,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash -j8",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32H7",
+    "SubFamily": "STM32H743/753",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../STM32H743I-EVAL.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "Vector"
+    ]
+  },
+  "Version": "4.22.1",
+  "CreatedBy": "4.22.1"
+}
