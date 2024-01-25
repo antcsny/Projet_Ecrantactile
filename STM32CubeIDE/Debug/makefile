@@ -87,8 +87,8 @@ all: main-build
 main-build: STM32H743I-EVAL.elf secondary-outputs
 
 # Tool invocations
-STM32H743I-EVAL.elf STM32H743I-EVAL.map: $(OBJS) $(USER_OBJS) C:\TouchGFXProjects\Morpion\STM32CubeIDE\STM32H743XIHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "STM32H743I-EVAL.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\TouchGFXProjects\Morpion\STM32CubeIDE\STM32H743XIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32H743I-EVAL.map" -Wl,--gc-sections -static -LC:/git/pacmanv2/scripts/at/stm32h743-eval/STM32H743I-EVAL/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LC:/TouchGFXProjects/Morpion/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+STM32H743I-EVAL.elf STM32H743I-EVAL.map: $(OBJS) $(USER_OBJS) D:\4A\Projet\Projet_Ecrantactile\STM32CubeIDE\STM32H743XIHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "STM32H743I-EVAL.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\4A\Projet\Projet_Ecrantactile\STM32CubeIDE\STM32H743XIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32H743I-EVAL.map" -Wl,--gc-sections -static -LC:/git/pacmanv2/scripts/at/stm32h743-eval/STM32H743I-EVAL/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LC:/TouchGFXProjects/Morpion/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LD:/4A/Projet/Projet_Ecrantactile/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

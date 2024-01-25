@@ -1,5 +1,5 @@
 Application/User/generated/LanguageGb.o: \
- C:/TouchGFXProjects/Morpion/TouchGFX/generated/texts/src/LanguageGb.cpp \
+ D:/4A/Projet/Projet_Ecrantactile/TouchGFX/generated/texts/src/LanguageGb.cpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Unicode.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp

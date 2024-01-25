@@ -1,6 +1,6 @@
 Drivers/BSP/Components/mt25tl01g.o: \
- C:/TouchGFXProjects/Morpion/Drivers/BSP/Components/mt25tl01g/mt25tl01g.c \
- C:/TouchGFXProjects/Morpion/Drivers/BSP/Components/mt25tl01g/mt25tl01g.h \
+ D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/Components/mt25tl01g/mt25tl01g.c \
+ D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/Components/mt25tl01g/mt25tl01g.h \
  ../../Core/Inc/mt25tl01g_conf.h \
  ../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
  ../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h \
@@ -40,7 +40,7 @@ Drivers/BSP/Components/mt25tl01g.o: \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
-C:/TouchGFXProjects/Morpion/Drivers/BSP/Components/mt25tl01g/mt25tl01g.h:
+D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/Components/mt25tl01g/mt25tl01g.h:
 ../../Core/Inc/mt25tl01g_conf.h:
 ../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:
 ../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h:

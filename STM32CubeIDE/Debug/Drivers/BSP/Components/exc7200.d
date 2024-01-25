@@ -1,8 +1,8 @@
 Drivers/BSP/Components/exc7200.o: \
- C:/TouchGFXProjects/Morpion/Drivers/BSP/Components/exc7200/exc7200.c \
- C:/TouchGFXProjects/Morpion/Drivers/BSP/Components/exc7200/exc7200.h \
- C:/TouchGFXProjects/Morpion/Drivers/BSP/Components/exc7200/exc7200_reg.h \
+ D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/Components/exc7200/exc7200.c \
+ D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/Components/exc7200/exc7200.h \
+ D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/Components/exc7200/exc7200_reg.h \
  ../../Core/Inc/exc7200_conf.h
-C:/TouchGFXProjects/Morpion/Drivers/BSP/Components/exc7200/exc7200.h:
-C:/TouchGFXProjects/Morpion/Drivers/BSP/Components/exc7200/exc7200_reg.h:
+D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/Components/exc7200/exc7200.h:
+D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/Components/exc7200/exc7200_reg.h:
 ../../Core/Inc/exc7200_conf.h:

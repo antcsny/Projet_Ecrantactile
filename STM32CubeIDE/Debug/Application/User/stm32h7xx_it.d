@@ -1,5 +1,5 @@
 Application/User/stm32h7xx_it.o: \
- C:/TouchGFXProjects/Morpion/Core/Src/stm32h7xx_it.c \
+ D:/4A/Projet/Projet_Ecrantactile/Core/Src/stm32h7xx_it.c \
  ../../Core/Inc/main.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../../Core/Inc/stm32h7xx_hal_conf.h \

@@ -1,6 +1,6 @@
 Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_bus.o: \
- C:/TouchGFXProjects/Morpion/Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_bus.c \
- C:/TouchGFXProjects/Morpion/Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_bus.h \
+ D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_bus.c \
+ D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_bus.h \
  ../../Core/Inc/stm32h743i_eval_conf.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../../Core/Inc/stm32h7xx_hal_conf.h \
@@ -40,8 +40,8 @@ Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_bus.o: \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
- C:/TouchGFXProjects/Morpion/Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_errno.h
-C:/TouchGFXProjects/Morpion/Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_bus.h:
+ D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_errno.h
+D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_bus.h:
 ../../Core/Inc/stm32h743i_eval_conf.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../../Core/Inc/stm32h7xx_hal_conf.h:
@@ -81,4 +81,4 @@ C:/TouchGFXProjects/Morpion/Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_bus.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
-C:/TouchGFXProjects/Morpion/Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_errno.h:
+D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_errno.h:

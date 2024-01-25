@@ -1,4 +1,4 @@
-Application/User/main.o: C:/TouchGFXProjects/Morpion/Core/Src/main.c \
+Application/User/main.o: D:/4A/Projet/Projet_Ecrantactile/Core/Src/main.c \
  ../../Core/Inc/main.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../../Core/Inc/stm32h7xx_hal_conf.h \

@@ -1,4 +1,4 @@
 Drivers/BSP/Components/ts3510_reg.o: \
- C:/TouchGFXProjects/Morpion/Drivers/BSP/Components/ts3510/ts3510_reg.c \
- C:/TouchGFXProjects/Morpion/Drivers/BSP/Components/ts3510/ts3510_reg.h
-C:/TouchGFXProjects/Morpion/Drivers/BSP/Components/ts3510/ts3510_reg.h:
+ D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/Components/ts3510/ts3510_reg.c \
+ D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/Components/ts3510/ts3510_reg.h
+D:/4A/Projet/Projet_Ecrantactile/Drivers/BSP/Components/ts3510/ts3510_reg.h:
