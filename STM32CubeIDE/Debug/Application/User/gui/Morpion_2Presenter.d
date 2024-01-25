@@ -87,7 +87,9 @@ Application/User/gui/Morpion_2Presenter.o: \
  ../../TouchGFX/gui/include/gui/containers/Cercle.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/CercleBase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp
 ../../TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2View.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp:
 ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
@@ -176,3 +178,5 @@ Application/User/gui/Morpion_2Presenter.o: \
 ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/CercleBase.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:

@@ -67,10 +67,10 @@ build/MINGW32_NT-6.2/generated/simulator/src/mainBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp \
  gui/include/gui/model/Model.hpp \
- gui/include/gui/morpion_1_screen/Morpion_1View.hpp \
- generated/gui_generated/include/gui_generated/morpion_1_screen/Morpion_1ViewBase.hpp \
+ gui/include/gui/morpion_2_screen/Morpion_2View.hpp \
+ generated/gui_generated/include/gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- gui/include/gui/morpion_1_screen/Morpion_1Presenter.hpp \
+ gui/include/gui/morpion_2_screen/Morpion_2Presenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
@@ -116,9 +116,6 @@ build/MINGW32_NT-6.2/generated/simulator/src/mainBase.o: \
  generated/gui_generated/include/gui_generated/containers/CercleBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
- gui/include/gui/morpion_screen/MorpionView.hpp \
- generated/gui_generated/include/gui_generated/morpion_screen/MorpionViewBase.hpp \
- gui/include/gui/morpion_screen/MorpionPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VectorRenderer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Matrix3x3.hpp \
@@ -265,13 +262,13 @@ generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp
 
 gui/include/gui/model/Model.hpp:
 
-gui/include/gui/morpion_1_screen/Morpion_1View.hpp:
+gui/include/gui/morpion_2_screen/Morpion_2View.hpp:
 
-generated/gui_generated/include/gui_generated/morpion_1_screen/Morpion_1ViewBase.hpp:
+generated/gui_generated/include/gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-gui/include/gui/morpion_1_screen/Morpion_1Presenter.hpp:
+gui/include/gui/morpion_2_screen/Morpion_2Presenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
 
@@ -362,12 +359,6 @@ generated/gui_generated/include/gui_generated/containers/CercleBase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
-
-gui/include/gui/morpion_screen/MorpionView.hpp:
-
-generated/gui_generated/include/gui_generated/morpion_screen/MorpionViewBase.hpp:
-
-gui/include/gui/morpion_screen/MorpionPresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:
 

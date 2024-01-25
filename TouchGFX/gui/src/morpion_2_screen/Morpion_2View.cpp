@@ -4,7 +4,7 @@
 int turn=0;
 Croix* Croix[5];
 Cercle* Cercle[4];
-
+//Commentaire stylé
 Morpion_2View::Morpion_2View()
 {
 	/*Initialization of pieces*/
@@ -32,15 +32,15 @@ void Morpion_2View::tearDownScreen()
 
 void Morpion_2View::restart_button()
 {
-	Button_0_0.moveTo(80,134);
-	Button_0_1.moveTo(241,134);
-	Button_0_2.moveTo(404,134);
-	Button_1_0.moveTo(80,245);
-	Button_1_1.moveTo(241,245);
-	Button_1_2.moveTo(404,245);
-	Button_2_0.moveTo(80,358);
-	Button_2_1.moveTo(241,358);
-	Button_2_2.moveTo(404,358);
+	Button_0_0.setTouchable(1);
+	Button_0_1.setTouchable(1);
+	Button_0_2.setTouchable(1);
+	Button_1_0.setTouchable(1);
+	Button_1_1.setTouchable(1);
+	Button_1_2.setTouchable(1);
+	Button_2_0.setTouchable(1);
+	Button_2_1.setTouchable(1);
+	Button_2_2.setTouchable(1);
 	Croix_1.moveTo(-156,-26);
 	Croix_2.moveTo(-156,-26);
 	Croix_3.moveTo(-156,-26);
@@ -52,6 +52,8 @@ void Morpion_2View::restart_button()
 	Cercle_4.moveTo(-156,-26);
 	turn=0;
 }
+
+//Commentaire de merde
 
 void Morpion_2View::PlayMove(int X, int Y)
 {

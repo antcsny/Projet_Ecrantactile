@@ -77,13 +77,30 @@
           },
           {
             "Type": "TextArea",
-            "Name": "Joueur",
-            "X": 250,
-            "Y": 70,
-            "Width": 140,
+            "Name": "Joueur_2",
+            "X": 275,
+            "Y": 68,
+            "Width": 88,
             "Height": 24,
             "LockPosition": true,
             "TextId": "__SingleUse_HD7Q",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Joueur_1",
+            "X": 275,
+            "Y": 68,
+            "Width": 88,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_TNV6",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -611,8 +628,10 @@
               "TriggerComponent": "Quit"
             },
             "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "quit_button"
+              "Type": "ActionFade",
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "ActionComponent": "Quit"
             }
           },
           {

@@ -14,6 +14,8 @@
 #include <touchgfx/containers/buttons/Buttons.hpp>
 #include <gui/containers/Croix.hpp>
 #include <gui/containers/Cercle.hpp>
+#include <touchgfx/EasingEquations.hpp>
+#include <touchgfx/mixins/FadeAnimator.hpp>
 
 class Morpion_2ViewBase : public touchgfx::View<Morpion_2Presenter>
 {
@@ -26,10 +28,6 @@ public:
      * Virtual Action Handlers
      */
     virtual void restart_button()
-    {
-        // Override and implement this function in Morpion_2
-    }
-    virtual void quit_button()
     {
         // Override and implement this function in Morpion_2
     }
@@ -84,7 +82,8 @@ protected:
     touchgfx::TextArea Titre;
     touchgfx::TextArea Quitter;
     touchgfx::TextArea Recommencer;
-    touchgfx::TextArea Joueur;
+    touchgfx::TextArea Joueur_2;
+    touchgfx::TextArea Joueur_1;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  Quit;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  Restart;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  Button_2_2;

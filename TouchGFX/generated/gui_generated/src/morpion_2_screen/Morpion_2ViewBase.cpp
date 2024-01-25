@@ -42,11 +42,17 @@ Morpion_2ViewBase::Morpion_2ViewBase() :
     Recommencer.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CEIK));
     add(Recommencer);
 
-    Joueur.setXY(250, 70);
-    Joueur.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    Joueur.setLinespacing(0);
-    Joueur.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HD7Q));
-    add(Joueur);
+    Joueur_2.setXY(275, 68);
+    Joueur_2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    Joueur_2.setLinespacing(0);
+    Joueur_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HD7Q));
+    add(Joueur_2);
+
+    Joueur_1.setXY(275, 68);
+    Joueur_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    Joueur_1.setLinespacing(0);
+    Joueur_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TNV6));
+    add(Joueur_1);
 
     Quit.setBoxWithBorderPosition(0, 0, 96, 68);
     Quit.setBorderSize(5);
@@ -193,9 +199,10 @@ void Morpion_2ViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButton
     if (&src == &Quit)
     {
         //Quit_Game
-        //When Quit clicked call virtual function
-        //Call quit_button
-        quit_button();
+        //When Quit clicked fade Quit
+        //Set alpha to 255 on Quit
+        Quit.setAlpha(255);
+        Quit.invalidate();
     }
     if (&src == &Button_0_0)
     {
