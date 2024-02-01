@@ -11,6 +11,8 @@
 #include <platform/driver/lcd/LCD16bpp.hpp>
 #include <gui/morpion_2_screen/Morpion_2View.hpp>
 #include <gui/morpion_2_screen/Morpion_2Presenter.hpp>
+#include <gui/mainmenu_screen/MainMenuView.hpp>
+#include <gui/mainmenu_screen/MainMenuPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -32,13 +34,37 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
 
 // Morpion_2
 
-void FrontendApplicationBase::gotoMorpion_2ScreenNoTransition()
+void FrontendApplicationBase::gotoMorpion_2ScreenSlideTransitionSouth()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMorpion_2ScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMorpion_2ScreenSlideTransitionSouthImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoMorpion_2ScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoMorpion_2ScreenSlideTransitionSouthImpl()
 {
-    touchgfx::makeTransition<Morpion_2View, Morpion_2Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<Morpion_2View, Morpion_2Presenter, touchgfx::SlideTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// MainMenu
+
+void FrontendApplicationBase::gotoMainMenuScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMainMenuScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoMainMenuScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<MainMenuView, MainMenuPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionNorth()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMainMenuScreenSlideTransitionNorthImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionNorthImpl()
+{
+    touchgfx::makeTransition<MainMenuView, MainMenuPresenter, touchgfx::SlideTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

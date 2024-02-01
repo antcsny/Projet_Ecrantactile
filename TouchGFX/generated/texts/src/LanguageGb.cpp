@@ -10,9 +10,15 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 // Remap all strings
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
-    27, // T___SINGLEUSE_TNV6: "Joueur 1"
-    36, // T___SINGLEUSE_HD7Q: "Joueur 2"
-    15, // T___SINGLEUSE_CEIK: "Recommencer"
-    45, // T___SINGLEUSE_OAW0: "Quitter"
-    0   // T___SINGLEUSE_CZXE: "Jeu du Morpion"
+    0,   // T___SINGLEUSE_A7PP: "Multiplayer not available"
+    25,  // T___SINGLEUSE_WYL5: ""
+    96,  // T___SINGLEUSE_8184: "New Text"
+    54,  // T___SINGLEUSE_G07I: "Multiplayer"
+    26,  // T___SINGLEUSE_TTJG: "Jeu du Morpion"
+    41,  // T___SINGLEUSE_VAWK: "Singleplayer"
+    78,  // T___SINGLEUSE_TNV6: "Joueur 1"
+    87,  // T___SINGLEUSE_HD7Q: "Joueur 2"
+    66,  // T___SINGLEUSE_CEIK: "Recommencer"
+    105, // T___SINGLEUSE_OAW0: "Quitter"
+    26   // T___SINGLEUSE_CZXE: "Jeu du Morpion"
 };

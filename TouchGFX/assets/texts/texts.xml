@@ -4,8 +4,27 @@
     <Language Id="GB" />
   </Languages>
   <Texts>
-    <TextGroup Id="Group1" />
+    <TextGroup Id="Group1">
+      <Text Id="__SingleUse_A7PP" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Multiplayer not available</Translation>
+      </Text>
+    </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_WYL5" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_8184" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_G07I" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Multiplayer</Translation>
+      </Text>
+      <Text Id="__SingleUse_TTJG" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Jeu du Morpion</Translation>
+      </Text>
+      <Text Id="__SingleUse_VAWK" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Singleplayer</Translation>
+      </Text>
       <Text Id="__SingleUse_TNV6" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Joueur 1</Translation>
       </Text>
