@@ -1,5 +1,0 @@
-../../TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2Presenter.hpp:28:13:Morpion_2Presenter::~Morpion_2Presenter()	1
-D:/4A/Projet/Projet_Ecrantactile/TouchGFX/gui/src/morpion_2_screen/Morpion_2Presenter.cpp:10:6:virtual void Morpion_2Presenter::activate()	1
-../../TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2Presenter.hpp:28:13:virtual Morpion_2Presenter::~Morpion_2Presenter()	1
-../../TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2Presenter.hpp:28:13:virtual void* Morpion_2Presenter::_ZThn4_N18Morpion_2PresenterD1Ev()	1
-D:/4A/Projet/Projet_Ecrantactile/TouchGFX/gui/src/morpion_2_screen/Morpion_2Presenter.cpp:4:1:Morpion_2Presenter::Morpion_2Presenter(Morpion_2View&)	1

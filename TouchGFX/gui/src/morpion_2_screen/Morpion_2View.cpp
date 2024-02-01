@@ -4,6 +4,7 @@
 int turn=0;
 Croix* Croix[5];
 Cercle* Cercle[4];
+char TabJeu[3][3];
 
 Morpion_2View::Morpion_2View()
 {
@@ -57,13 +58,17 @@ void Morpion_2View::PlayMove(Drawable& Button)
 {
 	Button.setTouchable(0);
 	int X= Button.getX(),Y= Button.getY();
-	if(turn%2==0)
+	int posCol=(X-80)/162, posLin=(Y-134)/112;
+	if(turn%2==0){
 		Croix[turn/2]->moveTo(X,Y);
-	if(turn%2==1)
+		TabJeu[posLin][posCol]='x';	// Joueur 1 : x
+	}
+	if(turn%2==1){
 		Cercle[turn/2]->moveTo(X,Y);
+		TabJeu[posLin][posCol]='o';	// Joueur 2 : o
+	}
 	turn++;
 }
-
 
 void Morpion_2View::button_0_0()
 {
