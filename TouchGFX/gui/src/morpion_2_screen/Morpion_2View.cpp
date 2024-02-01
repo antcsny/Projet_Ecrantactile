@@ -1,5 +1,7 @@
 #include <gui/morpion_2_screen/Morpion_2View.hpp>
 #include <gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
+
 
 int turn=0;
 Croix* Croix[5];
@@ -51,6 +53,10 @@ void Morpion_2View::restart_button()
 	Cercle_2.moveTo(-156,-26);
 	Cercle_3.moveTo(-156,-26);
 	Cercle_4.moveTo(-156,-26);
+	Joueur_1.setVisible(true);
+	Joueur_1.invalidate();
+	Joueur_2.setVisible(false);
+	Joueur_2.invalidate();
 	turn=0;
 }
 
@@ -62,10 +68,18 @@ void Morpion_2View::PlayMove(Drawable& Button)
 	if(turn%2==0){
 		Croix[turn/2]->moveTo(X,Y);
 		TabJeu[posLin][posCol]='x';	// Joueur 1 : x
+		Joueur_1.setVisible(false);
+		Joueur_1.invalidate();
+		Joueur_2.setVisible(true);
+		Joueur_2.invalidate();
 	}
 	if(turn%2==1){
 		Cercle[turn/2]->moveTo(X,Y);
 		TabJeu[posLin][posCol]='o';	// Joueur 2 : o
+		Joueur_1.setVisible(true);
+		Joueur_1.invalidate();
+		Joueur_2.setVisible(false);
+		Joueur_2.invalidate();
 	}
 	turn++;
 }

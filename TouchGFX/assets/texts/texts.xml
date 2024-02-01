@@ -7,18 +7,18 @@
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
       <Text Id="__SingleUse_TNV6" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Joueur 1</Translation>
+        <Translation Language="GB">Joueur 1 Joue (X)</Translation>
       </Text>
-      <Text Id="__SingleUse_HD7Q" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Joueur 2</Translation>
+      <Text Id="__SingleUse_HD7Q" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Joueur 2 Joue (O)</Translation>
       </Text>
-      <Text Id="__SingleUse_CEIK" Alignment="Left" TypographyId="Default">
+      <Text Id="__SingleUse_CEIK" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Recommencer</Translation>
       </Text>
-      <Text Id="__SingleUse_OAW0" Alignment="Left" TypographyId="Default">
+      <Text Id="__SingleUse_OAW0" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Quitter</Translation>
       </Text>
-      <Text Id="__SingleUse_CZXE" Alignment="Left" TypographyId="Default">
+      <Text Id="__SingleUse_CZXE" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Jeu du Morpion</Translation>
       </Text>
     </TextGroup>

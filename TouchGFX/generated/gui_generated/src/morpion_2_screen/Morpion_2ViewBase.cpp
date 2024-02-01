@@ -42,13 +42,13 @@ Morpion_2ViewBase::Morpion_2ViewBase() :
     Recommencer.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CEIK));
     add(Recommencer);
 
-    Joueur_2.setXY(275, 68);
+    Joueur_2.setXY(229, 62);
     Joueur_2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     Joueur_2.setLinespacing(0);
     Joueur_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HD7Q));
     add(Joueur_2);
 
-    Joueur_1.setXY(275, 68);
+    Joueur_1.setXY(230, 62);
     Joueur_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     Joueur_1.setLinespacing(0);
     Joueur_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TNV6));
@@ -105,7 +105,7 @@ Morpion_2ViewBase::Morpion_2ViewBase() :
     Button_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     Button_1_1.setAlpha(0);
     Button_1_1.setAction(flexButtonCallback);
-    Button_1_1.setPosition(242, 246, 156, 106);
+    Button_1_1.setPosition(241, 246, 156, 106);
     add(Button_1_1);
 
     Button_1_0.setBoxWithBorderPosition(0, 0, 156, 106);
@@ -113,7 +113,7 @@ Morpion_2ViewBase::Morpion_2ViewBase() :
     Button_1_0.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     Button_1_0.setAlpha(0);
     Button_1_0.setAction(flexButtonCallback);
-    Button_1_0.setPosition(80, 246, 156, 106);
+    Button_1_0.setPosition(80, 245, 156, 106);
     add(Button_1_0);
 
     Button_0_2.setBoxWithBorderPosition(0, 0, 156, 106);
@@ -129,7 +129,7 @@ Morpion_2ViewBase::Morpion_2ViewBase() :
     Button_0_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     Button_0_1.setAlpha(0);
     Button_0_1.setAction(flexButtonCallback);
-    Button_0_1.setPosition(242, 134, 156, 106);
+    Button_0_1.setPosition(241, 137, 156, 106);
     add(Button_0_1);
 
     Button_0_0.setBoxWithBorderPosition(0, 0, 156, 106);
