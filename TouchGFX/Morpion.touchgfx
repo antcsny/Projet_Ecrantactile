@@ -831,8 +831,7 @@
             "Name": "textArea2",
             "X": 315,
             "Y": 317,
-            "Width": 11,
-            "Height": 48,
+            "Height": 24,
             "TextId": "__SingleUse_WYL5",
             "TextRotation": "0",
             "AutoSize": true
