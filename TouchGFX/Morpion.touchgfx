@@ -743,6 +743,126 @@
               "Type": "ActionCustom",
               "FunctionName": "button_2_2"
             }
+          },
+          {
+            "InteractionName": "QuitGame",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Quit"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "MainMenu"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "MainMenu",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 1024,
+            "Height": 600,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_1024x600_meteor_rain.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "singleplayer_game",
+            "X": 135,
+            "Y": 142,
+            "Width": 370,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_large_round_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_large_round_disabled.png",
+            "TextId": "__SingleUse_VAWK",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\large_round_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "multiplayer",
+            "X": 135,
+            "Y": 232,
+            "Width": 370,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_large_round_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_large_round_disabled.png",
+            "TextId": "__SingleUse_G07I",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\large_round_disabled.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 244,
+            "Y": 23,
+            "Width": 153,
+            "Height": 24,
+            "TextId": "__SingleUse_TTJG",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 315,
+            "Y": 317,
+            "Width": 11,
+            "Height": 48,
+            "TextId": "__SingleUse_WYL5",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "singleplayer",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "singleplayer_game"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "Morpion_2"
+            }
+          },
+          {
+            "InteractionName": "multiplayer",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "multiplayer"
+            },
+            "Action": {
+              "Type": "ActionSetText",
+              "TextId": "__SingleUse_8184",
+              "ActionComponent": "textArea1"
+            }
           }
         ]
       }
@@ -864,7 +984,7 @@
       "Height": 480
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "Morpion_2",
+    "StartupScreenName": "MainMenu",
     "SelectedStartupLanguage": "GB",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",

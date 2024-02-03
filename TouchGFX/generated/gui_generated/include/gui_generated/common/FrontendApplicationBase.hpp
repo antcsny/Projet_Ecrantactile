@@ -17,11 +17,16 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gotoMorpion_2ScreenNoTransition();
+        gotoMainMenuScreenNoTransition();
     }
 
     // Morpion_2
-    void gotoMorpion_2ScreenNoTransition();
+    void gotoMorpion_2ScreenSlideTransitionSouth();
+
+    // MainMenu
+    void gotoMainMenuScreenNoTransition();
+
+    void gotoMainMenuScreenSlideTransitionNorth();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -29,7 +34,12 @@ protected:
     Model& model;
 
     // Morpion_2
-    void gotoMorpion_2ScreenNoTransitionImpl();
+    void gotoMorpion_2ScreenSlideTransitionSouthImpl();
+
+    // MainMenu
+    void gotoMainMenuScreenNoTransitionImpl();
+
+    void gotoMainMenuScreenSlideTransitionNorthImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

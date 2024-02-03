@@ -9,11 +9,15 @@
 #include <mvp/MVPHeap.hpp>
 
 #include <touchgfx/transitions/NoTransition.hpp>
+#include <touchgfx/transitions/SlideTransition.hpp>
+
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
 #include <gui/morpion_2_screen/Morpion_2View.hpp>
 #include <gui/morpion_2_screen/Morpion_2Presenter.hpp>
+#include <gui/mainmenu_screen/MainMenuView.hpp>
+#include <gui/mainmenu_screen/MainMenuPresenter.hpp>
 
 
 /**
@@ -37,7 +41,8 @@ public:
      * @note All view types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< Morpion_2View,
-            touchgfx::meta::Nil
+            touchgfx::meta::TypeList< MainMenuView,
+            touchgfx::meta::Nil >
             > GeneratedViewTypes;
 
     /**
@@ -50,7 +55,8 @@ public:
      * @note All presenter types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< Morpion_2Presenter,
-            touchgfx::meta::Nil
+            touchgfx::meta::TypeList< MainMenuPresenter,
+            touchgfx::meta::Nil >
             > GeneratedPresenterTypes;
 
     /**
@@ -63,7 +69,9 @@ public:
      * @note All transition types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< touchgfx::NoTransition,
-            touchgfx::meta::Nil
+            touchgfx::meta::TypeList< SlideTransition<NORTH>,
+            touchgfx::meta::TypeList< SlideTransition<SOUTH>,
+            touchgfx::meta::Nil > >
             > GeneratedTransitionTypes;
 
     /**
@@ -73,7 +81,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoMorpion_2ScreenNoTransition();
+        app.gotoMainMenuScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)

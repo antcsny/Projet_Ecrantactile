@@ -196,6 +196,18 @@
     <Filter Include="Source Files\generated\gui_generated\morpion_2_screen">
       <UniqueIdentifier>94107842-24AE-DA4E-60A6-AEC172A10FFF</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\mainmenu_screen">
+      <UniqueIdentifier>F77A197E-D015-E628-0842-BF2CBE1AD9C2</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\mainmenu_screen">
+      <UniqueIdentifier>17F3BF6A-3B59-1BA6-BEF3-975B4E558462</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\mainmenu_screen">
+      <UniqueIdentifier>0128382B-8253-A310-DB70-815F84E7E07F</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\mainmenu_screen">
+      <UniqueIdentifier>FDB4CF48-ABC4-0EEC-F9A5-A5F52A5A1E0B</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -254,6 +266,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\morpion_2_screen\Morpion_2ViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\morpion_2_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\mainmenu_screen\MainMenuPresenter.cpp">
+      <Filter>Source Files\gui\mainmenu_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\mainmenu_screen\MainMenuView.cpp">
+      <Filter>Source Files\gui\mainmenu_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\mainmenu_screen\MainMenuViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\mainmenu_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -723,6 +744,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\morpion_2_screen\Morpion_2ViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\morpion_2_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\mainmenu_screen\MainMenuPresenter.hpp">
+      <Filter>Header Files\gui\mainmenu_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\mainmenu_screen\MainMenuView.hpp">
+      <Filter>Header Files\gui\mainmenu_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\mainmenu_screen\MainMenuViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\mainmenu_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
