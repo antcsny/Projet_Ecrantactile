@@ -14,12 +14,12 @@ GrilleBase::GrilleBase()
     add(Verticale_2);
 
     Verticale_1.setBitmap(touchgfx::Bitmap(BITMAP_DARK_THEME_IMAGES_DIVIDERS_HORIZONTAL_SMALL_THICK_LIGHT_ID));
-    Verticale_1.setPosition(156, 0, 6, 330);
+    Verticale_1.setPosition(156, 0, 6, 360);
     Verticale_1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(Verticale_1);
 
     Horizontale_2.setBitmap(touchgfx::Bitmap(BITMAP_DARK_THEME_IMAGES_DIVIDERS_HORIZONTAL_SMALL_THICK_LIGHT_ID));
-    Horizontale_2.setPosition(318, 0, 6, 330);
+    Horizontale_2.setPosition(318, 0, 6, 360);
     Horizontale_2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(Horizontale_2);
 

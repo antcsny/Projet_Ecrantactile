@@ -22,7 +22,7 @@ TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	0	static
 AbstractButtonContainer.hpp:114:18:virtual void touchgfx::AbstractButtonContainer::handlePressedUpdated()	0	static
 AbstractButtonContainer.hpp:119:18:virtual void touchgfx::AbstractButtonContainer::handleAlphaUpdated()	0	static
 AbstractButtonContainer.hpp:34:7:touchgfx::AbstractButtonContainer::~AbstractButtonContainer()	0	static
-Morpion_2ViewBase.hpp:34:18:virtual void Morpion_2ViewBase::action1()	0	static
+Morpion_2ViewBase.hpp:34:18:virtual void Morpion_2ViewBase::init()	0	static
 Morpion_2ViewBase.hpp:43:18:virtual void Morpion_2ViewBase::restart_button()	0	static
 Morpion_2ViewBase.hpp:47:18:virtual void Morpion_2ViewBase::button_0_0()	0	static
 Morpion_2ViewBase.hpp:51:18:virtual void Morpion_2ViewBase::button_0_1()	0	static

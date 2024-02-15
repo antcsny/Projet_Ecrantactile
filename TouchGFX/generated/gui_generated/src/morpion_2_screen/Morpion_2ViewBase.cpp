@@ -121,7 +121,7 @@ Morpion_2ViewBase::Morpion_2ViewBase() :
     Button_0_2.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     Button_0_2.setAlpha(0);
     Button_0_2.setAction(flexButtonCallback);
-    Button_0_2.setPosition(404, 136, 156, 106);
+    Button_0_2.setPosition(404, 134, 156, 106);
     add(Button_0_2);
 
     Button_0_1.setBoxWithBorderPosition(0, 0, 156, 106);
@@ -129,7 +129,7 @@ Morpion_2ViewBase::Morpion_2ViewBase() :
     Button_0_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     Button_0_1.setAlpha(0);
     Button_0_1.setAction(flexButtonCallback);
-    Button_0_1.setPosition(242, 136, 156, 106);
+    Button_0_1.setPosition(242, 134, 156, 106);
     add(Button_0_1);
 
     Button_0_0.setBoxWithBorderPosition(0, 0, 156, 106);
@@ -137,7 +137,7 @@ Morpion_2ViewBase::Morpion_2ViewBase() :
     Button_0_0.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     Button_0_0.setAlpha(0);
     Button_0_0.setAction(flexButtonCallback);
-    Button_0_0.setPosition(80, 136, 156, 106);
+    Button_0_0.setPosition(80, 134, 156, 106);
     add(Button_0_0);
 
     Croix_1.setXY(-156, 401);
