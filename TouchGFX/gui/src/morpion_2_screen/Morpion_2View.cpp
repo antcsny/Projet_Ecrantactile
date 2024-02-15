@@ -37,44 +37,7 @@ void Morpion_2View::tearDownScreen()
 
 void Morpion_2View::restart_button()
 {
-	Button_0_0.setTouchable(1);
-	Button_0_1.setTouchable(1);
-	Button_0_2.setTouchable(1);
-	Button_1_0.setTouchable(1);
-	Button_1_1.setTouchable(1);
-	Button_1_2.setTouchable(1);
-	Button_2_0.setTouchable(1);
-	Button_2_1.setTouchable(1);
-	Button_2_2.setTouchable(1);
-	Croix_1.moveTo(-156,-26);
-	Croix_2.moveTo(-156,-26);
-	Croix_3.moveTo(-156,-26);
-	Croix_4.moveTo(-156,-26);
-	Croix_5.moveTo(-156,-26);
-	Cercle_1.moveTo(-156,-26);
-	Cercle_2.moveTo(-156,-26);
-	Cercle_3.moveTo(-156,-26);
-	Cercle_4.moveTo(-156,-26);
-	win_p1.setVisible(false);
-	win_p1.invalidate();
-	win_p2.setVisible(false);
-	win_p2.invalidate();
-	draw.setVisible(false);
-	draw.invalidate();
-	Joueur_1.setVisible(true);
-	Joueur_1.invalidate();
-	Joueur_2.setVisible(false);
-	Joueur_2.invalidate();
-	turn=0;
-	res=-1;
-	char valeur = '1';
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 3; j++) {
-			tableau[i][j] = valeur;
-			valeur ++;
-		}
-	}
-
+	initialisation();
 }
 
 void Morpion_2View::win_button()
@@ -202,4 +165,49 @@ void Morpion_2View::button_2_1()
 void Morpion_2View::button_2_2()
 {
 	Morpion_2View::PlayMove(Button_2_2);
+}
+
+void Morpion_2View::init()
+{
+	Morpion_2View::initialisation();
+}
+
+void Morpion_2View::initialisation(){
+	Button_0_0.setTouchable(1);
+	Button_0_1.setTouchable(1);
+	Button_0_2.setTouchable(1);
+	Button_1_0.setTouchable(1);
+	Button_1_1.setTouchable(1);
+	Button_1_2.setTouchable(1);
+	Button_2_0.setTouchable(1);
+	Button_2_1.setTouchable(1);
+	Button_2_2.setTouchable(1);
+	Croix_1.moveTo(-156,-26);
+	Croix_2.moveTo(-156,-26);
+	Croix_3.moveTo(-156,-26);
+	Croix_4.moveTo(-156,-26);
+	Croix_5.moveTo(-156,-26);
+	Cercle_1.moveTo(-156,-26);
+	Cercle_2.moveTo(-156,-26);
+	Cercle_3.moveTo(-156,-26);
+	Cercle_4.moveTo(-156,-26);
+	win_p1.setVisible(false);
+	win_p1.invalidate();
+	win_p2.setVisible(false);
+	win_p2.invalidate();
+	draw.setVisible(false);
+	draw.invalidate();
+	Joueur_1.setVisible(true);
+	Joueur_1.invalidate();
+	Joueur_2.setVisible(false);
+	Joueur_2.invalidate();
+	turn=0;
+	res=-1;
+	char valeur = '1';
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			tableau[i][j] = valeur;
+			valeur ++;
+		}
+	}
 }

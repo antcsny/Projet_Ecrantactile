@@ -777,6 +777,23 @@
               "ScreenTransitionDirection": "North",
               "ActionComponent": "MainMenu"
             }
+          },
+          {
+            "InteractionName": "Init",
+            "Trigger": {
+              "Type": "TriggerScreenTransitionBegins"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call Morpion_2 init",
+              "ActionComponent": "Morpion_2"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "init",
+            "Description": ""
           }
         ]
       },

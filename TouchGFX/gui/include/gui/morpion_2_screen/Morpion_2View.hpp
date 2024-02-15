@@ -24,6 +24,8 @@ public:
     void PlayMove(Drawable& Button);
     virtual int verifier_victoire();
     void win_button();
+    void initialisation();
+    virtual void init();
 protected:
 };
 

@@ -26,6 +26,16 @@ public:
     Morpion_2ViewBase();
     virtual ~Morpion_2ViewBase();
     virtual void setupScreen();
+    virtual void transitionBegins();
+
+    /*
+     * Custom Actions
+     */
+    virtual void init()
+    {
+        // Override and implement this function in Screen1
+    }
+    
 
     /*
      * Virtual Action Handlers

@@ -200,6 +200,7 @@ void Morpion_2ViewBase::setupScreen()
     win_p1.initialize();
     win_p2.initialize();
     draw.initialize();
+    transitionBegins();
 }
 
 void Morpion_2ViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
@@ -286,4 +287,12 @@ void Morpion_2ViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButton
         //Call button_2_2
         button_2_2();
     }
+}
+
+void Morpion_2ViewBase::transitionBegins()
+{
+    //Init
+    //When screen transition begins call init on Morpion_2
+    //Call init
+    init();
 }

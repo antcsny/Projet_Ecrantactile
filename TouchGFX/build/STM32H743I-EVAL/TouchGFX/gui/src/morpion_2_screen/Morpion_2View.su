@@ -1,0 +1,22 @@
+Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+Morpion_2View.cpp:32:6:virtual void Morpion_2View::tearDownScreen()	0	static
+Morpion_2View.cpp:135:5:virtual int Morpion_2View::verifier_victoire()	12	static
+Morpion_2View.hpp:11:13:Morpion_2View::~Morpion_2View()	8	static
+Morpion_2View.hpp:11:13:virtual Morpion_2View::~Morpion_2View()	8	static
+Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+Morpion_2View.cpp:13:1:Morpion_2View::Morpion_2View()	8	static
+Morpion_2View.cpp:80:6:void Morpion_2View::win_button()	0	static
+Morpion_2View.cpp:27:6:virtual void Morpion_2View::setupScreen()	0	static
+Morpion_2View.cpp:38:6:virtual void Morpion_2View::restart_button()	16	static
+Morpion_2View.cpp:93:6:void Morpion_2View::PlayMove(touchgfx::Drawable&)	32	static
+Morpion_2View.cpp:162:6:virtual void Morpion_2View::button_0_0()	0	static
+Morpion_2View.cpp:167:6:virtual void Morpion_2View::button_0_1()	0	static
+Morpion_2View.cpp:172:6:virtual void Morpion_2View::button_0_2()	0	static
+Morpion_2View.cpp:177:6:virtual void Morpion_2View::button_1_0()	0	static
+Morpion_2View.cpp:182:6:virtual void Morpion_2View::button_1_1()	0	static
+Morpion_2View.cpp:187:6:virtual void Morpion_2View::button_1_2()	0	static
+Morpion_2View.cpp:192:6:virtual void Morpion_2View::button_2_0()	0	static
+Morpion_2View.cpp:197:6:virtual void Morpion_2View::button_2_1()	0	static
+Morpion_2View.cpp:202:6:virtual void Morpion_2View::button_2_2()	0	static

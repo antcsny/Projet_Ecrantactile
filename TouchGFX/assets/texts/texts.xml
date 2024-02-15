@@ -23,7 +23,7 @@
         <Translation Language="GB"></Translation>
       </Text>
       <Text Id="__SingleUse_8184" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
+        <Translation Language="GB">A communication error has occurred.</Translation>
       </Text>
       <Text Id="__SingleUse_G07I" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Multiplayer</Translation>
