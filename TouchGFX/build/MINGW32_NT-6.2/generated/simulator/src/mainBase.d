@@ -119,6 +119,7 @@ build/MINGW32_NT-6.2/generated/simulator/src/mainBase.o: \
  generated/gui_generated/include/gui_generated/containers/CercleBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
+<<<<<<< Updated upstream
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp \
  gui/include/gui/mainmenu_screen/MainMenuView.hpp \
  generated/gui_generated/include/gui_generated/mainmenu_screen/MainMenuViewBase.hpp \
@@ -126,6 +127,10 @@ build/MINGW32_NT-6.2/generated/simulator/src/mainBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+=======
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp \
+>>>>>>> Stashed changes
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VectorRenderer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Matrix3x3.hpp \
@@ -376,6 +381,7 @@ generated/gui_generated/include/gui_generated/containers/CercleBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
 
+<<<<<<< Updated upstream
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:
 
 gui/include/gui/mainmenu_screen/MainMenuView.hpp:
@@ -389,6 +395,11 @@ gui/include/gui/mainmenu_screen/MainMenuPresenter.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+=======
+../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:
+>>>>>>> Stashed changes
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:
 

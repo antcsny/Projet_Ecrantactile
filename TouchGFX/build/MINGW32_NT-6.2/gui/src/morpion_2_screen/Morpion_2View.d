@@ -89,8 +89,12 @@ build/MINGW32_NT-6.2/gui/src/morpion_2_screen/Morpion_2View.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+<<<<<<< Updated upstream
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp \
  generated/texts/include/texts/TextKeysAndLanguages.hpp
+=======
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp
+>>>>>>> Stashed changes
 
 gui/include/gui/morpion_2_screen/Morpion_2View.hpp:
 
@@ -271,5 +275,8 @@ generated/gui_generated/include/gui_generated/containers/CercleBase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:
+<<<<<<< Updated upstream
 
 generated/texts/include/texts/TextKeysAndLanguages.hpp:
+=======
+>>>>>>> Stashed changes

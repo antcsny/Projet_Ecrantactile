@@ -36,14 +36,14 @@ void Morpion_2View::tearDownScreen()
 void Morpion_2View::restart_button()
 {
 	Button_0_0.setTouchable(1);
-    Button_0_1.setTouchable(1);
-    Button_0_2.setTouchable(1);
-    Button_1_0.setTouchable(1);
-    Button_1_1.setTouchable(1);
-    Button_1_2.setTouchable(1);
-    Button_2_0.setTouchable(1);
-    Button_2_1.setTouchable(1);
-    Button_2_2.setTouchable(1);
+	Button_0_1.setTouchable(1);
+	Button_0_2.setTouchable(1);
+	Button_1_0.setTouchable(1);
+	Button_1_1.setTouchable(1);
+	Button_1_2.setTouchable(1);
+	Button_2_0.setTouchable(1);
+	Button_2_1.setTouchable(1);
+	Button_2_2.setTouchable(1);
 	Croix_1.moveTo(-156,-26);
 	Croix_2.moveTo(-156,-26);
 	Croix_3.moveTo(-156,-26);
@@ -60,7 +60,9 @@ void Morpion_2View::restart_button()
 	turn=0;
 }
 
-void Morpion_2View::PlayMove(Drawable& Button)
+//Commentaire de merde
+
+void Morpion_2View::PlayMove(int X, int Y)
 {
 	Button.setTouchable(0);
 	int X= Button.getX(),Y= Button.getY();
@@ -86,45 +88,54 @@ void Morpion_2View::PlayMove(Drawable& Button)
 
 void Morpion_2View::button_0_0()
 {
-	Morpion_2View::PlayMove(Button_0_0);
+	Morpion_2View::PlayMove(Button_0_0.getX(),Button_0_0.getY());
+	Button_0_0.setTouchable(0);
 }
 
 void Morpion_2View::button_0_1()
 {
-	Morpion_2View::PlayMove(Button_0_1);
+	Morpion_2View::PlayMove(Button_0_1.getX(),Button_0_1.getY());
+	Button_0_1.setTouchable(0);
 }
 
 void Morpion_2View::button_0_2()
 {
-	Morpion_2View::PlayMove(Button_0_2);
+	Morpion_2View::PlayMove(Button_0_2.getX(),Button_0_2.getY());
+	Button_0_2.setTouchable(0);
 }
 
 void Morpion_2View::button_1_0()
 {
-	Morpion_2View::PlayMove(Button_1_0);
+	Morpion_2View::PlayMove(Button_1_0.getX(),Button_1_0.getY());
+	Button_1_0.setTouchable(0);
 }
 
 void Morpion_2View::button_1_1()
 {
-	Morpion_2View::PlayMove(Button_1_1);
+	Morpion_2View::PlayMove(Button_1_1.getX(),Button_1_1.getY());
+	Button_1_1.setTouchable(0);
 }
 
 void Morpion_2View::button_1_2()
 {
-	Morpion_2View::PlayMove(Button_1_2);
+	Morpion_2View::PlayMove(Button_1_2.getX(),Button_1_2.getY());
+	Button_1_2.setTouchable(0);
 }
 
 void Morpion_2View::button_2_0()
 {
-	Morpion_2View::PlayMove(Button_2_0);
+	Morpion_2View::PlayMove(Button_2_0.getX(),Button_2_0.getY());
+	Button_2_0.setTouchable(0);
 }
 
 void Morpion_2View::button_2_1()
 {
-	Morpion_2View::PlayMove(Button_2_1);
+	Morpion_2View::PlayMove(Button_2_1.getX(),Button_2_1.getY());
+	Button_2_1.setTouchable(0);
 }
 
 void Morpion_2View::button_2_2()
 {
-	Morpion_2View::PlayMove(Button_2_2);
+	Morpion_2View::PlayMove(Button_2_2.getX(),Button_2_2.getY());
+	Button_2_2.setTouchable(0);
 }

@@ -21,7 +21,7 @@ public:
     virtual void button_2_0();
     virtual void button_2_1();
     virtual void button_2_2();
-    virtual void PlayMove(Drawable& Button);
+    virtual void PlayMove(int X, int Y);
 protected:
 };
 
