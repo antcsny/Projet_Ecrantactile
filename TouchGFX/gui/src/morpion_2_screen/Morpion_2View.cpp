@@ -6,7 +6,9 @@
 int turn=0;
 Croix* Croix[5];
 Cercle* Cercle[4];
-char TabJeu[3][3];
+char tableau[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
+char valeur = '1';
+int res = -1;
 
 Morpion_2View::Morpion_2View()
 {
@@ -53,23 +55,49 @@ void Morpion_2View::restart_button()
 	Cercle_2.moveTo(-156,-26);
 	Cercle_3.moveTo(-156,-26);
 	Cercle_4.moveTo(-156,-26);
+	win_p1.setVisible(false);
+	win_p1.invalidate();
+	win_p2.setVisible(false);
+	win_p2.invalidate();
+	draw.setVisible(false);
+	draw.invalidate();
 	Joueur_1.setVisible(true);
 	Joueur_1.invalidate();
 	Joueur_2.setVisible(false);
 	Joueur_2.invalidate();
 	turn=0;
+	res=-1;
+	char valeur = '1';
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			tableau[i][j] = valeur;
+			valeur ++;
+		}
+	}
+
 }
 
-//Commentaire de merde
+void Morpion_2View::win_button()
+{
+	Button_0_0.setTouchable(0);
+	Button_0_1.setTouchable(0);
+	Button_0_2.setTouchable(0);
+	Button_1_0.setTouchable(0);
+	Button_1_1.setTouchable(0);
+	Button_1_2.setTouchable(0);
+	Button_2_0.setTouchable(0);
+	Button_2_1.setTouchable(0);
+	Button_2_2.setTouchable(0);
+}
 
-void Morpion_2View::PlayMove(int X, int Y)
+void Morpion_2View::PlayMove(Drawable& Button)
 {
 	Button.setTouchable(0);
 	int X= Button.getX(),Y= Button.getY();
 	int posCol=(X-80)/162, posLin=(Y-134)/112;
 	if(turn%2==0){
 		Croix[turn/2]->moveTo(X,Y);
-		TabJeu[posLin][posCol]='x';	// Joueur 1 : x
+		tableau[posLin][posCol]='x';	// Joueur 1 : x
 		Joueur_1.setVisible(false);
 		Joueur_1.invalidate();
 		Joueur_2.setVisible(true);
@@ -77,65 +105,101 @@ void Morpion_2View::PlayMove(int X, int Y)
 	}
 	if(turn%2==1){
 		Cercle[turn/2]->moveTo(X,Y);
-		TabJeu[posLin][posCol]='o';	// Joueur 2 : o
+		tableau[posLin][posCol]='o';	// Joueur 2 : o
 		Joueur_1.setVisible(true);
 		Joueur_1.invalidate();
 		Joueur_2.setVisible(false);
 		Joueur_2.invalidate();
 	}
 	turn++;
+	res = Morpion_2View::verifier_victoire();
+
+		if (res == 1){
+			if(turn%2==0){
+				win_p2.setVisible(true);
+				win_p2.invalidate();
+				Morpion_2View::win_button();
+			}
+			else if(turn%2==1) {
+				win_p1.setVisible(true);
+				win_p1.invalidate();
+				Morpion_2View::win_button();
+			}
+		}
+		else if(res == 0) {
+			draw.setVisible(true);
+			draw.invalidate();
+		}
+}
+
+int Morpion_2View::verifier_victoire()
+{
+	for (int i = 0; i < 3; i++) {
+		// vérifier victoire ligne
+		if (tableau[i][0] == tableau[i][1] && tableau[i][1] == tableau[i][2]) {
+			return 1;
+		}
+		// vérifier victoire colonne
+		if (tableau[0][i] == tableau[1][i] && tableau[1][i] == tableau[2][i]) {
+	        return 1;
+		}
+	}
+
+	// vérifier victoire diagonale
+	if (tableau[0][0] == tableau[1][1] && tableau[1][1] == tableau[2][2]) {
+		return 1;
+	}
+	if (tableau[0][2] == tableau[1][1] && tableau[1][1] == tableau[2][0]) {
+		return 1;
+	}
+	// match nul
+	if (turn == 9) {
+		return 0;
+	}
+    return -1;
 }
 
 void Morpion_2View::button_0_0()
 {
-	Morpion_2View::PlayMove(Button_0_0.getX(),Button_0_0.getY());
-	Button_0_0.setTouchable(0);
+	Morpion_2View::PlayMove(Button_0_0);
 }
 
 void Morpion_2View::button_0_1()
 {
-	Morpion_2View::PlayMove(Button_0_1.getX(),Button_0_1.getY());
-	Button_0_1.setTouchable(0);
+	Morpion_2View::PlayMove(Button_0_1);
 }
 
 void Morpion_2View::button_0_2()
 {
-	Morpion_2View::PlayMove(Button_0_2.getX(),Button_0_2.getY());
-	Button_0_2.setTouchable(0);
+	Morpion_2View::PlayMove(Button_0_2);
 }
 
 void Morpion_2View::button_1_0()
 {
-	Morpion_2View::PlayMove(Button_1_0.getX(),Button_1_0.getY());
-	Button_1_0.setTouchable(0);
+	Morpion_2View::PlayMove(Button_1_0);
 }
 
 void Morpion_2View::button_1_1()
 {
-	Morpion_2View::PlayMove(Button_1_1.getX(),Button_1_1.getY());
-	Button_1_1.setTouchable(0);
+	Morpion_2View::PlayMove(Button_1_1);
 }
 
 void Morpion_2View::button_1_2()
 {
-	Morpion_2View::PlayMove(Button_1_2.getX(),Button_1_2.getY());
-	Button_1_2.setTouchable(0);
+	Morpion_2View::PlayMove(Button_1_2);
 }
 
 void Morpion_2View::button_2_0()
 {
-	Morpion_2View::PlayMove(Button_2_0.getX(),Button_2_0.getY());
-	Button_2_0.setTouchable(0);
+	Morpion_2View::PlayMove(Button_2_0);
 }
 
 void Morpion_2View::button_2_1()
 {
-	Morpion_2View::PlayMove(Button_2_1.getX(),Button_2_1.getY());
-	Button_2_1.setTouchable(0);
+	Morpion_2View::PlayMove(Button_2_1);
 }
 
 void Morpion_2View::button_2_2()
 {
-	Morpion_2View::PlayMove(Button_2_2.getX(),Button_2_2.getY());
-	Button_2_2.setTouchable(0);
+	Morpion_2View::PlayMove(Button_2_2);
 }

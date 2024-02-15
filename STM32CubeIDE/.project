@@ -380,6 +380,21 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/containers/Grille.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/nowin.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/containers/nowin.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/win_a.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/containers/win_a.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/win_b.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/containers/win_b.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/gui/MainMenuPresenter.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.cpp</locationURI>
@@ -495,6 +510,21 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/containers/GrilleBase.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/nowinBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/containers/nowinBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/win_aBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/containers/win_aBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/win_bBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/containers/win_bBase.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/MainMenuViewBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.cpp</locationURI>
@@ -533,6 +563,11 @@
 			<name>Application/User/generated/image_dark_theme_images_dividers_horizontal_small_thick_light.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_dark_theme_images_dividers_horizontal_small_thick_light.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_winner_lmao2.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_winner_lmao2.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/LanguageGb.cpp</name>

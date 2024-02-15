@@ -14,6 +14,9 @@
 #include <touchgfx/containers/buttons/Buttons.hpp>
 #include <gui/containers/Croix.hpp>
 #include <gui/containers/Cercle.hpp>
+#include <gui/containers/win_a.hpp>
+#include <gui/containers/win_b.hpp>
+#include <gui/containers/nowin.hpp>
 #include <touchgfx/EasingEquations.hpp>
 #include <touchgfx/mixins/FadeAnimator.hpp>
 
@@ -104,6 +107,9 @@ protected:
     Cercle Cercle_4;
     Croix Croix_4;
     Croix Croix_5;
+    win_a win_p1;
+    win_b win_p2;
+    nowin draw;
 
 private:
 

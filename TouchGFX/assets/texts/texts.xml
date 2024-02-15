@@ -10,6 +10,15 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_8KPR" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Egalité !</Translation>
+      </Text>
+      <Text Id="__SingleUse_YUDG" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Joueur 2 !</Translation>
+      </Text>
+      <Text Id="__SingleUse_OYYZ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Joueur 1 !</Translation>
+      </Text>
       <Text Id="__SingleUse_WYL5" Alignment="Left" TypographyId="Default">
         <Translation Language="GB"></Translation>
       </Text>

@@ -192,7 +192,6 @@
             "Y": 358,
             "Width": 156,
             "Height": 106,
-            "LockPosition": true,
             "Alpha": 0,
             "ButtonTrigger": {
               "Type": "ClickButtonTrigger"
@@ -230,7 +229,6 @@
             "Y": 358,
             "Width": 156,
             "Height": 106,
-            "LockPosition": true,
             "Alpha": 0,
             "ButtonTrigger": {
               "Type": "ClickButtonTrigger"
@@ -268,7 +266,6 @@
             "Y": 358,
             "Width": 156,
             "Height": 106,
-            "LockPosition": true,
             "Alpha": 0,
             "ButtonTrigger": {
               "Type": "ClickButtonTrigger"
@@ -306,7 +303,6 @@
             "Y": 246,
             "Width": 156,
             "Height": 106,
-            "LockPosition": true,
             "Alpha": 0,
             "ButtonTrigger": {
               "Type": "ClickButtonTrigger"
@@ -340,11 +336,10 @@
           {
             "Type": "FlexButton",
             "Name": "Button_1_1",
-            "X": 241,
+            "X": 242,
             "Y": 246,
             "Width": 156,
             "Height": 106,
-            "LockPosition": true,
             "Alpha": 0,
             "ButtonTrigger": {
               "Type": "ClickButtonTrigger"
@@ -379,10 +374,9 @@
             "Type": "FlexButton",
             "Name": "Button_1_0",
             "X": 80,
-            "Y": 245,
+            "Y": 246,
             "Width": 156,
             "Height": 106,
-            "LockPosition": true,
             "Alpha": 0,
             "ButtonTrigger": {
               "Type": "ClickButtonTrigger"
@@ -417,10 +411,9 @@
             "Type": "FlexButton",
             "Name": "Button_0_2",
             "X": 404,
-            "Y": 134,
+            "Y": 136,
             "Width": 156,
             "Height": 106,
-            "LockPosition": true,
             "Alpha": 0,
             "ButtonTrigger": {
               "Type": "ClickButtonTrigger"
@@ -454,11 +447,10 @@
           {
             "Type": "FlexButton",
             "Name": "Button_0_1",
-            "X": 241,
-            "Y": 137,
+            "X": 242,
+            "Y": 136,
             "Width": 156,
             "Height": 106,
-            "LockPosition": true,
             "Alpha": 0,
             "ButtonTrigger": {
               "Type": "ClickButtonTrigger"
@@ -493,10 +485,9 @@
             "Type": "FlexButton",
             "Name": "Button_0_0",
             "X": 80,
-            "Y": 134,
+            "Y": 136,
             "Width": 156,
             "Height": 106,
-            "LockPosition": true,
             "Alpha": 0,
             "ButtonTrigger": {
               "Type": "ClickButtonTrigger"
@@ -607,6 +598,36 @@
             "Width": 156,
             "Height": 106,
             "CustomContainerDefinitionName": "Croix"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "win_p1",
+            "X": 195,
+            "Y": 121,
+            "Width": 250,
+            "Height": 250,
+            "Visible": false,
+            "CustomContainerDefinitionName": "win_a"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "win_p2",
+            "X": 195,
+            "Y": 121,
+            "Width": 250,
+            "Height": 250,
+            "Visible": false,
+            "CustomContainerDefinitionName": "win_b"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "draw",
+            "X": 195,
+            "Y": 220,
+            "Width": 250,
+            "Height": 50,
+            "Visible": false,
+            "CustomContainerDefinitionName": "nowin"
           }
         ],
         "Interactions": [
@@ -972,6 +993,112 @@
             "LineWidth": 5.0,
             "EndAngle": 360.0,
             "CapPrecision": "Butt"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "win_a",
+        "Width": 250,
+        "Height": 250,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 250,
+            "Height": 120,
+            "RelativeFilename": "winner lmao2.png"
+          },
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Y": 120,
+            "Width": 250,
+            "Height": 50,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 74,
+            "Y": 133,
+            "Width": 103,
+            "Height": 24,
+            "TextId": "__SingleUse_OYYZ",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "win_b",
+        "Width": 250,
+        "Height": 250,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Y": 120,
+            "Width": 250,
+            "Height": 50,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 74,
+            "Y": 133,
+            "Width": 103,
+            "Height": 24,
+            "TextId": "__SingleUse_YUDG",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 250,
+            "Height": 120,
+            "RelativeFilename": "winner lmao2.png"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "nowin",
+        "Width": 250,
+        "Height": 50,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 250,
+            "Height": 50,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 74,
+            "Y": 13,
+            "Width": 82,
+            "Height": 24,
+            "TextId": "__SingleUse_8KPR",
+            "TextRotation": "0",
+            "AutoSize": true
           }
         ],
         "Interactions": []
