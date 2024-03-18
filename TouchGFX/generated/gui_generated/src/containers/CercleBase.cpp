@@ -10,11 +10,11 @@ CercleBase::CercleBase()
     setHeight(106);
     circle1.setPosition(0, 0, 156, 106);
     circle1.setCenter(78, 53);
-    circle1.setRadius(50);
-    circle1.setLineWidth(5);
+    circle1.setRadius(47);
+    circle1.setLineWidth(10);
     circle1.setArc(0, 360);
     circle1.setCapPrecision(180);
-    circle1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    circle1Painter.setColor(touchgfx::Color::getColorFromRGB(194, 10, 10));
     circle1.setPainter(circle1Painter);
     add(circle1);
 }

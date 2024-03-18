@@ -39,6 +39,11 @@
     <ClCompile Include="..\..\generated\gui_generated\src\containers\win_aBase.cpp"/>
     <ClCompile Include="..\..\gui\src\containers\win_b.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\win_bBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\containers\menu_multi.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\menu_multiBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1Presenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1View.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen1_screen\Screen1ViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -207,6 +212,11 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\win_aBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\containers\win_b.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\win_bBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\containers\menu_multi.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\menu_multiBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1Presenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1View.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen1_screen\Screen1ViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

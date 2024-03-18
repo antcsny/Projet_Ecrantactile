@@ -9,7 +9,7 @@ CroixBase::CroixBase()
     setWidth(156);
     setHeight(106);
     line1_2.setPosition(0, 0, 156, 106);
-    line1_2Painter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    line1_2Painter.setColor(touchgfx::Color::getColorFromRGB(32, 60, 186));
     line1_2.setPainter(line1_2Painter);
     line1_2.setStart(0, 0);
     line1_2.setEnd(156, 106);
@@ -18,7 +18,7 @@ CroixBase::CroixBase()
     add(line1_2);
 
     line1.setPosition(0, 0, 156, 106);
-    line1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    line1Painter.setColor(touchgfx::Color::getColorFromRGB(32, 60, 186));
     line1.setPainter(line1Painter);
     line1.setStart(156, 0);
     line1.setEnd(0, 106);

@@ -13,6 +13,8 @@
 #include <gui/morpion_2_screen/Morpion_2Presenter.hpp>
 #include <gui/mainmenu_screen/MainMenuView.hpp>
 #include <gui/mainmenu_screen/MainMenuPresenter.hpp>
+#include <gui/screen1_screen/Screen1View.hpp>
+#include <gui/screen1_screen/Screen1Presenter.hpp>
 
 using namespace touchgfx;
 

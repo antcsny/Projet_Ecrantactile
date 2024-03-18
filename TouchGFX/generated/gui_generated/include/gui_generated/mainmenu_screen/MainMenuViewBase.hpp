@@ -10,7 +10,9 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/BoxWithBorder.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <gui/containers/menu_multi.hpp>
 
 class MainMenuViewBase : public touchgfx::View<MainMenuPresenter>
 {
@@ -18,6 +20,14 @@ public:
     MainMenuViewBase();
     virtual ~MainMenuViewBase();
     virtual void setupScreen();
+
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void multiplayer_game()
+    {
+        // Override and implement this function in MainMenu
+    }
 
 protected:
     FrontendApplication& application() {
@@ -31,8 +41,10 @@ protected:
     touchgfx::Image image1;
     touchgfx::ButtonWithLabel singleplayer_game;
     touchgfx::ButtonWithLabel multiplayer;
+    touchgfx::BoxWithBorder boxWithBorder1;
     touchgfx::TextArea textArea1;
     touchgfx::TextArea textArea2;
+    menu_multi multiplayerMenu;
 
 private:
 

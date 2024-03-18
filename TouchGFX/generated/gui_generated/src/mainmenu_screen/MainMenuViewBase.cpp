@@ -33,8 +33,14 @@ MainMenuViewBase::MainMenuViewBase() :
     multiplayer.setAction(buttonCallback);
     add(multiplayer);
 
-    textArea1.setXY(244, 23);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    boxWithBorder1.setPosition(155, 6, 332, 72);
+    boxWithBorder1.setColor(touchgfx::Color::getColorFromRGB(12, 27, 55));
+    boxWithBorder1.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    boxWithBorder1.setBorderSize(5);
+    add(boxWithBorder1);
+
+    textArea1.setXY(168, 17);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TTJG));
     add(textArea1);
@@ -44,6 +50,10 @@ MainMenuViewBase::MainMenuViewBase() :
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WYL5));
     add(textArea2);
+
+    multiplayerMenu.setXY(0, 0);
+    multiplayerMenu.setVisible(false);
+    add(multiplayerMenu);
 }
 
 MainMenuViewBase::~MainMenuViewBase()
@@ -53,7 +63,7 @@ MainMenuViewBase::~MainMenuViewBase()
 
 void MainMenuViewBase::setupScreen()
 {
-
+    multiplayerMenu.initialize();
 }
 
 void MainMenuViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
@@ -68,11 +78,8 @@ void MainMenuViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src
     if (&src == &multiplayer)
     {
         //multiplayer
-        //When multiplayer clicked set text textArea1
-        //Set textArea1 text to Resource: __SingleUse_8184
-        textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8184));
-        textArea1.invalidate();
-        textArea1.resizeToCurrentText();
-        textArea1.invalidate();
+        //When multiplayer clicked call virtual function
+        //Call multiplayer_game
+        multiplayer_game();
     }
 }

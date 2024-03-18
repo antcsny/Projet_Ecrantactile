@@ -10,6 +10,30 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_A0YX" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_5S02" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">Looking for host...</Translation>
+      </Text>
+      <Text Id="__SingleUse_TZMM" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">Waiting for player...</Translation>
+      </Text>
+      <Text Id="__SingleUse_APWM" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Cancel</Translation>
+      </Text>
+      <Text Id="__SingleUse_YUZ9" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Host Game</Translation>
+      </Text>
+      <Text Id="__SingleUse_4UT7" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Join Game</Translation>
+      </Text>
+      <Text Id="__SingleUse_Q2R6" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_YC9E" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Cancel</Translation>
+      </Text>
       <Text Id="__SingleUse_8KPR" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Egalité !</Translation>
       </Text>
@@ -22,13 +46,10 @@
       <Text Id="__SingleUse_WYL5" Alignment="Left" TypographyId="Default">
         <Translation Language="GB"></Translation>
       </Text>
-      <Text Id="__SingleUse_8184" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">A communication error has occurred.</Translation>
-      </Text>
       <Text Id="__SingleUse_G07I" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Multiplayer</Translation>
       </Text>
-      <Text Id="__SingleUse_TTJG" Alignment="Left" TypographyId="Default">
+      <Text Id="__SingleUse_TTJG" Alignment="Left" TypographyId="Large">
         <Translation Language="GB">Jeu du Morpion</Translation>
       </Text>
       <Text Id="__SingleUse_VAWK" Alignment="Center" TypographyId="Default">
@@ -55,5 +76,7 @@
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography_00" Font="comic.ttf" Size="30" Bpp="4" Direction="RTL" FallbackCharacter="?" />
+    <Typography Id="Typography_01" Font="verdana.ttf" Size="30" Bpp="4" Direction="LTR" FallbackCharacter="?" />
   </Typographies>
 </TextDatabase>

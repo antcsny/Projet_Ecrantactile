@@ -17,3 +17,8 @@ void MainMenuView::tearDownScreen()
     MainMenuViewBase::tearDownScreen();
 }
 
+void MainMenuView::multiplayer_game(){
+	multiplayerMenu.setVisible(true);
+	multiplayerMenu.invalidate();
+}
+

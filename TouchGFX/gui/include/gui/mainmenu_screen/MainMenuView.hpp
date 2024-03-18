@@ -11,6 +11,7 @@ public:
     virtual ~MainMenuView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    virtual void multiplayer_game();
 protected:
 };
 
