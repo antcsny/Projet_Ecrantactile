@@ -17,13 +17,13 @@ MainMenuViewBase::MainMenuViewBase() :
     image1.setBitmap(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_BACKGROUNDS_1024X600_METEOR_RAIN_ID));
     add(image1);
 
-    singleplayer_game.setXY(135, 142);
-    singleplayer_game.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_LARGE_ROUND_DISABLED_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_LARGE_ROUND_DISABLED_ID));
-    singleplayer_game.setLabelText(touchgfx::TypedText(T___SINGLEUSE_VAWK));
-    singleplayer_game.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    singleplayer_game.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    singleplayer_game.setAction(buttonCallback);
-    add(singleplayer_game);
+    singleplayer.setXY(135, 142);
+    singleplayer.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_LARGE_ROUND_DISABLED_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_LARGE_ROUND_DISABLED_ID));
+    singleplayer.setLabelText(touchgfx::TypedText(T___SINGLEUSE_VAWK));
+    singleplayer.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    singleplayer.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    singleplayer.setAction(buttonCallback);
+    add(singleplayer);
 
     multiplayer.setXY(135, 232);
     multiplayer.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_LARGE_ROUND_DISABLED_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_LARGE_ROUND_DISABLED_ID));
@@ -68,12 +68,17 @@ void MainMenuViewBase::setupScreen()
 
 void MainMenuViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &singleplayer_game)
+    if (&src == &singleplayer)
     {
         //singleplayer
-        //When singleplayer_game clicked change screen to Morpion_2
+        //When singleplayer clicked change screen to Morpion_2
         //Go to Morpion_2 with screen transition towards South
         application().gotoMorpion_2ScreenSlideTransitionSouth();
+    
+        //singleplayer2
+        //When singleplayer completed call virtual function
+        //Call singleplayer_game
+        singleplayer_game();
     }
     if (&src == &multiplayer)
     {

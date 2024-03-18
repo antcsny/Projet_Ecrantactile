@@ -1,6 +1,8 @@
 #include <gui/morpion_2_screen/Morpion_2View.hpp>
 #include <gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
+#include <gui/mainmenu_screen/MainMenuPresenter.hpp>
+#include <gui/mainmenu_screen/MainMenuView.hpp>
 
 
 int turn=0;
@@ -22,6 +24,10 @@ Morpion_2View::Morpion_2View()
 	Croix[3]=&Croix_4;
 	Cercle[3]=&Cercle_4;
 	Croix[4]=&Croix_5;
+	if(playerID==1){
+		Recommencer.setVisible(false);
+		Recommencer.invalidate();
+	}
 }
 
 void Morpion_2View::setupScreen()

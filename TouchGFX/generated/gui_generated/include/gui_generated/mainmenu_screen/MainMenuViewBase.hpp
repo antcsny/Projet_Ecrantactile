@@ -28,6 +28,10 @@ public:
     {
         // Override and implement this function in MainMenu
     }
+    virtual void singleplayer_game()
+    {
+        // Override and implement this function in MainMenu
+    }
 
 protected:
     FrontendApplication& application() {
@@ -39,7 +43,7 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Image image1;
-    touchgfx::ButtonWithLabel singleplayer_game;
+    touchgfx::ButtonWithLabel singleplayer;
     touchgfx::ButtonWithLabel multiplayer;
     touchgfx::BoxWithBorder boxWithBorder1;
     touchgfx::TextArea textArea1;

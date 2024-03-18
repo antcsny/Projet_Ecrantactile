@@ -1,4 +1,5 @@
 #include <gui/containers/menu_multi.hpp>
+#include <gui/mainmenu_screen/MainMenuView.hpp>
 
 int CancelState=0;
 
@@ -15,6 +16,7 @@ void menu_multi::initialize()
 void menu_multi::host_game()
 {
 	CancelState=1;
+	playerID=1;
 	cancel_button.setVisible(false);
 	cancel_button.invalidate();
 	cancel_action_button.setVisible(true);
@@ -28,6 +30,7 @@ void menu_multi::host_game()
 
 void menu_multi::join_game()
 {
+	playerID=2;
 	CancelState=1;
 	cancel_button.setVisible(false);
 	cancel_button.invalidate();

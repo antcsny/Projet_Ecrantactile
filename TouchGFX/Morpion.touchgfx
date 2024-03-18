@@ -810,7 +810,7 @@
           },
           {
             "Type": "ButtonWithLabel",
-            "Name": "singleplayer_game",
+            "Name": "singleplayer",
             "X": 135,
             "Y": 142,
             "Width": 370,
@@ -909,7 +909,7 @@
             "HasCompletedTrigger": true,
             "Trigger": {
               "Type": "TriggerClicked",
-              "TriggerComponent": "singleplayer_game"
+              "TriggerComponent": "singleplayer"
             },
             "Action": {
               "Type": "ActionGotoScreen",
@@ -927,6 +927,17 @@
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "multiplayer_game"
+            }
+          },
+          {
+            "InteractionName": "singleplayer2",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "singleplayer"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "singleplayer_game"
             }
           }
         ]

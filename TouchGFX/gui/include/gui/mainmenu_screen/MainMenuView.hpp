@@ -4,6 +4,8 @@
 #include <gui_generated/mainmenu_screen/MainMenuViewBase.hpp>
 #include <gui/mainmenu_screen/MainMenuPresenter.hpp>
 
+static int playerID;
+
 class MainMenuView : public MainMenuViewBase
 {
 public:
@@ -12,6 +14,7 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
     virtual void multiplayer_game();
+    virtual void singleplayer_game();
 protected:
 };
 
