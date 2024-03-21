@@ -58,6 +58,9 @@ UART_HandleTypeDef huart1;
 
 SDRAM_HandleTypeDef hsdram1;
 
+char rx_data;
+char recu=0;
+
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
@@ -149,6 +152,8 @@ int main(void)
   /* Call PreOsInit function */
   MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
+
+  HAL_UART_Receive_IT(&huart1,&rx_data,1);
 
   /* USER CODE END 2 */
 
@@ -516,6 +521,27 @@ static void MX_USART1_UART_Init(void)
 
 }
 
+void SendByte_Uart1(uint8_t data)
+{
+	USART1->TDR = data;
+	while((USART1->ISR & 0x00000020));		/*check for transmission complete*/
+}
+
+void Execute_Action_RX(uint8_t data){	/* default function to choose the action depending on the recieved data */
+	switch(data){
+	case 'C':
+		break;
+	default:
+		break;
+	}
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+	recu=1;
+	HAL_UART_Receive_IT(&huart1,&rx_data,1); //start next data receive interrupt
+}
+
 /* FMC initialization function */
 static void MX_FMC_Init(void)
 {
@@ -776,3 +802,5 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
+

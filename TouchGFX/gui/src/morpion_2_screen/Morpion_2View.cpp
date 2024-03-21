@@ -1,13 +1,15 @@
 #include <gui/morpion_2_screen/Morpion_2View.hpp>
 #include <gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
-
+#include <stm32h7xx_hal.h>
+#include <main.h>
 
 int turn=0;
 Croix* Croix[5];
 Cercle* Cercle[4];
 char tableau[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 char valeur = '1';
+uint8_t dataT = 0x43;	//42 : 8E ou 71, 43 : D3 ou CB
 int res = -1;
 
 Morpion_2View::Morpion_2View()
@@ -38,6 +40,7 @@ void Morpion_2View::tearDownScreen()
 void Morpion_2View::restart_button()
 {
 	initialisation();
+	SendByte_Uart1(dataT);
 }
 
 void Morpion_2View::win_button()
