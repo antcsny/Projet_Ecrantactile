@@ -18,6 +18,8 @@
 #include <gui/morpion_2_screen/Morpion_2Presenter.hpp>
 #include <gui/mainmenu_screen/MainMenuView.hpp>
 #include <gui/mainmenu_screen/MainMenuPresenter.hpp>
+#include <gui/screen1_screen/Screen1View.hpp>
+#include <gui/screen1_screen/Screen1Presenter.hpp>
 
 
 /**
@@ -42,7 +44,8 @@ public:
      */
     typedef touchgfx::meta::TypeList< Morpion_2View,
             touchgfx::meta::TypeList< MainMenuView,
-            touchgfx::meta::Nil >
+            touchgfx::meta::TypeList< Screen1View,
+            touchgfx::meta::Nil > >
             > GeneratedViewTypes;
 
     /**
@@ -56,7 +59,8 @@ public:
      */
     typedef touchgfx::meta::TypeList< Morpion_2Presenter,
             touchgfx::meta::TypeList< MainMenuPresenter,
-            touchgfx::meta::Nil >
+            touchgfx::meta::TypeList< Screen1Presenter,
+            touchgfx::meta::Nil > >
             > GeneratedPresenterTypes;
 
     /**

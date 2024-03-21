@@ -17,13 +17,13 @@ MainMenuViewBase::MainMenuViewBase() :
     image1.setBitmap(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_BACKGROUNDS_1024X600_METEOR_RAIN_ID));
     add(image1);
 
-    singleplayer_game.setXY(135, 142);
-    singleplayer_game.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_LARGE_ROUND_DISABLED_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_LARGE_ROUND_DISABLED_ID));
-    singleplayer_game.setLabelText(touchgfx::TypedText(T___SINGLEUSE_VAWK));
-    singleplayer_game.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    singleplayer_game.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    singleplayer_game.setAction(buttonCallback);
-    add(singleplayer_game);
+    singleplayer.setXY(135, 142);
+    singleplayer.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_LARGE_ROUND_DISABLED_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_LARGE_ROUND_DISABLED_ID));
+    singleplayer.setLabelText(touchgfx::TypedText(T___SINGLEUSE_VAWK));
+    singleplayer.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    singleplayer.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    singleplayer.setAction(buttonCallback);
+    add(singleplayer);
 
     multiplayer.setXY(135, 232);
     multiplayer.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_LARGE_ROUND_DISABLED_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_LARGE_ROUND_DISABLED_ID));
@@ -33,8 +33,14 @@ MainMenuViewBase::MainMenuViewBase() :
     multiplayer.setAction(buttonCallback);
     add(multiplayer);
 
-    textArea1.setXY(244, 23);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    boxWithBorder1.setPosition(155, 6, 332, 72);
+    boxWithBorder1.setColor(touchgfx::Color::getColorFromRGB(12, 27, 55));
+    boxWithBorder1.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    boxWithBorder1.setBorderSize(5);
+    add(boxWithBorder1);
+
+    textArea1.setXY(168, 17);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TTJG));
     add(textArea1);
@@ -44,6 +50,10 @@ MainMenuViewBase::MainMenuViewBase() :
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WYL5));
     add(textArea2);
+
+    multiplayerMenu.setXY(0, 0);
+    multiplayerMenu.setVisible(false);
+    add(multiplayerMenu);
 }
 
 MainMenuViewBase::~MainMenuViewBase()
@@ -53,26 +63,28 @@ MainMenuViewBase::~MainMenuViewBase()
 
 void MainMenuViewBase::setupScreen()
 {
-
+    multiplayerMenu.initialize();
 }
 
 void MainMenuViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &singleplayer_game)
+    if (&src == &singleplayer)
     {
         //singleplayer
-        //When singleplayer_game clicked change screen to Morpion_2
+        //When singleplayer clicked change screen to Morpion_2
         //Go to Morpion_2 with screen transition towards South
         application().gotoMorpion_2ScreenSlideTransitionSouth();
+    
+        //singleplayer2
+        //When singleplayer completed call virtual function
+        //Call singleplayer_game
+        singleplayer_game();
     }
     if (&src == &multiplayer)
     {
         //multiplayer
-        //When multiplayer clicked set text textArea1
-        //Set textArea1 text to Resource: __SingleUse_8184
-        textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8184));
-        textArea1.invalidate();
-        textArea1.resizeToCurrentText();
-        textArea1.invalidate();
+        //When multiplayer clicked call virtual function
+        //Call multiplayer_game
+        multiplayer_game();
     }
 }
