@@ -26,6 +26,7 @@ public:
     void win_button();
     void initialisation();
     virtual void init();
+    void buttonTouchable(bool act);
 protected:
 };
 

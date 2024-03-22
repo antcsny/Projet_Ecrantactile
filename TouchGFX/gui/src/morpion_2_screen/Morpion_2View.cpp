@@ -26,9 +26,11 @@ Morpion_2View::Morpion_2View()
 	Croix[3]=&Croix_4;
 	Cercle[3]=&Cercle_4;
 	Croix[4]=&Croix_5;
-	if(playerID==1){
+	if(playerID>=1){
 		Recommencer.setVisible(false);
 		Recommencer.invalidate();
+		Restart.setVisible(false);
+		Restart.invalidate();
 	}
 }
 
@@ -51,15 +53,14 @@ void Morpion_2View::restart_button()
 
 void Morpion_2View::win_button()
 {
-	Button_0_0.setTouchable(0);
-	Button_0_1.setTouchable(0);
-	Button_0_2.setTouchable(0);
-	Button_1_0.setTouchable(0);
-	Button_1_1.setTouchable(0);
-	Button_1_2.setTouchable(0);
-	Button_2_0.setTouchable(0);
-	Button_2_1.setTouchable(0);
-	Button_2_2.setTouchable(0);
+	Morpion_2View::buttonTouchable(0);
+	if(playerID>=1)
+	{
+		Recommencer.setVisible(true);
+		Recommencer.invalidate();
+		Restart.setVisible(true);
+		Restart.invalidate();
+	}
 }
 
 void Morpion_2View::PlayMove(Drawable& Button)
@@ -102,6 +103,12 @@ void Morpion_2View::PlayMove(Drawable& Button)
 			draw.setVisible(true);
 			draw.invalidate();
 		}
+	if(playerID%2==1){
+		Morpion_2View::buttonTouchable(0);
+	}
+	if(playerID%2==0){
+		Morpion_2View::buttonTouchable(1);
+	}
 }
 
 int Morpion_2View::verifier_victoire()
@@ -182,15 +189,10 @@ void Morpion_2View::init()
 }
 
 void Morpion_2View::initialisation(){
-	Button_0_0.setTouchable(1);
-	Button_0_1.setTouchable(1);
-	Button_0_2.setTouchable(1);
-	Button_1_0.setTouchable(1);
-	Button_1_1.setTouchable(1);
-	Button_1_2.setTouchable(1);
-	Button_2_0.setTouchable(1);
-	Button_2_1.setTouchable(1);
-	Button_2_2.setTouchable(1);
+	if(playerID<=1)
+	{
+		Morpion_2View::buttonTouchable(1);
+	}
 	Croix_1.moveTo(-156,-26);
 	Croix_2.moveTo(-156,-26);
 	Croix_3.moveTo(-156,-26);
@@ -219,4 +221,16 @@ void Morpion_2View::initialisation(){
 			valeur ++;
 		}
 	}
+}
+
+void Morpion_2View::buttonTouchable(bool act){
+	Button_0_0.setTouchable(act);
+	Button_0_1.setTouchable(act);
+	Button_0_2.setTouchable(act);
+	Button_1_0.setTouchable(act);
+	Button_1_1.setTouchable(act);
+	Button_1_2.setTouchable(act);
+	Button_2_0.setTouchable(act);
+	Button_2_1.setTouchable(act);
+	Button_2_2.setTouchable(act);
 }

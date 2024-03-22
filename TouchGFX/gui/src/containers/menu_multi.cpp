@@ -1,5 +1,6 @@
 #include <gui/containers/menu_multi.hpp>
 #include <gui/mainmenu_screen/MainMenuView.hpp>
+#include <touchgfx/hal/OSWrappers.hpp>
 
 int CancelState=0;
 
@@ -25,7 +26,6 @@ void menu_multi::host_game()
 	client_button.invalidate();
 	host_button.setVisible(false);
 	host_button.invalidate();
-	//textArea.setText("Hosting game - Waiting for player...");
 }
 
 void menu_multi::join_game()
@@ -40,6 +40,7 @@ void menu_multi::join_game()
 	client_button.invalidate();
 	host_button.setVisible(false);
 	host_button.invalidate();
+	while(1);
 }
 
 void menu_multi::cancel_game()
