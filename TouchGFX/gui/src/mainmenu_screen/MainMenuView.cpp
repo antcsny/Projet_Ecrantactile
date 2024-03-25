@@ -1,5 +1,6 @@
 #include <gui/mainmenu_screen/MainMenuView.hpp>
 #include <gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp>
+#include <gui_generated/mainmenu_screen/MainMenuViewBase.hpp>
 
 MainMenuView::MainMenuView()
 {
@@ -25,4 +26,8 @@ void MainMenuView::multiplayer_game(){
 
 void MainMenuView::singleplayer_game(){
 	playerID=0;
+}
+
+void MainMenuView::testfunction(){
+	MainMenuViewBase::launchGame();
 }

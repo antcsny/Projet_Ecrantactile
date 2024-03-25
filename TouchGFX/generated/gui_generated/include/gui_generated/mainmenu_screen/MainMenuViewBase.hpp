@@ -23,6 +23,11 @@ public:
     virtual void setupScreen();
 
     /*
+     * Custom Actions
+     */
+    virtual void launchGame();
+
+    /*
      * Virtual Action Handlers
      */
     virtual void multiplayer_game()
@@ -30,6 +35,10 @@ public:
         // Override and implement this function in MainMenu
     }
     virtual void singleplayer_game()
+    {
+        // Override and implement this function in MainMenu
+    }
+    virtual void testfunction()
     {
         // Override and implement this function in MainMenu
     }
@@ -46,6 +55,7 @@ protected:
     touchgfx::Image image1;
     touchgfx::ButtonWithLabel singleplayer;
     touchgfx::ButtonWithLabel multiplayer;
+    touchgfx::ButtonWithLabel test;
     touchgfx::BoxWithBorder boxWithBorder1;
     touchgfx::TextArea textArea1;
     touchgfx::TextArea textArea2;

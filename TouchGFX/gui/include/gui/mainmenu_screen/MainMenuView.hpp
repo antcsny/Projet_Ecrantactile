@@ -15,6 +15,7 @@ public:
     virtual void tearDownScreen();
     virtual void multiplayer_game();
     virtual void singleplayer_game();
+    virtual void testfunction();
 protected:
 };
 

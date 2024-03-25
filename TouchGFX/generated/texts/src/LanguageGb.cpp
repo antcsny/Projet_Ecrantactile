@@ -11,6 +11,7 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
     47,  // T___SINGLEUSE_A7PP: "Multiplayer not available"
+    301, // T___SINGLEUSE_QY59: "Test"
     0,   // T___SINGLEUSE_U3B6: "Romain Bouche\nBastien Chevallier\nAntony Cosnay"
     155, // T___SINGLEUSE_UU5B: "IESE4 - 2023/2024"
     273, // T___SINGLEUSE_C3PC: "Credits"

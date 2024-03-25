@@ -10,6 +10,9 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_QY59" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Test</Translation>
+      </Text>
       <Text Id="__SingleUse_U3B6" Alignment="Left" TypographyId="Small">
         <Translation Language="GB">Romain Bouche&#10;Bastien Chevallier&#10;Antony Cosnay</Translation>
       </Text>
