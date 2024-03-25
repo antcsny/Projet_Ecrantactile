@@ -3,6 +3,9 @@
 
 #include <gui_generated/containers/menu_multiBase.hpp>
 
+void Host_Task(void *argument);
+void Join_Task(void *argument);
+
 class menu_multi : public menu_multiBase
 {
 public:

@@ -26,6 +26,7 @@
 /* USER CODE BEGIN Includes */
 #include "stm32h743i_eval_sdram.h"
 #include "stm32h743i_eval_qspi.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,7 +59,7 @@ UART_HandleTypeDef huart1;
 
 SDRAM_HandleTypeDef hsdram1;
 
-char rx_data;
+uint8_t rx_data;
 char recu=0;
 
 /* Definitions for defaultTask */
@@ -527,19 +528,13 @@ void SendByte_Uart1(uint8_t data)
 	while((USART1->ISR & 0x00000020));		/*check for transmission complete*/
 }
 
-void Execute_Action_RX(uint8_t data){	/* default function to choose the action depending on the recieved data */
-	switch(data){
-	case 'C':
-		break;
-	default:
-		break;
-	}
-}
-
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 	recu=1;
 	HAL_UART_Receive_IT(&huart1,&rx_data,1); //start next data receive interrupt
+	if(rx_data==0x06 || rx_data==0x07){
+		// launch multiplayer
+	}
 }
 
 /* FMC initialization function */

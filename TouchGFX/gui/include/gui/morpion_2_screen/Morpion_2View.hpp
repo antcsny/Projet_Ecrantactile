@@ -4,6 +4,9 @@
 #include <gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp>
 #include <gui/morpion_2_screen/Morpion_2Presenter.hpp>
 
+void Execute_Action_RX(uint8_t data);
+void uart1_send_frame(int function, char data);
+
 class Morpion_2View : public Morpion_2ViewBase
 {
 public:

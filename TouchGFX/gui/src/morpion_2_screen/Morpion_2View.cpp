@@ -1,5 +1,4 @@
 #include <gui/morpion_2_screen/Morpion_2View.hpp>
-#include <gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 #include <gui/mainmenu_screen/MainMenuView.hpp>
 #include <gui/mainmenu_screen/MainMenuPresenter.hpp>
@@ -11,8 +10,11 @@ Croix* Croix[5];
 Cercle* Cercle[4];
 char tableau[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 char valeur = '1';
-uint8_t dataT = 0x43;	//42 : 8E ou 71, 43 : D3 ou CB
+uint8_t dataT = 0x43;
 int res = -1;
+extern char recu;
+extern char rx_data;
+extern int PlayerID;
 
 Morpion_2View::Morpion_2View()
 {
@@ -84,24 +86,24 @@ void Morpion_2View::PlayMove(Drawable& Button)
 		Joueur_2.invalidate();
 	}
 	turn++;
+	/* -------- Condition de victoire -------- */
 	res = Morpion_2View::verifier_victoire();
-
-		if (res == 1){
-			if(turn%2==0){
-				win_p2.setVisible(true);
-				win_p2.invalidate();
-				Morpion_2View::win_button();
-			}
-			else if(turn%2==1) {
-				win_p1.setVisible(true);
-				win_p1.invalidate();
-				Morpion_2View::win_button();
-			}
+	if (res == 1){
+		if(turn%2==0){
+			win_p2.setVisible(true);
+			win_p2.invalidate();
+			Morpion_2View::win_button();
 		}
-		else if(res == 0) {
-			draw.setVisible(true);
-			draw.invalidate();
+		else if(turn%2==1) {
+			win_p1.setVisible(true);
+			win_p1.invalidate();
+			Morpion_2View::win_button();
 		}
+	}
+	else if(res == 0) {
+		draw.setVisible(true);
+		draw.invalidate();
+	}
 }
 
 int Morpion_2View::verifier_victoire()
@@ -219,4 +221,29 @@ void Morpion_2View::initialisation(){
 			valeur ++;
 		}
 	}
+}
+
+void Execute_Action_RX(uint8_t data){	/* default function to choose the action depending on the recieved data */
+	switch(data){
+	case 0x06:
+		static_cast<FrontendApplication*>(Application::getInstance())->gotoMorpion_2ScreenSlideTransitionSouth();
+		break;
+	case 0x07:
+		static_cast<FrontendApplication*>(Application::getInstance())->gotoMorpion_2ScreenSlideTransitionSouth();
+		break;
+	default:
+		break;
+	}
+}
+/* Brief uart1_send_frame : Function to send formated byte for the update of Morpion
+* 00 : game gestion
+* 			0x01 : quit, 0x02 : start/restart,
+* 			0x03 : host request, 0x04  : join request, 0x05 : abort host/join, 0x06 : host acknowledge, 0x07  : join acknowledge
+* 01 : game update
+* 			id pressed button : 0x00 - 0x08
+*/
+void uart1_send_frame(int function, char data){
+	function &=0x3;	// function on 2 bits
+	data &=0x3F;	// data on 6 bits
+	SendByte_Uart1(function << 6 | data);
 }

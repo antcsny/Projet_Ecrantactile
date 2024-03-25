@@ -3,6 +3,7 @@
 
 #include <gui_generated/mainmenu_screen/MainMenuViewBase.hpp>
 #include <gui/mainmenu_screen/MainMenuPresenter.hpp>
+#include <gui/morpion_2_screen/Morpion_2View.hpp>
 
 static int playerID;
 

@@ -1,7 +1,25 @@
 #include <gui/containers/menu_multi.hpp>
 #include <gui/mainmenu_screen/MainMenuView.hpp>
+#include <gui/morpion_2_screen/Morpion_2View.hpp>
+#include "cmsis_os.h"
+#include <main.h>
 
-int CancelState=0;
+int status=1;
+extern char recu;
+extern char rx_data;
+
+osThreadId_t hostTaskHandle;
+const osThreadAttr_t hostTask_attributes = {
+  .name = "HostPollingTask",
+  .stack_size = 1024 * 4,
+  .priority = (osPriority_t) osPriorityBelowNormal,
+};
+osThreadId_t joinTaskHandle;
+const osThreadAttr_t joinTask_attributes = {
+  .name = "JoinPollingTask",
+  .stack_size = 1024 * 4,
+  .priority = (osPriority_t) osPriorityBelowNormal,
+};
 
 menu_multi::menu_multi()
 {
@@ -15,7 +33,6 @@ void menu_multi::initialize()
 
 void menu_multi::host_game()
 {
-	CancelState=1;
 	playerID=1;
 	cancel_button.setVisible(false);
 	cancel_button.invalidate();
@@ -25,13 +42,13 @@ void menu_multi::host_game()
 	client_button.invalidate();
 	host_button.setVisible(false);
 	host_button.invalidate();
-	//textArea.setText("Hosting game - Waiting for player...");
+	uart1_send_frame(0x00,0x03);	// host request
+	hostTaskHandle = osThreadNew(Host_Task, NULL, &hostTask_attributes);
 }
 
 void menu_multi::join_game()
 {
 	playerID=2;
-	CancelState=1;
 	cancel_button.setVisible(false);
 	cancel_button.invalidate();
 	cancel_action_button.setVisible(true);
@@ -40,11 +57,12 @@ void menu_multi::join_game()
 	client_button.invalidate();
 	host_button.setVisible(false);
 	host_button.invalidate();
+	uart1_send_frame(0x00,0x04);	//join request
+	joinTaskHandle = osThreadNew(Join_Task, NULL, &joinTask_attributes);
 }
 
 void menu_multi::cancel_game()
 {
-	CancelState=0;
 	cancel_button.setVisible(true);
 	cancel_button.invalidate();
 	cancel_action_button.setVisible(false);
@@ -53,4 +71,35 @@ void menu_multi::cancel_game()
 	client_button.invalidate();
 	host_button.setVisible(true);
 	host_button.invalidate();
+	osThreadTerminate(hostTaskHandle);
+	osThreadTerminate(joinTaskHandle);
 }
+
+/* Tasks FreeRTos for polling receiving a character*/
+void Host_Task(void *argument){
+	status=1;
+	while(status==1){
+		if(recu==1){
+			recu=0;
+			if(rx_data==0x04){	// join request
+				uart1_send_frame(0x00,0x06);
+				status=2; // lancement fonction switch incoming
+			}
+		}
+	}
+	vTaskDelete(NULL);
+}
+void Join_Task(void *argument){
+	status=1;
+	while(status==1){
+		if(recu==1){
+			recu=0;
+			if(rx_data==0x03){	// host request
+				uart1_send_frame(0x00,0x07);
+				status=2;	// lancement fonction switch incoming
+			}
+		}
+	}
+	vTaskDelete(NULL);
+}
+
