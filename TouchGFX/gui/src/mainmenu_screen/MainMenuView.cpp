@@ -28,6 +28,3 @@ void MainMenuView::singleplayer_game(){
 	playerID=0;
 }
 
-void MainMenuView::testfunction(){
-	MainMenuViewBase::launchGame();
-}

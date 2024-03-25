@@ -19,6 +19,11 @@ public:
     virtual void initialize();
 
     /*
+     * Custom Actions
+     */
+    virtual void launchGame();
+
+    /*
      * Virtual Action Handlers
      */
     virtual void host_game()

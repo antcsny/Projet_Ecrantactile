@@ -34,14 +34,6 @@ MainMenuViewBase::MainMenuViewBase() :
     multiplayer.setAction(buttonCallback);
     add(multiplayer);
 
-    test.setXY(136, 329);
-    test.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_LARGE_ROUND_DISABLED_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_LARGE_ROUND_DISABLED_ID));
-    test.setLabelText(touchgfx::TypedText(T___SINGLEUSE_QY59));
-    test.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    test.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    test.setAction(buttonCallback);
-    add(test);
-
     boxWithBorder1.setPosition(155, 6, 332, 72);
     boxWithBorder1.setColor(touchgfx::Color::getColorFromRGB(12, 27, 55));
     boxWithBorder1.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -114,13 +106,6 @@ void MainMenuViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src
         //Call multiplayer_game
         multiplayer_game();
     }
-    if (&src == &test)
-    {
-        //testCall
-        //When test clicked call virtual function
-        //Call testfunction
-        testfunction();
-    }
 }
 
 void MainMenuViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
@@ -139,12 +124,4 @@ void MainMenuViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonC
         //Go to Credits with screen transition towards West
         application().gotoCreditsScreenSlideTransitionWest();
     }
-}
-
-void MainMenuViewBase::launchGame()
-{
-    //launchMultiGame
-    //When launchGame is called change screen to Morpion_2
-    //Go to Morpion_2 with screen transition towards South
-    application().gotoMorpion_2ScreenSlideTransitionSouth();
 }

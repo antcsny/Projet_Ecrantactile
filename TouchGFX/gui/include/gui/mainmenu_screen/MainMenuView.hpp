@@ -3,6 +3,7 @@
 
 #include <gui_generated/mainmenu_screen/MainMenuViewBase.hpp>
 #include <gui/mainmenu_screen/MainMenuPresenter.hpp>
+#include <gui/morpion_2_screen/Morpion_2View.hpp>
 
 static int playerID;
 
@@ -15,7 +16,6 @@ public:
     virtual void tearDownScreen();
     virtual void multiplayer_game();
     virtual void singleplayer_game();
-    virtual void testfunction();
 protected:
 };
 

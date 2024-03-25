@@ -53,8 +53,6 @@ extern "C" {
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 void SendByte_Uart1(uint8_t data);
-uint8_t RecieveByte_Uart1(void);
-void Execute_Action_RX(uint8_t data);
 
 /* USER CODE BEGIN EFP */
 

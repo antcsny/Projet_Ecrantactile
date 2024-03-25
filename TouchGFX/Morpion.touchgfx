@@ -855,29 +855,6 @@
             "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\large_round_disabled.json"
           },
           {
-            "Type": "ButtonWithLabel",
-            "Name": "test",
-            "X": 136,
-            "Y": 329,
-            "Width": 370,
-            "Height": 50,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_large_round_disabled.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_large_round_disabled.png",
-            "TextId": "__SingleUse_QY59",
-            "ReleasedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "TextRotation": "0",
-            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\large_round_disabled.json"
-          },
-          {
             "Type": "BoxWithBorder",
             "Name": "boxWithBorder1",
             "X": 155,
@@ -897,7 +874,7 @@
             "X": 212,
             "Y": 14,
             "Width": 219,
-            "Height": 48,
+            "Height": 49,
             "TextId": "__SingleUse_TTJG",
             "TextRotation": "0",
             "Color": {
@@ -1073,35 +1050,6 @@
               "ScreenTransitionDirection": "West",
               "ActionComponent": "Credits"
             }
-          },
-          {
-            "InteractionName": "launchMultiGame",
-            "Trigger": {
-              "Type": "TriggerWhen",
-              "ActionCustomTypeName": "Call MainMenu launchGame"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionSlide",
-              "ScreenTransitionDirection": "South",
-              "ActionComponent": "Morpion_2"
-            }
-          },
-          {
-            "InteractionName": "testCall",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "test"
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "testfunction"
-            }
-          }
-        ],
-        "CustomActions": [
-          {
-            "Name": "launchGame"
           }
         ]
       },
@@ -1136,7 +1084,7 @@
             "X": 220,
             "Y": 14,
             "Width": 200,
-            "Height": 48,
+            "Height": 49,
             "TextId": "__SingleUse_LOJN",
             "TextRotation": "0",
             "Color": {
@@ -1793,6 +1741,24 @@
               "TextId": "__SingleUse_A0YX",
               "ActionComponent": "textArea"
             }
+          },
+          {
+            "InteractionName": "launchMultiGame",
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call menu_multi launchGame"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "Morpion_2"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "launchGame"
           }
         ]
       },
