@@ -19,6 +19,8 @@ void MainMenuView::tearDownScreen()
 void MainMenuView::multiplayer_game(){
 	multiplayerMenu.setVisible(true);
 	multiplayerMenu.invalidate();
+	singleplayer.setTouchable(false);
+
 }
 
 void MainMenuView::singleplayer_game(){

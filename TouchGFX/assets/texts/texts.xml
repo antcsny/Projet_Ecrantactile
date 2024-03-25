@@ -10,6 +10,18 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_U3B6" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">Romain Bouche&#10;Bastien Chevallier&#10;Antony Cosnay</Translation>
+      </Text>
+      <Text Id="__SingleUse_UU5B" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">IESE4 - 2023/2024</Translation>
+      </Text>
+      <Text Id="__SingleUse_C3PC" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">Credits</Translation>
+      </Text>
+      <Text Id="__SingleUse_LOJN" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">Battleship</Translation>
+      </Text>
       <Text Id="__SingleUse_A0YX" Alignment="Center" TypographyId="Typography_01">
         <Translation Language="GB"></Translation>
       </Text>
@@ -50,32 +62,32 @@
         <Translation Language="GB">Multiplayer</Translation>
       </Text>
       <Text Id="__SingleUse_TTJG" Alignment="Left" TypographyId="Large">
-        <Translation Language="GB">Jeu du Morpion</Translation>
+        <Translation Language="GB">Tic Tac Toe</Translation>
       </Text>
       <Text Id="__SingleUse_VAWK" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Singleplayer</Translation>
       </Text>
       <Text Id="__SingleUse_TNV6" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Joueur 1 Joue (X)</Translation>
+        <Translation Language="GB">Player 1's Turn (X)</Translation>
       </Text>
       <Text Id="__SingleUse_HD7Q" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Joueur 2 Joue (O)</Translation>
+        <Translation Language="GB">Player 2's Turn (O)</Translation>
       </Text>
       <Text Id="__SingleUse_CEIK" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Recommencer</Translation>
+        <Translation Language="GB">Restart</Translation>
       </Text>
       <Text Id="__SingleUse_OAW0" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Quitter</Translation>
+        <Translation Language="GB">Quit</Translation>
       </Text>
-      <Text Id="__SingleUse_CZXE" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Jeu du Morpion</Translation>
+      <Text Id="__SingleUse_CZXE" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">Tic Tac Toe</Translation>
       </Text>
     </TextGroup>
   </Texts>
   <Typographies>
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="15" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Typography_00" Font="comic.ttf" Size="30" Bpp="4" Direction="RTL" FallbackCharacter="?" />
     <Typography Id="Typography_01" Font="verdana.ttf" Size="30" Bpp="4" Direction="LTR" FallbackCharacter="?" />
   </Typographies>

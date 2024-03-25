@@ -370,6 +370,16 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/BattleShipPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/battleship_screen/BattleShipPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/BattleShipView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/battleship_screen/BattleShipView.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/gui/FrontendApplication.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/common/FrontendApplication.cpp</locationURI>
@@ -383,6 +393,11 @@
 			<name>Application/User/gui/Croix.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/containers/Croix.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/CustomContainer1.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/containers/CustomContainer1.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/Grille.cpp</name>
@@ -410,6 +425,16 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/containers/win_b.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/CreditsPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/credits_screen/CreditsPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/CreditsView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/credits_screen/CreditsView.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/gui/MainMenuPresenter.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.cpp</locationURI>
@@ -435,16 +460,6 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/morpion_2_screen/Morpion_2View.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/Screen1Presenter.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screen1_screen/Screen1Presenter.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/gui/Screen1View.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screen1_screen/Screen1View.cpp</locationURI>
-		</link>
-		<link>
 			<name>Application/User/generated/ApplicationFontProvider.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/ApplicationFontProvider.cpp</locationURI>
@@ -465,9 +480,9 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_comic_30_4bpp_0.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_verdana_10_4bpp_0.cpp</name>
+			<name>Application/User/generated/Font_verdana_15_4bpp_0.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_verdana_10_4bpp_0.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_verdana_15_4bpp_0.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Font_verdana_20_4bpp_0.cpp</name>
@@ -495,9 +510,9 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_comic_30_4bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Kerning_verdana_10_4bpp.cpp</name>
+			<name>Application/User/generated/Kerning_verdana_15_4bpp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_verdana_10_4bpp.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_verdana_15_4bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Kerning_verdana_20_4bpp.cpp</name>
@@ -520,9 +535,9 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_comic_30_4bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Table_verdana_10_4bpp.cpp</name>
+			<name>Application/User/generated/Table_verdana_15_4bpp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_verdana_10_4bpp.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_verdana_15_4bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Table_verdana_20_4bpp.cpp</name>
@@ -545,6 +560,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/UnmappedDataFont.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/BattleShipViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/battleship_screen/BattleShipViewBase.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/FrontendApplicationBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp</locationURI>
@@ -558,6 +578,11 @@
 			<name>Application/User/generated/CroixBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/containers/CroixBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/CustomContainer1Base.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/containers/CustomContainer1Base.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/GrilleBase.cpp</name>
@@ -585,6 +610,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/containers/win_bBase.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/CreditsViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/credits_screen/CreditsViewBase.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/MainMenuViewBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.cpp</locationURI>
@@ -593,11 +623,6 @@
 			<name>Application/User/generated/Morpion_2ViewBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/morpion_2_screen/Morpion_2ViewBase.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/Screen1ViewBase.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/BitmapDatabase.cpp</name>
@@ -615,6 +640,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_backgrounds_1024x600_meteor_rain.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_alternate_theme_images_backgrounds_800x480_waves.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_backgrounds_800x480_waves.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_alternate_theme_images_widgets_button_regular_height_50_large_round_disabled.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_50_large_round_disabled.cpp</locationURI>
@@ -628,6 +658,31 @@
 			<name>Application/User/generated/image_dark_theme_images_dividers_horizontal_small_thick_light.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_dark_theme_images_dividers_horizontal_small_thick_light.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_icon_theme_images_hardware_keyboard_arrow_left_50_50_000000.svg.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_hardware_keyboard_arrow_left_50_50_000000.svg.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_icon_theme_images_hardware_keyboard_arrow_left_50_50_FFFFFF.svg.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_hardware_keyboard_arrow_left_50_50_FFFFFF.svg.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_icon_theme_images_hardware_keyboard_arrow_right_50_50_000000.svg.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_hardware_keyboard_arrow_right_50_50_000000.svg.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_icon_theme_images_hardware_keyboard_arrow_right_50_50_FFFFFF.svg.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_hardware_keyboard_arrow_right_50_50_FFFFFF.svg.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_53376_rd.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_53376_rd.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_winner_lmao2.cpp</name>

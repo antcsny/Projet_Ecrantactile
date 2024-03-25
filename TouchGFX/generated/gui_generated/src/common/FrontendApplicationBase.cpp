@@ -13,8 +13,10 @@
 #include <gui/morpion_2_screen/Morpion_2Presenter.hpp>
 #include <gui/mainmenu_screen/MainMenuView.hpp>
 #include <gui/mainmenu_screen/MainMenuPresenter.hpp>
-#include <gui/screen1_screen/Screen1View.hpp>
-#include <gui/screen1_screen/Screen1Presenter.hpp>
+#include <gui/battleship_screen/BattleShipView.hpp>
+#include <gui/battleship_screen/BattleShipPresenter.hpp>
+#include <gui/credits_screen/CreditsView.hpp>
+#include <gui/credits_screen/CreditsPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -69,4 +71,52 @@ void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionNorth()
 void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionNorthImpl()
 {
     touchgfx::makeTransition<MainMenuView, MainMenuPresenter, touchgfx::SlideTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionWest()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMainMenuScreenSlideTransitionWestImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionWestImpl()
+{
+    touchgfx::makeTransition<MainMenuView, MainMenuPresenter, touchgfx::SlideTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMainMenuScreenSlideTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionEastImpl()
+{
+    touchgfx::makeTransition<MainMenuView, MainMenuPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// BattleShip
+
+void FrontendApplicationBase::gotoBattleShipScreenSlideTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoBattleShipScreenSlideTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoBattleShipScreenSlideTransitionEastImpl()
+{
+    touchgfx::makeTransition<BattleShipView, BattleShipPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Credits
+
+void FrontendApplicationBase::gotoCreditsScreenSlideTransitionWest()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoCreditsScreenSlideTransitionWestImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoCreditsScreenSlideTransitionWestImpl()
+{
+    touchgfx::makeTransition<CreditsView, CreditsPresenter, touchgfx::SlideTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

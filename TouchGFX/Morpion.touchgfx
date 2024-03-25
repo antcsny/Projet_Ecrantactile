@@ -28,10 +28,10 @@
           {
             "Type": "TextArea",
             "Name": "Titre",
-            "X": 244,
+            "X": 239,
             "Y": 14,
-            "Width": 153,
-            "Height": 24,
+            "Width": 163,
+            "Height": 36,
             "LockPosition": true,
             "TextId": "__SingleUse_CZXE",
             "TextRotation": "0",
@@ -45,9 +45,9 @@
           {
             "Type": "TextArea",
             "Name": "Quitter",
-            "X": 519,
+            "X": 533,
             "Y": 82,
-            "Width": 71,
+            "Width": 42,
             "Height": 24,
             "LockPosition": true,
             "TextId": "__SingleUse_OAW0",
@@ -62,9 +62,9 @@
           {
             "Type": "TextArea",
             "Name": "Recommencer",
-            "X": 27,
+            "X": 62,
             "Y": 82,
-            "Width": 142,
+            "Width": 73,
             "Height": 24,
             "LockPosition": true,
             "TextId": "__SingleUse_CEIK",
@@ -81,7 +81,7 @@
             "Name": "Joueur_2",
             "X": 229,
             "Y": 62,
-            "Width": 182,
+            "Width": 190,
             "Height": 24,
             "LockPosition": true,
             "TextId": "__SingleUse_HD7Q",
@@ -98,7 +98,7 @@
             "Name": "Joueur_1",
             "X": 230,
             "Y": 62,
-            "Width": 180,
+            "Width": 188,
             "Height": 24,
             "LockPosition": true,
             "TextId": "__SingleUse_TNV6",
@@ -871,9 +871,9 @@
           {
             "Type": "TextArea",
             "Name": "textArea1",
-            "X": 168,
-            "Y": 17,
-            "Width": 305,
+            "X": 212,
+            "Y": 14,
+            "Width": 219,
             "Height": 48,
             "TextId": "__SingleUse_TTJG",
             "TextRotation": "0",
@@ -901,6 +901,91 @@
             "Height": 480,
             "Visible": false,
             "CustomContainerDefinitionName": "menu_multi"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "nextGame",
+            "X": 589,
+            "Y": 175,
+            "Width": 57,
+            "Height": 142,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "Y": 46,
+                "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_right_50_50_FFFFFF.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_right_50_50_000000.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 57,
+                "Height": 142,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Red": 12,
+                  "Green": 27,
+                  "Blue": 55
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "previousGame",
+            "Y": 175,
+            "Width": 50,
+            "Height": 142,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "Y": 46,
+                "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_left_50_50_FFFFFF.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_left_50_50_000000.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 50,
+                "Height": 142,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Red": 12,
+                  "Green": 27,
+                  "Blue": 55
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
           }
         ],
         "Interactions": [
@@ -939,13 +1024,287 @@
               "Type": "ActionCustom",
               "FunctionName": "singleplayer_game"
             }
+          },
+          {
+            "InteractionName": "rightGame",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "nextGame"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "BattleShip"
+            }
+          },
+          {
+            "InteractionName": "leftGame",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "previousGame"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Credits"
+            }
           }
         ]
       },
       {
-        "Name": "Screen1",
-        "Components": [],
-        "Interactions": []
+        "Name": "BattleShip",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": -58,
+            "Width": 723,
+            "Height": 480,
+            "RelativeFilename": "53376_rd.png"
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "boxWithBorder1",
+            "X": 155,
+            "Y": 6,
+            "Width": 332,
+            "Height": 72,
+            "Color": {
+              "Red": 12,
+              "Green": 27,
+              "Blue": 55
+            },
+            "BorderSize": 5
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 220,
+            "Y": 14,
+            "Width": 200,
+            "Height": 48,
+            "TextId": "__SingleUse_LOJN",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "previousGame",
+            "X": -1,
+            "Y": 169,
+            "Width": 57,
+            "Height": 142,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "Y": 46,
+                "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_left_50_50_FFFFFF.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_left_50_50_000000.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 57,
+                "Height": 142,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Red": 12,
+                  "Green": 27,
+                  "Blue": 55
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "leftGame",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "previousGame"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "MainMenu"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Credits",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": -91,
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_800x480_waves.png"
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "boxWithBorder1",
+            "X": 173,
+            "Y": 14,
+            "Width": 294,
+            "Height": 59,
+            "Color": {
+              "Red": 12,
+              "Green": 27,
+              "Blue": 55
+            },
+            "BorderSize": 5
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 267,
+            "Y": 25,
+            "Width": 107,
+            "Height": 36,
+            "TextId": "__SingleUse_C3PC",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "boxWithBorder2",
+            "X": 30,
+            "Y": 93,
+            "Width": 228,
+            "Height": 108,
+            "Color": {
+              "Red": 77,
+              "Green": 94,
+              "Blue": 125
+            },
+            "BorderColor": {
+              "Red": 12,
+              "Green": 27,
+              "Blue": 55
+            },
+            "BorderSize": 5
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 41,
+            "Y": 101,
+            "Width": 197,
+            "Height": 24,
+            "TextId": "__SingleUse_UU5B",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea3",
+            "X": 47,
+            "Y": 133,
+            "Width": 143,
+            "Height": 54,
+            "TextId": "__SingleUse_U3B6",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "nextGame",
+            "X": 589,
+            "Y": 175,
+            "Width": 57,
+            "Height": 142,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "Y": 46,
+                "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_right_50_50_FFFFFF.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_right_50_50_000000.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 57,
+                "Height": 142,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Red": 12,
+                  "Green": 27,
+                  "Blue": 55
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "rightGame",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "nextGame"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "MainMenu"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [
@@ -1384,6 +1743,13 @@
             }
           }
         ]
+      },
+      {
+        "Name": "CustomContainer1",
+        "Width": 250,
+        "Height": 250,
+        "Components": [],
+        "Interactions": []
       }
     ],
     "Name": "Morpion",

@@ -13,6 +13,7 @@
 #include <touchgfx/widgets/BoxWithBorder.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <gui/containers/menu_multi.hpp>
+#include <touchgfx/containers/buttons/Buttons.hpp>
 
 class MainMenuViewBase : public touchgfx::View<MainMenuPresenter>
 {
@@ -49,6 +50,8 @@ protected:
     touchgfx::TextArea textArea1;
     touchgfx::TextArea textArea2;
     menu_multi multiplayerMenu;
+    touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  nextGame;
+    touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  previousGame;
 
 private:
 
@@ -56,11 +59,13 @@ private:
      * Callback Declarations
      */
     touchgfx::Callback<MainMenuViewBase, const touchgfx::AbstractButton&> buttonCallback;
+    touchgfx::Callback<MainMenuViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
 
     /*
      * Callback Handler Declarations
      */
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+    void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
 
 };
 

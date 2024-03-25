@@ -7,7 +7,8 @@
 #include <texts/TextKeysAndLanguages.hpp>
 
 MainMenuViewBase::MainMenuViewBase() :
-    buttonCallback(this, &MainMenuViewBase::buttonCallbackHandler)
+    buttonCallback(this, &MainMenuViewBase::buttonCallbackHandler),
+    flexButtonCallback(this, &MainMenuViewBase::flexButtonCallbackHandler)
 {
     __background.setPosition(0, 0, 640, 480);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -39,7 +40,7 @@ MainMenuViewBase::MainMenuViewBase() :
     boxWithBorder1.setBorderSize(5);
     add(boxWithBorder1);
 
-    textArea1.setXY(168, 17);
+    textArea1.setXY(212, 14);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TTJG));
@@ -54,6 +55,24 @@ MainMenuViewBase::MainMenuViewBase() :
     multiplayerMenu.setXY(0, 0);
     multiplayerMenu.setVisible(false);
     add(multiplayerMenu);
+
+    nextGame.setBoxWithBorderPosition(0, 0, 57, 142);
+    nextGame.setBorderSize(0);
+    nextGame.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(12, 27, 55), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    nextGame.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_RIGHT_50_50_FFFFFF_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_RIGHT_50_50_000000_SVG_ID));
+    nextGame.setIconXY(0, 46);
+    nextGame.setAction(flexButtonCallback);
+    nextGame.setPosition(589, 175, 57, 142);
+    add(nextGame);
+
+    previousGame.setBoxWithBorderPosition(0, 0, 50, 142);
+    previousGame.setBorderSize(0);
+    previousGame.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(12, 27, 55), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    previousGame.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_LEFT_50_50_FFFFFF_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_LEFT_50_50_000000_SVG_ID));
+    previousGame.setIconXY(0, 46);
+    previousGame.setAction(flexButtonCallback);
+    previousGame.setPosition(0, 175, 50, 142);
+    add(previousGame);
 }
 
 MainMenuViewBase::~MainMenuViewBase()
@@ -86,5 +105,23 @@ void MainMenuViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src
         //When multiplayer clicked call virtual function
         //Call multiplayer_game
         multiplayer_game();
+    }
+}
+
+void MainMenuViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
+{
+    if (&src == &nextGame)
+    {
+        //rightGame
+        //When nextGame clicked change screen to BattleShip
+        //Go to BattleShip with screen transition towards East
+        application().gotoBattleShipScreenSlideTransitionEast();
+    }
+    if (&src == &previousGame)
+    {
+        //leftGame
+        //When previousGame clicked change screen to Credits
+        //Go to Credits with screen transition towards West
+        application().gotoCreditsScreenSlideTransitionWest();
     }
 }

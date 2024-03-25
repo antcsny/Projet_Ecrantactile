@@ -41,9 +41,14 @@
     <ClCompile Include="..\..\generated\gui_generated\src\containers\win_bBase.cpp"/>
     <ClCompile Include="..\..\gui\src\containers\menu_multi.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\menu_multiBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1View.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen1_screen\Screen1ViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\battleship_screen\BattleShipPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\battleship_screen\BattleShipView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\battleship_screen\BattleShipViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\containers\CustomContainer1.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\CustomContainer1Base.cpp"/>
+    <ClCompile Include="..\..\gui\src\credits_screen\CreditsPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\credits_screen\CreditsView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\credits_screen\CreditsViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -214,9 +219,14 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\win_bBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\containers\menu_multi.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\menu_multiBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1View.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen1_screen\Screen1ViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\battleship_screen\BattleShipPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\battleship_screen\BattleShipView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\battleship_screen\BattleShipViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\containers\CustomContainer1.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\CustomContainer1Base.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\credits_screen\CreditsPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\credits_screen\CreditsView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\credits_screen\CreditsViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

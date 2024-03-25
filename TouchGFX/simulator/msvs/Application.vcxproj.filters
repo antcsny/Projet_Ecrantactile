@@ -208,17 +208,29 @@
     <Filter Include="Source Files\generated\gui_generated\mainmenu_screen">
       <UniqueIdentifier>FDB4CF48-ABC4-0EEC-F9A5-A5F52A5A1E0B</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\screen1_screen">
-      <UniqueIdentifier>861E3F96-2336-6B9E-28B0-88D0768A2D96</UniqueIdentifier>
+    <Filter Include="Header Files\gui\battleship_screen">
+      <UniqueIdentifier>FD833183-0A2C-BEDE-DAFE-859A373528BB</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\screen1_screen">
-      <UniqueIdentifier>2E4B4598-8691-FB0C-82B3-A4312C72D221</UniqueIdentifier>
+    <Filter Include="Source Files\gui\battleship_screen">
+      <UniqueIdentifier>37E72D90-3361-ED84-2923-F44CD3AC50A9</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\generated\gui_generated\screen1_screen">
-      <UniqueIdentifier>473C263A-59DC-B2AB-AF8B-96142D4323F6</UniqueIdentifier>
+    <Filter Include="Source Files\generated\gui_generated\battleship_screen">
+      <UniqueIdentifier>1EEEF756-9AD4-830F-BF4D-9B977887D914</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\screen1_screen">
-      <UniqueIdentifier>B3CACA67-458D-375A-9BF0-602DC14237EA</UniqueIdentifier>
+    <Filter Include="Header Files\generated\gui_generated\battleship_screen">
+      <UniqueIdentifier>ADB9DA74-917B-31FD-E2AE-E286FAA19385</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\credits_screen">
+      <UniqueIdentifier>35A361E5-E3DD-60F3-4884-B47594E23C82</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\credits_screen">
+      <UniqueIdentifier>AB9BACD5-A12F-1229-15C6-D39A77285C82</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\credits_screen">
+      <UniqueIdentifier>7FFAEC1B-4751-F6DE-CCCA-885BD81DC77C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\credits_screen">
+      <UniqueIdentifier>5D2FCC41-78AF-36FD-C6EA-6B0207D62A98</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -312,14 +324,29 @@
     <ClCompile Include="..\..\generated\gui_generated\src\containers\menu_multiBase.cpp">
       <Filter>Source Files\generated\gui_generated\containers</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1Presenter.cpp">
-      <Filter>Source Files\gui\screen1_screen</Filter>
+    <ClCompile Include="..\..\gui\src\battleship_screen\BattleShipPresenter.cpp">
+      <Filter>Source Files\gui\battleship_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1View.cpp">
-      <Filter>Source Files\gui\screen1_screen</Filter>
+    <ClCompile Include="..\..\gui\src\battleship_screen\BattleShipView.cpp">
+      <Filter>Source Files\gui\battleship_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen1_screen\Screen1ViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\screen1_screen</Filter>
+    <ClCompile Include="..\..\generated\gui_generated\src\battleship_screen\BattleShipViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\battleship_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\containers\CustomContainer1.cpp">
+      <Filter>Source Files\gui\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\CustomContainer1Base.cpp">
+      <Filter>Source Files\generated\gui_generated\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\credits_screen\CreditsPresenter.cpp">
+      <Filter>Source Files\gui\credits_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\credits_screen\CreditsView.cpp">
+      <Filter>Source Files\gui\credits_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\credits_screen\CreditsViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\credits_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -823,14 +850,29 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\menu_multiBase.hpp">
       <Filter>Header Files\generated\gui_generated\containers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1Presenter.hpp">
-      <Filter>Header Files\gui\screen1_screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\battleship_screen\BattleShipPresenter.hpp">
+      <Filter>Header Files\gui\battleship_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1View.hpp">
-      <Filter>Header Files\gui\screen1_screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\battleship_screen\BattleShipView.hpp">
+      <Filter>Header Files\gui\battleship_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen1_screen\Screen1ViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\screen1_screen</Filter>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\battleship_screen\BattleShipViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\battleship_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\containers\CustomContainer1.hpp">
+      <Filter>Header Files\gui\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\CustomContainer1Base.hpp">
+      <Filter>Header Files\generated\gui_generated\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\credits_screen\CreditsPresenter.hpp">
+      <Filter>Header Files\gui\credits_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\credits_screen\CreditsView.hpp">
+      <Filter>Header Files\gui\credits_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\credits_screen\CreditsViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\credits_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

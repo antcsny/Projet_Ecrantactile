@@ -18,8 +18,10 @@
 #include <gui/morpion_2_screen/Morpion_2Presenter.hpp>
 #include <gui/mainmenu_screen/MainMenuView.hpp>
 #include <gui/mainmenu_screen/MainMenuPresenter.hpp>
-#include <gui/screen1_screen/Screen1View.hpp>
-#include <gui/screen1_screen/Screen1Presenter.hpp>
+#include <gui/battleship_screen/BattleShipView.hpp>
+#include <gui/battleship_screen/BattleShipPresenter.hpp>
+#include <gui/credits_screen/CreditsView.hpp>
+#include <gui/credits_screen/CreditsPresenter.hpp>
 
 
 /**
@@ -44,8 +46,9 @@ public:
      */
     typedef touchgfx::meta::TypeList< Morpion_2View,
             touchgfx::meta::TypeList< MainMenuView,
-            touchgfx::meta::TypeList< Screen1View,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< BattleShipView,
+            touchgfx::meta::TypeList< CreditsView,
+            touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
 
     /**
@@ -59,8 +62,9 @@ public:
      */
     typedef touchgfx::meta::TypeList< Morpion_2Presenter,
             touchgfx::meta::TypeList< MainMenuPresenter,
-            touchgfx::meta::TypeList< Screen1Presenter,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< BattleShipPresenter,
+            touchgfx::meta::TypeList< CreditsPresenter,
+            touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;
 
     /**
@@ -75,7 +79,9 @@ public:
     typedef touchgfx::meta::TypeList< touchgfx::NoTransition,
             touchgfx::meta::TypeList< SlideTransition<NORTH>,
             touchgfx::meta::TypeList< SlideTransition<SOUTH>,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< SlideTransition<EAST>,
+            touchgfx::meta::TypeList< SlideTransition<WEST>,
+            touchgfx::meta::Nil > > > >
             > GeneratedTransitionTypes;
 
     /**

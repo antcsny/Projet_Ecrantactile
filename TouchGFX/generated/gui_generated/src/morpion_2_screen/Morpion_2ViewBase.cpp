@@ -24,19 +24,19 @@ Morpion_2ViewBase::Morpion_2ViewBase() :
     Grille_main.setXY(80, 134);
     add(Grille_main);
 
-    Titre.setXY(244, 14);
+    Titre.setXY(239, 14);
     Titre.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     Titre.setLinespacing(0);
     Titre.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CZXE));
     add(Titre);
 
-    Quitter.setXY(519, 82);
+    Quitter.setXY(533, 82);
     Quitter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     Quitter.setLinespacing(0);
     Quitter.setTypedText(touchgfx::TypedText(T___SINGLEUSE_OAW0));
     add(Quitter);
 
-    Recommencer.setXY(27, 82);
+    Recommencer.setXY(62, 82);
     Recommencer.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     Recommencer.setLinespacing(0);
     Recommencer.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CEIK));

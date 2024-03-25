@@ -28,6 +28,16 @@ public:
 
     void gotoMainMenuScreenSlideTransitionNorth();
 
+    void gotoMainMenuScreenSlideTransitionWest();
+
+    void gotoMainMenuScreenSlideTransitionEast();
+
+    // BattleShip
+    void gotoBattleShipScreenSlideTransitionEast();
+
+    // Credits
+    void gotoCreditsScreenSlideTransitionWest();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -40,6 +50,16 @@ protected:
     void gotoMainMenuScreenNoTransitionImpl();
 
     void gotoMainMenuScreenSlideTransitionNorthImpl();
+
+    void gotoMainMenuScreenSlideTransitionWestImpl();
+
+    void gotoMainMenuScreenSlideTransitionEastImpl();
+
+    // BattleShip
+    void gotoBattleShipScreenSlideTransitionEastImpl();
+
+    // Credits
+    void gotoCreditsScreenSlideTransitionWestImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP
