@@ -4,11 +4,14 @@
 #include <gui/morpion_2_screen/Morpion_2View.hpp>
 #include "cmsis_os.h"
 #include <main.h>
+#include <stm32h7xx_hal.h>
 
-int status=1;
 extern char recu;
 extern uint8_t rx_data;
+extern UART_HandleTypeDef huart1;
 menu_multiBase obj;
+const TickType_t xDelay = 500 / portTICK_PERIOD_MS;
+char status;
 
 osThreadId_t hostTaskHandle;
 const osThreadAttr_t hostTask_attributes = {
@@ -44,7 +47,6 @@ void menu_multi::host_game()
 	client_button.invalidate();
 	host_button.setVisible(false);
 	host_button.invalidate();
-	uart1_send_frame(0x00,0x03);	// host request
 	hostTaskHandle = osThreadNew(Host_Task, NULL, &hostTask_attributes);
 }
 
@@ -59,7 +61,6 @@ void menu_multi::join_game()
 	client_button.invalidate();
 	host_button.setVisible(false);
 	host_button.invalidate();
-	uart1_send_frame(0x00,0x04);	//join request
 	joinTaskHandle = osThreadNew(Join_Task, NULL, &joinTask_attributes);
 }
 
@@ -75,39 +76,36 @@ void menu_multi::cancel_game()
 	host_button.invalidate();
 	osThreadTerminate(hostTaskHandle);
 	osThreadTerminate(joinTaskHandle);
+	recu=0;		// abort existing requests
+	rx_data=0x00;
 }
 
 /* Tasks FreeRTos for polling receiving a character*/
 void Host_Task(void *argument){
-	status=1;
-	while(status==1){
+	while(1){
+		uart1_send_frame(0x00,0x03);	// host request
 		if(recu==1){
 			recu=0;
-			if(rx_data==0x04){	// join request polling
-				uart1_send_frame(0x00,0x07);
-			}
-			if(rx_data==0x06){	// host acknowledge
+			if(rx_data==0x04){	// host acknowledge ?
 				obj.launchGame();
-				status=2;
+				vTaskDelete(NULL);
+				HAL_UART_Receive_IT(&huart1,&rx_data,1);
 			}
 		}
+		vTaskDelay(xDelay);
 	}
-	vTaskDelete(NULL);
 }
 void Join_Task(void *argument){
-	status=1;
-	while(status==1){
+	while(1){
 		if(recu==1){
 			recu=0;
 			if(rx_data==0x03){	// host request polling
-				uart1_send_frame(0x00,0x06);
-			}
-			if(rx_data==0x07){	// join acknowledge
+				uart1_send_frame(0x00,0x04);
 				obj.launchGame();
-				status=2;
+				vTaskDelete(NULL);
+				HAL_UART_Receive_IT(&huart1,&rx_data,1);
 			}
 		}
+		vTaskDelay(xDelay);
 	}
-	vTaskDelete(NULL);
 }
-

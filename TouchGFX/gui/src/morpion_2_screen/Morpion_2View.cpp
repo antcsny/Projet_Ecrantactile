@@ -14,7 +14,7 @@ uint8_t dataT = 0x43;
 int res = -1;
 extern char recu;
 extern char rx_data;
-extern int PlayerID;
+extern int playerID;
 
 Morpion_2View::Morpion_2View()
 {
@@ -105,10 +105,10 @@ void Morpion_2View::PlayMove(Drawable& Button)
 		draw.setVisible(true);
 		draw.invalidate();
 	}
-	if(playerID%2==1){
+	if((playerID+turn)%2==1){
 		Morpion_2View::buttonTouchable(0);
 	}
-	if(playerID%2==0){
+	if((playerID+turn)%2==0){
 		Morpion_2View::buttonTouchable(1);
 	}
 }
@@ -190,9 +190,11 @@ void Morpion_2View::init()
 }
 
 void Morpion_2View::initialisation(){
-	if(playerID<=1)
-	{
+	if(playerID==1||playerID==0){
 		Morpion_2View::buttonTouchable(1);
+	}
+	if(playerID==2){
+		Morpion_2View::buttonTouchable(0);
 	}
 	Croix_1.moveTo(-156,-26);
 	Croix_2.moveTo(-156,-26);
@@ -251,7 +253,7 @@ void Execute_Action_RX(uint8_t data){	/* default function to choose the action d
 /* Brief uart1_send_frame : Function to send formated byte for the update of Morpion
 * 00 : game gestion
 * 			0x01 : quit, 0x02 : start/restart,
-* 			0x03 : host request, 0x04  : join request, 0x05 : abort host/join, 0x06 : host acknowledge, 0x07  : join acknowledge
+* 			0x03 : host request, 0x04 : host acknowledge, 0x05 : abort host/join,
 * 01 : game update
 * 			id pressed button : 0x00 - 0x08
 */
