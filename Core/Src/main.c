@@ -61,6 +61,7 @@ SDRAM_HandleTypeDef hsdram1;
 
 uint8_t rx_data;
 char recu=0;
+int playerID;
 
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
@@ -149,6 +150,7 @@ int main(void)
   MX_QUADSPI_Init();
   MX_TIM7_Init();
   MX_USART1_UART_Init();
+  __HAL_UART_DISABLE(&huart1);
   MX_TouchGFX_Init();
   /* Call PreOsInit function */
   MX_TouchGFX_PreOSInit();

@@ -1,5 +1,4 @@
 #include <gui/containers/menu_multi.hpp>
-
 #include <gui/mainmenu_screen/MainMenuView.hpp>
 #include <gui/morpion_2_screen/Morpion_2View.hpp>
 #include "cmsis_os.h"
@@ -10,8 +9,9 @@ extern char recu;
 extern uint8_t rx_data;
 extern UART_HandleTypeDef huart1;
 menu_multiBase obj;
-const TickType_t xDelay = 500 / portTICK_PERIOD_MS;
+const TickType_t loopxDelay = 500 / portTICK_PERIOD_MS, xDelay = 50 / portTICK_PERIOD_MS;
 char status;
+extern int playerID;
 
 osThreadId_t hostTaskHandle;
 const osThreadAttr_t hostTask_attributes = {
@@ -78,34 +78,38 @@ void menu_multi::cancel_game()
 	osThreadTerminate(joinTaskHandle);
 	recu=0;		// abort existing requests
 	rx_data=0x00;
+	__HAL_UART_DISABLE(&huart1);
 }
 
 /* Tasks FreeRTos for polling receiving a character*/
 void Host_Task(void *argument){
+	__HAL_UART_ENABLE(&huart1);
 	while(1){
 		uart1_send_frame(0x00,0x03);	// host request
 		if(recu==1){
 			recu=0;
 			if(rx_data==0x04){	// host acknowledge ?
 				obj.launchGame();
+				__HAL_UART_DISABLE(&huart1);
 				vTaskDelete(NULL);
-				HAL_UART_Receive_IT(&huart1,&rx_data,1);
 			}
 		}
-		vTaskDelay(xDelay);
+		vTaskDelay(loopxDelay);
 	}
 }
 void Join_Task(void *argument){
+	__HAL_UART_ENABLE(&huart1);
 	while(1){
 		if(recu==1){
 			recu=0;
 			if(rx_data==0x03){	// host request polling
 				uart1_send_frame(0x00,0x04);
 				obj.launchGame();
+				vTaskDelay(xDelay);
+				__HAL_UART_DISABLE(&huart1);
 				vTaskDelete(NULL);
-				HAL_UART_Receive_IT(&huart1,&rx_data,1);
 			}
 		}
-		vTaskDelay(xDelay);
+		vTaskDelay(loopxDelay);
 	}
 }
