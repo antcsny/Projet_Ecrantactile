@@ -15,6 +15,7 @@ int res = -1;
 extern char recu;
 extern char rx_data;
 extern int playerID;
+Morpion_2View play;
 
 Morpion_2View::Morpion_2View()
 {
@@ -28,7 +29,7 @@ Morpion_2View::Morpion_2View()
 	Croix[3]=&Croix_4;
 	Cercle[3]=&Cercle_4;
 	Croix[4]=&Croix_5;
-	if(playerID>=1){
+	if(playerID==1){
 		Recommencer.setVisible(false);
 		Recommencer.invalidate();
 		Restart.setVisible(false);
@@ -86,6 +87,7 @@ void Morpion_2View::PlayMove(Drawable& Button)
 		Joueur_2.setVisible(false);
 		Joueur_2.invalidate();
 	}
+	uart1_send_frame(0x00,(posCol+posLin*3));
 	turn++;
 	/* -------- Condition de victoire -------- */
 	res = Morpion_2View::verifier_victoire();
@@ -105,11 +107,41 @@ void Morpion_2View::PlayMove(Drawable& Button)
 		draw.setVisible(true);
 		draw.invalidate();
 	}
-	if((playerID+turn)%2==1){
-		Morpion_2View::buttonTouchable(0);
+	if(playerID!=0){
+			Morpion_2View::buttonTouchable((playerID+turn+1)%2);
 	}
-	if((playerID+turn)%2==0){
-		Morpion_2View::buttonTouchable(1);
+
+	/*Le joueur a fini son tour*/
+	while(recu==0);
+	recu=0;
+	switch (rx_data){
+					case 0x40:
+						Morpion_2View::PlayMove(Button_0_0);
+						break;
+					case 0x41:
+						Morpion_2View::PlayMove(Button_0_1);
+						break;
+					case 0x42:
+						Morpion_2View::PlayMove(Button_0_2);
+						break;
+					case 0x43:
+						Morpion_2View::PlayMove(Button_1_0);
+						break;
+					case 0x44:
+						Morpion_2View::PlayMove(Button_1_1);
+						break;
+					case 0x45:
+						Morpion_2View::PlayMove(Button_1_2);
+						break;
+					case 0x46:
+						Morpion_2View::PlayMove(Button_2_0);
+						break;
+					case 0x47:
+						Morpion_2View::PlayMove(Button_2_1);
+						break;
+					case 0x48:
+						Morpion_2View::PlayMove(Button_2_2);
+						break;
 	}
 }
 
