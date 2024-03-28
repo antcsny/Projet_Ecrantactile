@@ -255,7 +255,7 @@ void Execute_Action_RX(uint8_t data){	/* default function to choose the action d
 /* Brief uart1_send_frame : Function to send formated byte for the update of Morpion
 * 00 : game gestion
 * 			0x01 : quit, 0x02 : start/restart,
-* 			0x03 : host request, 0x04  : join request, 0x05 : abort host/join, 0x06 : host acknowledge, 0x07  : join acknowledge
+* 			0x03 : host request, 0x04 : host acknowledge, 0x05 : abort host/join,
 * 01 : game update
 * 			id pressed button : 0x00 - 0x08
 */
