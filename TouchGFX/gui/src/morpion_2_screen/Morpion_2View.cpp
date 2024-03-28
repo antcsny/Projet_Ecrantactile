@@ -12,8 +12,10 @@ char tableau[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 char valeur = '1';
 uint8_t dataT = 0x43;
 int res = -1;
+
+extern UART_HandleTypeDef huart1;
 extern char recu;
-extern char rx_data;
+extern uint8_t rx_data;
 extern int playerID;
 
 Morpion_2View::Morpion_2View()
