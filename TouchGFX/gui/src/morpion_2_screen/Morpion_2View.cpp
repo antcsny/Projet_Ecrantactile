@@ -14,7 +14,7 @@ uint8_t dataT = 0x43;
 int res = -1;
 extern char recu;
 extern char rx_data;
-extern int PlayerID;
+extern int playerID;
 
 Morpion_2View::Morpion_2View()
 {
@@ -105,10 +105,10 @@ void Morpion_2View::PlayMove(Drawable& Button)
 		draw.setVisible(true);
 		draw.invalidate();
 	}
-	if(playerID%2==1){
+	if((playerID+turn)%2==1){
 		Morpion_2View::buttonTouchable(0);
 	}
-	if(playerID%2==0){
+	if((playerID+turn)%2==0){
 		Morpion_2View::buttonTouchable(1);
 	}
 }
@@ -190,9 +190,13 @@ void Morpion_2View::init()
 }
 
 void Morpion_2View::initialisation(){
-	if(playerID<=1)
+	if(playerID==1||playerID==0)
 	{
 		Morpion_2View::buttonTouchable(1);
+	}
+	if(playerID==2)
+	{
+		Morpion_2View::buttonTouchable(0);
 	}
 	Croix_1.moveTo(-156,-26);
 	Croix_2.moveTo(-156,-26);
