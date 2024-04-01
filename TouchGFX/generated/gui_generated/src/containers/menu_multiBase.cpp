@@ -122,7 +122,7 @@ void menu_multiBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 void menu_multiBase::launchGame()
 {
     //launchMultiGame
-    //When launchGame is called change screen to Morpion_2
-    //Go to Morpion_2 with screen transition towards South
-    application().gotoMorpion_2ScreenSlideTransitionSouth();
+    //When launchGame is called change screen to Morpion
+    //Go to Morpion with screen transition towards South
+    application().gotoMorpionScreenSlideTransitionSouth();
 }

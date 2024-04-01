@@ -1,5 +1,5 @@
 #include <gui/mainmenu_screen/MainMenuView.hpp>
-#include <gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp>
+#include <gui_generated/morpion_screen/MorpionViewBase.hpp>
 #include <gui_generated/mainmenu_screen/MainMenuViewBase.hpp>
 #include <main.h>
 

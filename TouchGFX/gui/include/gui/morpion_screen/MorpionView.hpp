@@ -1,17 +1,17 @@
 #ifndef MORPION_2VIEW_HPP
 #define MORPION_2VIEW_HPP
 
-#include <gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp>
-#include <gui/morpion_2_screen/Morpion_2Presenter.hpp>
+#include <gui_generated/morpion_screen/MorpionViewBase.hpp>
+#include <gui/morpion_screen/MorpionPresenter.hpp>
 
 void uart1_send_frame(int function, char data);
 void RxTTTTask(void *argument);
 
-class Morpion_2View : public Morpion_2ViewBase
+class MorpionView : public MorpionViewBase
 {
 public:
-    Morpion_2View();
-    virtual ~Morpion_2View() {}
+    MorpionView();
+    virtual ~MorpionView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
     virtual void restart_button();

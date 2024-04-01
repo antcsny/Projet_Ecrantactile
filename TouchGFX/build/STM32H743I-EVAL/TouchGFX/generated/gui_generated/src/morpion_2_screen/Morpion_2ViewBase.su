@@ -22,33 +22,33 @@ TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	0	static
 AbstractButtonContainer.hpp:114:18:virtual void touchgfx::AbstractButtonContainer::handlePressedUpdated()	0	static
 AbstractButtonContainer.hpp:119:18:virtual void touchgfx::AbstractButtonContainer::handleAlphaUpdated()	0	static
 AbstractButtonContainer.hpp:34:7:touchgfx::AbstractButtonContainer::~AbstractButtonContainer()	0	static
-Morpion_2ViewBase.hpp:34:18:virtual void Morpion_2ViewBase::init()	0	static
-Morpion_2ViewBase.hpp:43:18:virtual void Morpion_2ViewBase::restart_button()	0	static
-Morpion_2ViewBase.hpp:47:18:virtual void Morpion_2ViewBase::button_0_0()	0	static
-Morpion_2ViewBase.hpp:51:18:virtual void Morpion_2ViewBase::button_0_1()	0	static
-Morpion_2ViewBase.hpp:55:18:virtual void Morpion_2ViewBase::button_0_2()	0	static
-Morpion_2ViewBase.hpp:59:18:virtual void Morpion_2ViewBase::button_1_0()	0	static
-Morpion_2ViewBase.hpp:63:18:virtual void Morpion_2ViewBase::button_1_1()	0	static
-Morpion_2ViewBase.hpp:67:18:virtual void Morpion_2ViewBase::button_1_2()	0	static
-Morpion_2ViewBase.hpp:71:18:virtual void Morpion_2ViewBase::button_2_0()	0	static
-Morpion_2ViewBase.hpp:75:18:virtual void Morpion_2ViewBase::button_2_1()	0	static
-Morpion_2ViewBase.hpp:79:18:virtual void Morpion_2ViewBase::button_2_2()	0	static
-View.hpp:36:7:touchgfx::View<Morpion_2Presenter>::~View()	0	static
-Morpion_2ViewBase.cpp:293:6:virtual void Morpion_2ViewBase::transitionBegins()	0	static
+MorpionViewBase.hpp:34:18:virtual void MorpionViewBase::init()	0	static
+MorpionViewBase.hpp:43:18:virtual void MorpionViewBase::restart_button()	0	static
+MorpionViewBase.hpp:47:18:virtual void MorpionViewBase::button_0_0()	0	static
+MorpionViewBase.hpp:51:18:virtual void MorpionViewBase::button_0_1()	0	static
+MorpionViewBase.hpp:55:18:virtual void MorpionViewBase::button_0_2()	0	static
+MorpionViewBase.hpp:59:18:virtual void MorpionViewBase::button_1_0()	0	static
+MorpionViewBase.hpp:63:18:virtual void MorpionViewBase::button_1_1()	0	static
+MorpionViewBase.hpp:67:18:virtual void MorpionViewBase::button_1_2()	0	static
+MorpionViewBase.hpp:71:18:virtual void MorpionViewBase::button_2_0()	0	static
+MorpionViewBase.hpp:75:18:virtual void MorpionViewBase::button_2_1()	0	static
+MorpionViewBase.hpp:79:18:virtual void MorpionViewBase::button_2_2()	0	static
+View.hpp:36:7:touchgfx::View<MorpionPresenter>::~View()	0	static
+MorpionViewBase.cpp:293:6:virtual void MorpionViewBase::transitionBegins()	0	static
 ClickButtonTrigger.hpp:35:7:touchgfx::ClickButtonTrigger::~ClickButtonTrigger()	0	static
 BoxWithBorderButtonStyle.hpp:123:18:void touchgfx::BoxWithBorderButtonStyle<T>::handlePressedUpdated() [with T = touchgfx::ClickButtonTrigger]	0	static
-Callback.hpp:357:8:touchgfx::Callback<Morpion_2ViewBase, const touchgfx::AbstractButtonContainer&>::~Callback()	0	static
+Callback.hpp:357:8:touchgfx::Callback<MorpionViewBase, const touchgfx::AbstractButtonContainer&>::~Callback()	0	static
 BoxWithBorderButtonStyle.hpp:41:7:touchgfx::BoxWithBorderButtonStyle<touchgfx::ClickButtonTrigger>::~BoxWithBorderButtonStyle()	0	static
-Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = Morpion_2ViewBase; T1 = const touchgfx::AbstractButtonContainer&]	8	static
-Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = Morpion_2ViewBase; T1 = const touchgfx::AbstractButtonContainer&]	0	static
+Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = MorpionViewBase; T1 = const touchgfx::AbstractButtonContainer&]	8	static
+Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = MorpionViewBase; T1 = const touchgfx::AbstractButtonContainer&]	0	static
 BoxWithBorderButtonStyle.hpp:131:18:void touchgfx::BoxWithBorderButtonStyle<T>::handleAlphaUpdated() [with T = touchgfx::ClickButtonTrigger]	0	static
 TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
-View.hpp:36:7:virtual touchgfx::View<Morpion_2Presenter>::~View()	8	static
+View.hpp:36:7:virtual touchgfx::View<MorpionPresenter>::~View()	8	static
 AbstractButtonContainer.hpp:34:7:virtual touchgfx::AbstractButtonContainer::~AbstractButtonContainer()	8	static
 ClickButtonTrigger.hpp:35:7:virtual touchgfx::ClickButtonTrigger::~ClickButtonTrigger()	8	static
 BoxWithBorderButtonStyle.hpp:41:7:virtual touchgfx::BoxWithBorderButtonStyle<touchgfx::ClickButtonTrigger>::~BoxWithBorderButtonStyle()	8	static
-Callback.hpp:357:8:virtual touchgfx::Callback<Morpion_2ViewBase, const touchgfx::AbstractButtonContainer&>::~Callback()	8	static
-Morpion_2ViewBase.cpp:188:6:virtual void Morpion_2ViewBase::setupScreen()	8	static
+Callback.hpp:357:8:virtual touchgfx::Callback<MorpionViewBase, const touchgfx::AbstractButtonContainer&>::~Callback()	8	static
+MorpionViewBase.cpp:188:6:virtual void MorpionViewBase::setupScreen()	8	static
 AbstractButtonContainer.hpp:99:18:virtual void touchgfx::AbstractButtonContainer::executeAction()	8	static
 ClickButtonTrigger.hpp:47:18:virtual void touchgfx::ClickButtonTrigger::handleClickEvent(const touchgfx::ClickEvent&)	16	static
 Drawable.hpp:48:5:touchgfx::Drawable::Drawable()	0	static
@@ -57,11 +57,11 @@ Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16
 Box.hpp:33:5:touchgfx::Box::Box()	8	static
 TextArea.hpp:43:5:touchgfx::TextArea::TextArea()	8	static
 AbstractButtonContainer.hpp:70:10:void touchgfx::AbstractButtonContainer::setAlpha(uint8_t)	0	static
-Morpion_2ViewBase.cpp:206:6:void Morpion_2ViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer&)	16	static
+MorpionViewBase.cpp:206:6:void MorpionViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer&)	16	static
 Croix.hpp:10:13:Croix::~Croix()	8	static
-Morpion_2ViewBase.cpp:183:1:Morpion_2ViewBase::~Morpion_2ViewBase()	16	static
-Morpion_2ViewBase.cpp:183:1:virtual Morpion_2ViewBase::~Morpion_2ViewBase()	8	static
+MorpionViewBase.cpp:183:1:MorpionViewBase::~MorpionViewBase()	16	static
+MorpionViewBase.cpp:183:1:virtual MorpionViewBase::~MorpionViewBase()	8	static
 Croix.hpp:10:13:virtual Croix::~Croix()	8	static
 BoxWithBorderButtonStyle.hpp:44:5:touchgfx::BoxWithBorderButtonStyle<T>::BoxWithBorderButtonStyle() [with T = touchgfx::ClickButtonTrigger]	16	static
 BoxWithBorderButtonStyle.hpp:94:10:void touchgfx::BoxWithBorderButtonStyle<T>::setBoxWithBorderColors(touchgfx::colortype, touchgfx::colortype, touchgfx::colortype, touchgfx::colortype) [with T = touchgfx::ClickButtonTrigger]	4	static
-Morpion_2ViewBase.cpp:10:1:Morpion_2ViewBase::Morpion_2ViewBase()	184	static
+MorpionViewBase.cpp:10:1:MorpionViewBase::MorpionViewBase()	184	static

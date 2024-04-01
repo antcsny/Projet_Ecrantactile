@@ -9,8 +9,8 @@
 #include <touchgfx/Texts.hpp>
 #include <touchgfx/hal/HAL.hpp>
 #include <platform/driver/lcd/LCD16bpp.hpp>
-#include <gui/morpion_2_screen/Morpion_2View.hpp>
-#include <gui/morpion_2_screen/Morpion_2Presenter.hpp>
+#include <gui/morpion_screen/MorpionView.hpp>
+#include <gui/morpion_screen/MorpionPresenter.hpp>
 #include <gui/mainmenu_screen/MainMenuView.hpp>
 #include <gui/mainmenu_screen/MainMenuPresenter.hpp>
 #include <gui/battleship_screen/BattleShipView.hpp>
@@ -36,17 +36,17 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
  * Screen Transition Declarations
  */
 
-// Morpion_2
+// Morpion
 
-void FrontendApplicationBase::gotoMorpion_2ScreenSlideTransitionSouth()
+void FrontendApplicationBase::gotoMorpionScreenSlideTransitionSouth()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMorpion_2ScreenSlideTransitionSouthImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMorpionScreenSlideTransitionSouthImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoMorpion_2ScreenSlideTransitionSouthImpl()
+void FrontendApplicationBase::gotoMorpionScreenSlideTransitionSouthImpl()
 {
-    touchgfx::makeTransition<Morpion_2View, Morpion_2Presenter, touchgfx::SlideTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<MorpionView, MorpionPresenter, touchgfx::SlideTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // MainMenu

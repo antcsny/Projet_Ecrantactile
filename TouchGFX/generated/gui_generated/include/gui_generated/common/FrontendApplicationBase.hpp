@@ -20,8 +20,8 @@ public:
         gotoMainMenuScreenNoTransition();
     }
 
-    // Morpion_2
-    void gotoMorpion_2ScreenSlideTransitionSouth();
+    // Morpion
+    void gotoMorpionScreenSlideTransitionSouth();
 
     // MainMenu
     void gotoMainMenuScreenNoTransition();
@@ -43,8 +43,8 @@ protected:
     FrontendHeap& frontendHeap;
     Model& model;
 
-    // Morpion_2
-    void gotoMorpion_2ScreenSlideTransitionSouthImpl();
+    // Morpion
+    void gotoMorpionScreenSlideTransitionSouthImpl();
 
     // MainMenu
     void gotoMainMenuScreenNoTransitionImpl();

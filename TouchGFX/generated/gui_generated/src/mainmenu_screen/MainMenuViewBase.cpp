@@ -90,9 +90,9 @@ void MainMenuViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src
     if (&src == &singleplayer)
     {
         //singleplayer
-        //When singleplayer clicked change screen to Morpion_2
-        //Go to Morpion_2 with screen transition towards South
-        application().gotoMorpion_2ScreenSlideTransitionSouth();
+        //When singleplayer clicked change screen to Morpion
+        //Go to Morpion with screen transition towards South
+        application().gotoMorpionScreenSlideTransitionSouth();
     
         //singleplayer2
         //When singleplayer completed call virtual function

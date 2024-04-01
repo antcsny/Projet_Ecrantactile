@@ -2,7 +2,7 @@
   "Application": {
     "Screens": [
       {
-        "Name": "Morpion_2",
+        "Name": "Morpion",
         "CanvasBufferSize": 9600,
         "Includes": "",
         "Components": [
@@ -774,8 +774,8 @@
             },
             "Action": {
               "Type": "ActionCustom2",
-              "ActionCustomTypeName": "Call Morpion_2 quit_game",
-              "ActionComponent": "Morpion_2"
+              "ActionCustomTypeName": "Call Morpion quit_game",
+              "ActionComponent": "Morpion"
             }
           },
           {
@@ -785,15 +785,15 @@
             },
             "Action": {
               "Type": "ActionCustom2",
-              "ActionCustomTypeName": "Call Morpion_2 init",
-              "ActionComponent": "Morpion_2"
+              "ActionCustomTypeName": "Call Morpion init",
+              "ActionComponent": "Morpion"
             }
           },
           {
             "InteractionName": "game_quit",
             "Trigger": {
               "Type": "TriggerWhen",
-              "ActionCustomTypeName": "Call Morpion_2 quit_game"
+              "ActionCustomTypeName": "Call Morpion quit_game"
             },
             "Action": {
               "Type": "ActionGotoScreen",
@@ -1015,7 +1015,7 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionSlide",
               "ScreenTransitionDirection": "South",
-              "ActionComponent": "Morpion_2"
+              "ActionComponent": "Morpion"
             }
           },
           {
@@ -1783,7 +1783,7 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionSlide",
               "ScreenTransitionDirection": "South",
-              "ActionComponent": "Morpion_2"
+              "ActionComponent": "Morpion"
             }
           }
         ],

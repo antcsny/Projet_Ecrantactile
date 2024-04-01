@@ -6,12 +6,12 @@
 
 using namespace touchgfx;
 
-class Morpion_2View;
+class MorpionView;
 
-class Morpion_2Presenter : public touchgfx::Presenter, public ModelListener
+class MorpionPresenter : public touchgfx::Presenter, public ModelListener
 {
 public:
-    Morpion_2Presenter(Morpion_2View& v);
+    MorpionPresenter(MorpionView& v);
 
     /**
      * The activate function is called automatically when this screen is "switched in"
@@ -25,12 +25,12 @@ public:
      */
     virtual void deactivate();
 
-    virtual ~Morpion_2Presenter() {}
+    virtual ~MorpionPresenter() {}
 
 private:
-    Morpion_2Presenter();
+    MorpionPresenter();
 
-    Morpion_2View& view;
+    MorpionView& view;
 };
 
 #endif // MORPION_2PRESENTER_HPP

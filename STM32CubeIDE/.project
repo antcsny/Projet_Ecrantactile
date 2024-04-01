@@ -450,14 +450,24 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/model/Model.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/Morpion_2Presenter.cpp</name>
+			<name>Application/User/gui/MorpionPresenter.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/morpion_2_screen/Morpion_2Presenter.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/morpion_screen/MorpionPresenter.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/Morpion_2View.cpp</name>
+			<name>Application/User/gui/MorpionView.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/morpion_2_screen/Morpion_2View.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/morpion_screen/MorpionView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/MorpionPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/morpion_screen/MorpionPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/MorpionView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/morpion_screen/MorpionView.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/ApplicationFontProvider.cpp</name>
@@ -620,9 +630,9 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Morpion_2ViewBase.cpp</name>
+			<name>Application/User/generated/MorpionViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/morpion_2_screen/Morpion_2ViewBase.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/morpion_screen/MorpionViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/BitmapDatabase.cpp</name>

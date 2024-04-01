@@ -184,10 +184,10 @@
     <Filter Include="Header Files\generated\simulator\include\simulator\video">
       <UniqueIdentifier>34A4A73C-623E-25AC-8A0A-149765EF09AF</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\morpion_2_screen">
+    <Filter Include="Source Files\gui\morpion_screen">
       <UniqueIdentifier>6CC68594-D942-88F7-BCDB-9F4BC3ADCD06</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\morpion_2_screen">
+    <Filter Include="Header Files\gui\morpion_screen">
       <UniqueIdentifier>468340B6-D0E6-3F3B-7B78-C5A12D469A79</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\gui\mainmenu_screen">
@@ -226,11 +226,17 @@
     <Filter Include="Header Files\generated\gui_generated\credits_screen">
       <UniqueIdentifier>5D2FCC41-78AF-36FD-C6EA-6B0207D62A98</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\generated\gui_generated\morpion_2_screen">
-      <UniqueIdentifier>428D987C-4754-529C-C33D-0BA73CDDD0D9</UniqueIdentifier>
+    <Filter Include="Source Files\gui\morpion_screen">
+      <UniqueIdentifier>800B0C10-0F24-0FAB-B571-DDA88828A3BF</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\morpion_2_screen">
-      <UniqueIdentifier>1A0D56AC-FA83-7AA9-C894-A77C7F17BDF8</UniqueIdentifier>
+    <Filter Include="Header Files\gui\morpion_screen">
+      <UniqueIdentifier>BE40789F-712D-FE30-7462-E68276A138E5</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\morpion_screen">
+      <UniqueIdentifier>EE62AC51-BB05-2263-4456-1EED549B2891</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\morpion_screen">
+      <UniqueIdentifier>E2E203E7-5186-FEE5-7511-7049EDD10ED0</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -281,9 +287,6 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp">
       <Filter>Source Files\generated\simulator\video</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\morpion_2_screen\Morpion_2View.cpp">
-      <Filter>Source Files\gui\morpion_2_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\mainmenu_screen\MainMenuPresenter.cpp">
       <Filter>Source Files\gui\mainmenu_screen</Filter>
@@ -342,11 +345,20 @@
     <ClCompile Include="..\..\generated\gui_generated\src\credits_screen\CreditsViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\credits_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\morpion_2_screen\Morpion_2Presenter.cpp">
-      <Filter>Source Files\gui\morpion_2_screen</Filter>
+    <ClCompile Include="..\..\gui\src\morpion_screen\MorpionPresenter.cpp">
+      <Filter>Source Files\gui\morpion_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\morpion_2_screen\Morpion_2ViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\morpion_2_screen</Filter>
+    <ClCompile Include="..\..\gui\src\morpion_screen\MorpionView.cpp">
+      <Filter>Source Files\gui\morpion_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\morpion_screen\MorpionPresenter.cpp">
+      <Filter>Source Files\gui\morpion_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\morpion_screen\MorpionView.cpp">
+      <Filter>Source Files\gui\morpion_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\morpion_screen\MorpionViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\morpion_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -808,9 +820,6 @@
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp">
       <Filter>Header Files\generated\simulator\include\simulator\video</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\morpion_2_screen\Morpion_2View.hpp">
-      <Filter>Header Files\gui\morpion_2_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\mainmenu_screen\MainMenuPresenter.hpp">
       <Filter>Header Files\gui\mainmenu_screen</Filter>
     </ClInclude>
@@ -868,11 +877,20 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\credits_screen\CreditsViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\credits_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\morpion_2_screen\Morpion_2Presenter.hpp">
-      <Filter>Header Files\gui\morpion_2_screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\morpion_screen\MorpionPresenter.hpp">
+      <Filter>Header Files\gui\morpion_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\morpion_2_screen\Morpion_2ViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\morpion_2_screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\morpion_screen\MorpionView.hpp">
+      <Filter>Header Files\gui\morpion_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\morpion_screen\MorpionPresenter.hpp">
+      <Filter>Header Files\gui\morpion_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\morpion_screen\MorpionView.hpp">
+      <Filter>Header Files\gui\morpion_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\morpion_screen\MorpionViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\morpion_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

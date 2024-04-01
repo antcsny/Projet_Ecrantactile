@@ -50,8 +50,8 @@ TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o: 
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp \
- TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2Presenter.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/morpion_screen/MorpionViewBase.hpp \
+ TouchGFX/gui/include/gui/morpion_screen/MorpionPresenter.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
  TouchGFX/gui/include/gui/containers/Grille.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/containers/GrilleBase.hpp \
@@ -101,7 +101,7 @@ TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o: 
  TouchGFX/generated/gui_generated/include/gui_generated/containers/nowinBase.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp \
- TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2View.hpp
+ TouchGFX/gui/include/gui/morpion_screen/MorpionView.hpp
 
 TouchGFX/gui/include/gui/mainmenu_screen/MainMenuView.hpp:
 
@@ -203,9 +203,9 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
-TouchGFX/generated/gui_generated/include/gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/morpion_screen/MorpionViewBase.hpp:
 
-TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2Presenter.hpp:
+TouchGFX/gui/include/gui/morpion_screen/MorpionPresenter.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp:
 
@@ -305,4 +305,4 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:
 
-TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2View.hpp:
+TouchGFX/gui/include/gui/morpion_screen/MorpionView.hpp:

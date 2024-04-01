@@ -1,4 +1,4 @@
-#include <gui/morpion_2_screen/Morpion_2View.hpp>
+#include <gui/morpion_screen/MorpionView.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 #include <gui/mainmenu_screen/MainMenuView.hpp>
 #include <gui/mainmenu_screen/MainMenuPresenter.hpp>
@@ -18,7 +18,7 @@ extern char recu;
 extern uint8_t rx_data;
 extern int playerID;
 
-Morpion_2View objMp;
+MorpionView objMp;
 
 const TickType_t looptttxDelay = 100 / portTICK_PERIOD_MS, xDelay = 50 / portTICK_PERIOD_MS;	// freertos delay
 osThreadId_t RxTTTTaskHandle;
@@ -28,7 +28,7 @@ const osThreadAttr_t rxtttTask_attributes = {
   .priority = (osPriority_t) osPriorityNormal,
 };
 
-Morpion_2View::Morpion_2View()
+MorpionView::MorpionView()
 {
 	/*Initialization of pieces*/
 	Croix[0]=&Croix_1;
@@ -48,22 +48,22 @@ Morpion_2View::Morpion_2View()
 	}
 }
 
-void Morpion_2View::setupScreen()
+void MorpionView::setupScreen()
 {
-    Morpion_2ViewBase::setupScreen();
+    MorpionViewBase::setupScreen();
 }
 
-void Morpion_2View::tearDownScreen()
+void MorpionView::tearDownScreen()
 {
-    Morpion_2ViewBase::tearDownScreen();
+    MorpionViewBase::tearDownScreen();
 }
 
-void Morpion_2View::restart_button()
+void MorpionView::restart_button()
 {
 	initialisation();
 }
 
-void Morpion_2View::PlayMove(Drawable& Button)
+void MorpionView::PlayMove(Drawable& Button)
 {
 	int X= Button.getX(),Y= Button.getY();
 	int posCol=(X-80)/162, posLin=(Y-134)/112;
@@ -85,9 +85,9 @@ void Morpion_2View::PlayMove(Drawable& Button)
 	}
 	turn++;
 	/* -------- Condition de victoire -------- */
-	res = Morpion_2View::verifier_victoire();
+	res = MorpionView::verifier_victoire();
 	if (res == 1){
-		Morpion_2View::buttonTouchable(0);
+		MorpionView::buttonTouchable(0);
 		if(turn%2==0){
 			win_p2.setVisible(true);
 			win_p2.invalidate();
@@ -103,14 +103,14 @@ void Morpion_2View::PlayMove(Drawable& Button)
 	}
 
 	if(playerID!=0){
-		Morpion_2View::buttonTouchable((playerID+turn+1)%2);
+		MorpionView::buttonTouchable((playerID+turn+1)%2);
 		uart1_send_frame(0x00,(posCol+posLin*3));
 	}
 
 	/*Le joueur a fini son tour*/
 }
 
-int Morpion_2View::verifier_victoire(){
+int MorpionView::verifier_victoire(){
 	for (int i = 0; i < 3; i++) {
 		// vérifier victoire ligne
 		if (tableau[i][0] == tableau[i][1] && tableau[i][1] == tableau[i][2]) {
@@ -136,57 +136,57 @@ int Morpion_2View::verifier_victoire(){
     return -1;
 }
 
-void Morpion_2View::button_0_0()
+void MorpionView::button_0_0()
 {
-	Morpion_2View::PlayMove(Button_0_0);
+	MorpionView::PlayMove(Button_0_0);
 }
 
-void Morpion_2View::button_0_1()
+void MorpionView::button_0_1()
 {
-	Morpion_2View::PlayMove(Button_0_1);
+	MorpionView::PlayMove(Button_0_1);
 }
 
-void Morpion_2View::button_0_2()
+void MorpionView::button_0_2()
 {
-	Morpion_2View::PlayMove(Button_0_2);
+	MorpionView::PlayMove(Button_0_2);
 }
 
-void Morpion_2View::button_1_0()
+void MorpionView::button_1_0()
 {
-	Morpion_2View::PlayMove(Button_1_0);
+	MorpionView::PlayMove(Button_1_0);
 }
 
-void Morpion_2View::button_1_1()
+void MorpionView::button_1_1()
 {
-	Morpion_2View::PlayMove(Button_1_1);
+	MorpionView::PlayMove(Button_1_1);
 }
 
-void Morpion_2View::button_1_2()
+void MorpionView::button_1_2()
 {
-	Morpion_2View::PlayMove(Button_1_2);
+	MorpionView::PlayMove(Button_1_2);
 }
 
-void Morpion_2View::button_2_0()
+void MorpionView::button_2_0()
 {
-	Morpion_2View::PlayMove(Button_2_0);
+	MorpionView::PlayMove(Button_2_0);
 }
 
-void Morpion_2View::button_2_1()
+void MorpionView::button_2_1()
 {
-	Morpion_2View::PlayMove(Button_2_1);
+	MorpionView::PlayMove(Button_2_1);
 }
 
-void Morpion_2View::button_2_2()
+void MorpionView::button_2_2()
 {
-	Morpion_2View::PlayMove(Button_2_2);
+	MorpionView::PlayMove(Button_2_2);
 }
 
-void Morpion_2View::init()
+void MorpionView::init()
 {
-	Morpion_2View::initialisation();
+	MorpionView::initialisation();
 }
 
-void Morpion_2View::quit_game(){
+void MorpionView::quit_game(){
 	if(playerID!=0){
 		uart1_send_frame(0x01,0x0A);
 		vTaskDelay(xDelay);
@@ -195,17 +195,17 @@ void Morpion_2View::quit_game(){
 	application().gotoMainMenuScreenSlideTransitionNorth();
 }
 
-void Morpion_2View::initialisation(){
+void MorpionView::initialisation(){
 	if(playerID!=0){
 		vTaskDelay(xDelay);
-		if(playerID==1){Morpion_2View::buttonTouchable(1);}
-		if(playerID==2){Morpion_2View::buttonTouchable(0);}
+		if(playerID==1){MorpionView::buttonTouchable(1);}
+		if(playerID==2){MorpionView::buttonTouchable(0);}
 		__HAL_UART_ENABLE(&huart1);
 		HAL_UART_Receive_IT(&huart1,&rx_data,1);
 		RxTTTTaskHandle = osThreadNew(RxTTTTask, NULL, &rxtttTask_attributes);
 	}
 	else
-		Morpion_2View::buttonTouchable(1);
+		MorpionView::buttonTouchable(1);
 	Croix_1.moveTo(-156,-26);
 	Croix_2.moveTo(-156,-26);
 	Croix_3.moveTo(-156,-26);
@@ -236,7 +236,7 @@ void Morpion_2View::initialisation(){
 	}
 }
 
-void Morpion_2View::buttonTouchable(bool act){
+void MorpionView::buttonTouchable(bool act){
 	Button_0_0.setTouchable(act);
 	Button_0_1.setTouchable(act);
 	Button_0_2.setTouchable(act);

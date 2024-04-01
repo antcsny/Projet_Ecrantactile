@@ -69,10 +69,10 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp \
  gui/include/gui/model/Model.hpp \
- gui/include/gui/morpion_2_screen/Morpion_2View.hpp \
- generated/gui_generated/include/gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp \
+ gui/include/gui/morpion_screen/MorpionView.hpp \
+ generated/gui_generated/include/gui_generated/morpion_screen/MorpionViewBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- gui/include/gui/morpion_2_screen/Morpion_2Presenter.hpp \
+ gui/include/gui/morpion_screen/MorpionPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
@@ -274,13 +274,13 @@ generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp
 
 gui/include/gui/model/Model.hpp:
 
-gui/include/gui/morpion_2_screen/Morpion_2View.hpp:
+gui/include/gui/morpion_screen/MorpionView.hpp:
 
-generated/gui_generated/include/gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp:
+generated/gui_generated/include/gui_generated/morpion_screen/MorpionViewBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-gui/include/gui/morpion_2_screen/Morpion_2Presenter.hpp:
+gui/include/gui/morpion_screen/MorpionPresenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
 

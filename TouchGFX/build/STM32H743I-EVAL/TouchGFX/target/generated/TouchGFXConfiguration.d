@@ -50,10 +50,10 @@ TouchGFX/build/STM32H743I-EVAL/TouchGFX/target/generated/TouchGFXConfiguration.o
  Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp \
  TouchGFX/gui/include/gui/model/Model.hpp \
- TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2View.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp \
+ TouchGFX/gui/include/gui/morpion_screen/MorpionView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/morpion_screen/MorpionViewBase.hpp \
  Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2Presenter.hpp \
+ TouchGFX/gui/include/gui/morpion_screen/MorpionPresenter.hpp \
  TouchGFX/gui/include/gui/model/ModelListener.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
@@ -255,13 +255,13 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
 
-TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2View.hpp:
+TouchGFX/gui/include/gui/morpion_screen/MorpionView.hpp:
 
-TouchGFX/generated/gui_generated/include/gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/morpion_screen/MorpionViewBase.hpp:
 
 Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2Presenter.hpp:
+TouchGFX/gui/include/gui/morpion_screen/MorpionPresenter.hpp:
 
 TouchGFX/gui/include/gui/model/ModelListener.hpp:
 

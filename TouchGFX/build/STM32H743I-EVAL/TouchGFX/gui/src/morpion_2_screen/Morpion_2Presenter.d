@@ -1,7 +1,7 @@
-TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/morpion_2_screen/Morpion_2Presenter.o: \
- TouchGFX/gui/src/morpion_2_screen/Morpion_2Presenter.cpp \
- TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2View.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp \
+TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/morpion_screen/MorpionPresenter.o: \
+ TouchGFX/gui/src/morpion_screen/MorpionPresenter.cpp \
+ TouchGFX/gui/include/gui/morpion_screen/MorpionView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/morpion_screen/MorpionViewBase.hpp \
  TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
@@ -40,7 +40,7 @@ TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/morpion_2_screen/Morpion_2Presen
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  TouchGFX/gui/include/gui/model/Model.hpp \
  Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2Presenter.hpp \
+ TouchGFX/gui/include/gui/morpion_screen/MorpionPresenter.hpp \
  TouchGFX/gui/include/gui/model/ModelListener.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
@@ -97,9 +97,9 @@ TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/morpion_2_screen/Morpion_2Presen
  Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp
 
-TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2View.hpp:
+TouchGFX/gui/include/gui/morpion_screen/MorpionView.hpp:
 
-TouchGFX/generated/gui_generated/include/gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/morpion_screen/MorpionViewBase.hpp:
 
 TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
 
@@ -177,7 +177,7 @@ TouchGFX/gui/include/gui/model/Model.hpp:
 
 Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-TouchGFX/gui/include/gui/morpion_2_screen/Morpion_2Presenter.hpp:
+TouchGFX/gui/include/gui/morpion_screen/MorpionPresenter.hpp:
 
 TouchGFX/gui/include/gui/model/ModelListener.hpp:
 

@@ -1,6 +1,6 @@
 #include <gui/containers/menu_multi.hpp>
 #include <gui/mainmenu_screen/MainMenuView.hpp>
-#include <gui/morpion_2_screen/Morpion_2View.hpp>
+#include <gui/morpion_screen/MorpionView.hpp>
 #include "cmsis_os.h"
 #include <main.h>
 #include <stm32h7xx_hal.h>

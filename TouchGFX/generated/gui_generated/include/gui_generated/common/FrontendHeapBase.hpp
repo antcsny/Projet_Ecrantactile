@@ -14,8 +14,8 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
-#include <gui/morpion_2_screen/Morpion_2View.hpp>
-#include <gui/morpion_2_screen/Morpion_2Presenter.hpp>
+#include <gui/morpion_screen/MorpionView.hpp>
+#include <gui/morpion_screen/MorpionPresenter.hpp>
 #include <gui/mainmenu_screen/MainMenuView.hpp>
 #include <gui/mainmenu_screen/MainMenuPresenter.hpp>
 #include <gui/battleship_screen/BattleShipView.hpp>
@@ -44,7 +44,7 @@ public:
      * A list of all view types. Must end with meta::Nil.
      * @note All view types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< Morpion_2View,
+    typedef touchgfx::meta::TypeList< MorpionView,
             touchgfx::meta::TypeList< MainMenuView,
             touchgfx::meta::TypeList< BattleShipView,
             touchgfx::meta::TypeList< CreditsView,
@@ -60,7 +60,7 @@ public:
      * A list of all presenter types. Must end with meta::Nil.
      * @note All presenter types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< Morpion_2Presenter,
+    typedef touchgfx::meta::TypeList< MorpionPresenter,
             touchgfx::meta::TypeList< MainMenuPresenter,
             touchgfx::meta::TypeList< BattleShipPresenter,
             touchgfx::meta::TypeList< CreditsPresenter,

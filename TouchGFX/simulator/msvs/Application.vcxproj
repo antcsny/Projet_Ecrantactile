@@ -27,7 +27,6 @@
     <ClCompile Include="..\..\generated\gui_generated\src\containers\GrilleBase.cpp"/>
     <ClCompile Include="..\..\gui\src\model\Model.cpp"/>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp"/>
-    <ClCompile Include="..\..\gui\src\morpion_2_screen\Morpion_2View.cpp"/>
     <ClCompile Include="..\..\gui\src\mainmenu_screen\MainMenuPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\mainmenu_screen\MainMenuView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\mainmenu_screen\MainMenuViewBase.cpp"/>
@@ -47,8 +46,11 @@
     <ClCompile Include="..\..\gui\src\credits_screen\CreditsPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\credits_screen\CreditsView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\credits_screen\CreditsViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\morpion_2_screen\Morpion_2Presenter.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\morpion_2_screen\Morpion_2ViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\morpion_screen\MorpionPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\morpion_screen\MorpionView.cpp"/>
+    <ClCompile Include="..\..\gui\src\morpion_screen\MorpionPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\morpion_screen\MorpionView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\morpion_screen\MorpionViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -205,7 +207,6 @@
     <ClInclude Include="..\..\gui\include\gui\model\ModelListener.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp"/>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\morpion_2_screen\Morpion_2View.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\mainmenu_screen\MainMenuPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\mainmenu_screen\MainMenuView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\mainmenu_screen\MainMenuViewBase.hpp"/>
@@ -225,8 +226,11 @@
     <ClInclude Include="..\..\gui\include\gui\credits_screen\CreditsPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\credits_screen\CreditsView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\credits_screen\CreditsViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\morpion_2_screen\Morpion_2Presenter.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\morpion_2_screen\Morpion_2ViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\morpion_screen\MorpionPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\morpion_screen\MorpionView.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\morpion_screen\MorpionPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\morpion_screen\MorpionView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\morpion_screen\MorpionViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

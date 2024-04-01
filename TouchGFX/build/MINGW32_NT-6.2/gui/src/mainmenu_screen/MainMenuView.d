@@ -50,8 +50,8 @@ build/MINGW32_NT-6.2/gui/src/mainmenu_screen/MainMenuView.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
- generated/gui_generated/include/gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp \
- gui/include/gui/morpion_2_screen/Morpion_2Presenter.hpp \
+ generated/gui_generated/include/gui_generated/morpion_screen/MorpionViewBase.hpp \
+ gui/include/gui/morpion_screen/MorpionPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
  gui/include/gui/containers/Grille.hpp \
  generated/gui_generated/include/gui_generated/containers/GrilleBase.hpp \
@@ -95,7 +95,7 @@ build/MINGW32_NT-6.2/gui/src/mainmenu_screen/MainMenuView.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp \
- gui/include/gui/morpion_2_screen/Morpion_2View.hpp
+ gui/include/gui/morpion_screen/MorpionView.hpp
 
 gui/include/gui/mainmenu_screen/MainMenuView.hpp:
 
@@ -197,9 +197,9 @@ gui/include/gui/model/ModelListener.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
-generated/gui_generated/include/gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp:
+generated/gui_generated/include/gui_generated/morpion_screen/MorpionViewBase.hpp:
 
-gui/include/gui/morpion_2_screen/Morpion_2Presenter.hpp:
+gui/include/gui/morpion_screen/MorpionPresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp:
 
@@ -287,4 +287,4 @@ generated/gui_generated/include/gui_generated/containers/CercleBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:
 
-gui/include/gui/morpion_2_screen/Morpion_2View.hpp:
+gui/include/gui/morpion_screen/MorpionView.hpp:
