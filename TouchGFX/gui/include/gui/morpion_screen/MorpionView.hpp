@@ -24,7 +24,7 @@ public:
     virtual void button_2_0();
     virtual void button_2_1();
     virtual void button_2_2();
-    void PlayMove(Drawable& Button);
+    void PlayMove(Drawable& Button, char rxcmd);
     virtual int verifier_victoire();
     void initialisation();
     virtual void init();

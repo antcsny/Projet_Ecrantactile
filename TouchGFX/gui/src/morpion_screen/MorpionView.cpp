@@ -63,7 +63,7 @@ void MorpionView::restart_button()
 	initialisation();
 }
 
-void MorpionView::PlayMove(Drawable& Button)
+void MorpionView::PlayMove(Drawable& Button, char rxcmd)
 {
 	int X= Button.getX(),Y= Button.getY();
 	int posCol=(X-80)/162, posLin=(Y-134)/112;
@@ -102,9 +102,15 @@ void MorpionView::PlayMove(Drawable& Button)
 		draw.invalidate();
 	}
 
-	if(playerID!=0){
-		MorpionView::buttonTouchable((playerID+turn+1)%2);
-		uart1_send_frame(0x00,(posCol+posLin*3));
+	if(playerID==1){
+		MorpionView::buttonTouchable((turn+1)%2);
+		if(rxcmd==0)
+			uart1_send_frame(0x01,(posCol+posLin*3));
+	}
+	if(playerID==2){
+		MorpionView::buttonTouchable((turn)%2);
+		if(rxcmd==0)
+			uart1_send_frame(0x01,(posCol+posLin*3));
 	}
 
 	/*Le joueur a fini son tour*/
@@ -138,47 +144,47 @@ int MorpionView::verifier_victoire(){
 
 void MorpionView::button_0_0()
 {
-	MorpionView::PlayMove(Button_0_0);
+	MorpionView::PlayMove(Button_0_0,0);
 }
 
 void MorpionView::button_0_1()
 {
-	MorpionView::PlayMove(Button_0_1);
+	MorpionView::PlayMove(Button_0_1,0);
 }
 
 void MorpionView::button_0_2()
 {
-	MorpionView::PlayMove(Button_0_2);
+	MorpionView::PlayMove(Button_0_2,0);
 }
 
 void MorpionView::button_1_0()
 {
-	MorpionView::PlayMove(Button_1_0);
+	MorpionView::PlayMove(Button_1_0,0);
 }
 
 void MorpionView::button_1_1()
 {
-	MorpionView::PlayMove(Button_1_1);
+	MorpionView::PlayMove(Button_1_1,0);
 }
 
 void MorpionView::button_1_2()
 {
-	MorpionView::PlayMove(Button_1_2);
+	MorpionView::PlayMove(Button_1_2,0);
 }
 
 void MorpionView::button_2_0()
 {
-	MorpionView::PlayMove(Button_2_0);
+	MorpionView::PlayMove(Button_2_0,0);
 }
 
 void MorpionView::button_2_1()
 {
-	MorpionView::PlayMove(Button_2_1);
+	MorpionView::PlayMove(Button_2_1,0);
 }
 
 void MorpionView::button_2_2()
 {
-	MorpionView::PlayMove(Button_2_2);
+	MorpionView::PlayMove(Button_2_2,0);
 }
 
 void MorpionView::init()
@@ -270,31 +276,31 @@ void RxTTTTask(void *argument){
 			recu=0;
 			switch (rx_data){
 				case 0x40:
-					objMp.PlayMove(objMp.Button_0_0);
+					objMp.PlayMove(objMp.Button_0_0,1);
 					break;
 				case 0x41:
-					objMp.PlayMove(objMp.Button_0_1);
+					objMp.PlayMove(objMp.Button_0_1,1);
 					break;
 				case 0x42:
-					objMp.PlayMove(objMp.Button_0_2);
+					objMp.PlayMove(objMp.Button_0_2,1);
 					break;
 				case 0x43:
-					objMp.PlayMove(objMp.Button_1_0);
+					objMp.PlayMove(objMp.Button_1_0,1);
 					break;
 				case 0x44:
-					objMp.PlayMove(objMp.Button_1_1);
+					objMp.PlayMove(objMp.Button_1_1,1);
 					break;
 				case 0x45:
-					objMp.PlayMove(objMp.Button_1_2);
+					objMp.PlayMove(objMp.Button_1_2,1);
 					break;
 				case 0x46:
-					objMp.PlayMove(objMp.Button_2_0);
+					objMp.PlayMove(objMp.Button_2_0,1);
 					break;
 				case 0x47:
-					objMp.PlayMove(objMp.Button_2_1);
+					objMp.PlayMove(objMp.Button_2_1,1);
 					break;
 				case 0x48:
-					objMp.PlayMove(objMp.Button_2_2);
+					objMp.PlayMove(objMp.Button_2_2,1);
 					break;
 				case 0x49:
 					objMp.initialisation();
@@ -305,7 +311,8 @@ void RxTTTTask(void *argument){
 					break;
 			}
 		}
-		vTaskDelay(looptttxDelay);
+		else if(RXLoopActive!=0)
+			vTaskDelay(looptttxDelay);
 	}
 	vTaskDelete(NULL);
 }
