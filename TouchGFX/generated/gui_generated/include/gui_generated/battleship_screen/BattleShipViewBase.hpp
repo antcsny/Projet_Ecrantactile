@@ -33,6 +33,7 @@ protected:
     touchgfx::BoxWithBorder boxWithBorder1;
     touchgfx::TextArea textArea1;
     touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  previousGame;
+    touchgfx::TextArea textArea2;
 
 private:
 

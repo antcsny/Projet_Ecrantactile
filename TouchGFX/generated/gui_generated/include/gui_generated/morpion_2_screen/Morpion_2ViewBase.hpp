@@ -36,6 +36,7 @@ public:
         // Override and implement this function in Screen1
     }
     
+    virtual void quit_game();
 
     /*
      * Virtual Action Handlers

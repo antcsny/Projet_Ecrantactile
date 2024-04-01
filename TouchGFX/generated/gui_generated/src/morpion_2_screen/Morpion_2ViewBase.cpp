@@ -220,9 +220,9 @@ void Morpion_2ViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButton
         Quit.setAlpha(255);
         Quit.invalidate();
         //QuitGame
-        //When Quit clicked change screen to MainMenu
-        //Go to MainMenu with screen transition towards North
-        application().gotoMainMenuScreenSlideTransitionNorth();
+        //When Quit clicked call quit_game on Morpion_2
+        //Call quit_game
+        quit_game();
     }
     if (&src == &Button_0_0)
     {
@@ -295,4 +295,12 @@ void Morpion_2ViewBase::transitionBegins()
     //When screen transition begins call init on Morpion_2
     //Call init
     init();
+}
+
+void Morpion_2ViewBase::quit_game()
+{
+    //game_quit
+    //When quit_game is called change screen to MainMenu
+    //Go to MainMenu with screen transition towards North
+    application().gotoMainMenuScreenSlideTransitionNorth();
 }

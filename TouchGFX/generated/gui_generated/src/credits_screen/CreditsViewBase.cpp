@@ -29,7 +29,7 @@ CreditsViewBase::CreditsViewBase() :
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C3PC));
     add(textArea1);
 
-    boxWithBorder2.setPosition(30, 93, 228, 108);
+    boxWithBorder2.setPosition(30, 93, 237, 138);
     boxWithBorder2.setColor(touchgfx::Color::getColorFromRGB(77, 94, 125));
     boxWithBorder2.setBorderColor(touchgfx::Color::getColorFromRGB(12, 27, 55));
     boxWithBorder2.setBorderSize(5);
@@ -41,7 +41,7 @@ CreditsViewBase::CreditsViewBase() :
     textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_UU5B));
     add(textArea2);
 
-    textArea3.setXY(47, 133);
+    textArea3.setXY(41, 162);
     textArea3.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea3.setLinespacing(0);
     textArea3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_U3B6));

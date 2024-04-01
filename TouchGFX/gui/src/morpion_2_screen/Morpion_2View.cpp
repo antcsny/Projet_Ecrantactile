@@ -3,21 +3,30 @@
 #include <gui/mainmenu_screen/MainMenuView.hpp>
 #include <gui/mainmenu_screen/MainMenuPresenter.hpp>
 #include <main.h>
+#include "cmsis_os.h"
 #include <stm32h7xx_hal.h>
 
 int turn=0;
 Croix* Croix[5];
 Cercle* Cercle[4];
 char tableau[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
-char valeur = '1';
-uint8_t dataT = 0x43;
 int res = -1;
+char RXLoopActive=0;
 
 extern UART_HandleTypeDef huart1;
 extern char recu;
 extern uint8_t rx_data;
 extern int playerID;
-Morpion_2View play;
+
+Morpion_2View objMp;
+
+const TickType_t looptttxDelay = 100 / portTICK_PERIOD_MS, xDelay = 50 / portTICK_PERIOD_MS;	// freertos delay
+osThreadId_t RxTTTTaskHandle;
+const osThreadAttr_t rxtttTask_attributes = {
+  .name = "RxTicTacToeTask",
+  .stack_size = 1024 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
 
 Morpion_2View::Morpion_2View()
 {
@@ -31,7 +40,7 @@ Morpion_2View::Morpion_2View()
 	Croix[3]=&Croix_4;
 	Cercle[3]=&Cercle_4;
 	Croix[4]=&Croix_5;
-	if(playerID==1){
+	if(playerID==2){
 		Recommencer.setVisible(false);
 		Recommencer.invalidate();
 		Restart.setVisible(false);
@@ -49,28 +58,13 @@ void Morpion_2View::tearDownScreen()
     Morpion_2ViewBase::tearDownScreen();
 }
 
-
 void Morpion_2View::restart_button()
 {
 	initialisation();
-	SendByte_Uart1(dataT);
-}
-
-void Morpion_2View::win_button()
-{
-	Morpion_2View::buttonTouchable(0);
-	if(playerID>=1)
-	{
-		Recommencer.setVisible(true);
-		Recommencer.invalidate();
-		Restart.setVisible(true);
-		Restart.invalidate();
-	}
 }
 
 void Morpion_2View::PlayMove(Drawable& Button)
 {
-	Button.setTouchable(0);
 	int X= Button.getX(),Y= Button.getY();
 	int posCol=(X-80)/162, posLin=(Y-134)/112;
 	if(turn%2==0){
@@ -89,62 +83,31 @@ void Morpion_2View::PlayMove(Drawable& Button)
 		Joueur_2.setVisible(false);
 		Joueur_2.invalidate();
 	}
-	uart1_send_frame(0x00,(posCol+posLin*3));
 	turn++;
 	/* -------- Condition de victoire -------- */
 	res = Morpion_2View::verifier_victoire();
 	if (res == 1){
+		Morpion_2View::buttonTouchable(0);
 		if(turn%2==0){
 			win_p2.setVisible(true);
 			win_p2.invalidate();
-			Morpion_2View::win_button();
 		}
 		else if(turn%2==1) {
 			win_p1.setVisible(true);
 			win_p1.invalidate();
-			Morpion_2View::win_button();
 		}
 	}
 	else if(res == 0) {
 		draw.setVisible(true);
 		draw.invalidate();
 	}
+
 	if(playerID!=0){
-			Morpion_2View::buttonTouchable((playerID+turn+1)%2);
+		Morpion_2View::buttonTouchable((playerID+turn+1)%2);
+		uart1_send_frame(0x00,(posCol+posLin*3));
 	}
 
 	/*Le joueur a fini son tour*/
-	while(recu==0);
-	recu=0;
-	switch (rx_data){
-					case 0x40:
-						Morpion_2View::PlayMove(Button_0_0);
-						break;
-					case 0x41:
-						Morpion_2View::PlayMove(Button_0_1);
-						break;
-					case 0x42:
-						Morpion_2View::PlayMove(Button_0_2);
-						break;
-					case 0x43:
-						Morpion_2View::PlayMove(Button_1_0);
-						break;
-					case 0x44:
-						Morpion_2View::PlayMove(Button_1_1);
-						break;
-					case 0x45:
-						Morpion_2View::PlayMove(Button_1_2);
-						break;
-					case 0x46:
-						Morpion_2View::PlayMove(Button_2_0);
-						break;
-					case 0x47:
-						Morpion_2View::PlayMove(Button_2_1);
-						break;
-					case 0x48:
-						Morpion_2View::PlayMove(Button_2_2);
-						break;
-	}
 }
 
 int Morpion_2View::verifier_victoire(){
@@ -223,15 +186,26 @@ void Morpion_2View::init()
 	Morpion_2View::initialisation();
 }
 
+void Morpion_2View::quit_game(){
+	if(playerID!=0){
+		uart1_send_frame(0x01,0x0A);
+		vTaskDelay(xDelay);
+		__HAL_UART_DISABLE(&huart1);
+	}
+	application().gotoMainMenuScreenSlideTransitionNorth();
+}
+
 void Morpion_2View::initialisation(){
-	if(playerID==1||playerID==0)
-	{
+	if(playerID!=0){
+		vTaskDelay(xDelay);
+		if(playerID==1){Morpion_2View::buttonTouchable(1);}
+		if(playerID==2){Morpion_2View::buttonTouchable(0);}
+		__HAL_UART_ENABLE(&huart1);
+		HAL_UART_Receive_IT(&huart1,&rx_data,1);
+		RxTTTTaskHandle = osThreadNew(RxTTTTask, NULL, &rxtttTask_attributes);
+	}
+	else
 		Morpion_2View::buttonTouchable(1);
-	}
-	if(playerID==2)
-	{
-		Morpion_2View::buttonTouchable(0);
-	}
 	Croix_1.moveTo(-156,-26);
 	Croix_2.moveTo(-156,-26);
 	Croix_3.moveTo(-156,-26);
@@ -274,27 +248,64 @@ void Morpion_2View::buttonTouchable(bool act){
 	Button_2_2.setTouchable(act);
 }
 
-void Execute_Action_RX(uint8_t data){	/* default function to choose the action depending on the recieved data */
-	switch(data){
-	case 0x06:
-		static_cast<FrontendApplication*>(Application::getInstance())->gotoMorpion_2ScreenSlideTransitionSouth();
-		break;
-	case 0x07:
-		static_cast<FrontendApplication*>(Application::getInstance())->gotoMorpion_2ScreenSlideTransitionSouth();
-		break;
-	default:
-		break;
-	}
-}
 /* Brief uart1_send_frame : Function to send formated byte for the update of Morpion
 * 00 : game gestion
 * 			0x01 : quit, 0x02 : start/restart,
 * 			0x03 : host request, 0x04 : host acknowledge, 0x05 : abort host/join,
 * 01 : game update
 * 			id pressed button : 0x00 - 0x08
+* 			0x09 : restart
+* 			0x0A : quit
 */
 void uart1_send_frame(int function, char data){
 	function &=0x3;	// function on 2 bits
 	data &=0x3F;	// data on 6 bits
 	SendByte_Uart1(function << 6 | data);
+}
+
+void RxTTTTask(void *argument){
+	RXLoopActive=1;
+	while(RXLoopActive){
+		if(recu==1){
+			recu=0;
+			switch (rx_data){
+				case 0x40:
+					objMp.PlayMove(objMp.Button_0_0);
+					break;
+				case 0x41:
+					objMp.PlayMove(objMp.Button_0_1);
+					break;
+				case 0x42:
+					objMp.PlayMove(objMp.Button_0_2);
+					break;
+				case 0x43:
+					objMp.PlayMove(objMp.Button_1_0);
+					break;
+				case 0x44:
+					objMp.PlayMove(objMp.Button_1_1);
+					break;
+				case 0x45:
+					objMp.PlayMove(objMp.Button_1_2);
+					break;
+				case 0x46:
+					objMp.PlayMove(objMp.Button_2_0);
+					break;
+				case 0x47:
+					objMp.PlayMove(objMp.Button_2_1);
+					break;
+				case 0x48:
+					objMp.PlayMove(objMp.Button_2_2);
+					break;
+				case 0x49:
+					objMp.initialisation();
+					break;
+				case 0x4A:
+					objMp.quit_game();
+					RXLoopActive=0;
+					break;
+			}
+		}
+		vTaskDelay(looptttxDelay);
+	}
+	vTaskDelete(NULL);
 }

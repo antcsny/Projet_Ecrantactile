@@ -4,8 +4,8 @@
 #include <gui_generated/morpion_2_screen/Morpion_2ViewBase.hpp>
 #include <gui/morpion_2_screen/Morpion_2Presenter.hpp>
 
-void Execute_Action_RX(uint8_t data);
 void uart1_send_frame(int function, char data);
+void RxTTTTask(void *argument);
 
 class Morpion_2View : public Morpion_2ViewBase
 {
@@ -26,10 +26,12 @@ public:
     virtual void button_2_2();
     void PlayMove(Drawable& Button);
     virtual int verifier_victoire();
-    void win_button();
     void initialisation();
     virtual void init();
+    virtual void quit_game();
     void buttonTouchable(bool act);
+
+    friend void RxTTTTask(void *argument);
 protected:
 };
 

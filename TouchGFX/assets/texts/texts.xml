@@ -10,11 +10,14 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_GOX7" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">????</Translation>
+      </Text>
       <Text Id="__SingleUse_U3B6" Alignment="Left" TypographyId="Small">
         <Translation Language="GB">Romain Bouche&#10;Bastien Chevallier&#10;Antony Cosnay</Translation>
       </Text>
       <Text Id="__SingleUse_UU5B" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">IESE4 - 2023/2024</Translation>
+        <Translation Language="GB">Polytech Grenoble&#10;IESE4 - 2023/2024</Translation>
       </Text>
       <Text Id="__SingleUse_C3PC" Alignment="Left" TypographyId="Typography_01">
         <Translation Language="GB">Credits</Translation>

@@ -37,6 +37,12 @@ BattleShipViewBase::BattleShipViewBase() :
     previousGame.setAction(flexButtonCallback);
     previousGame.setPosition(-1, 169, 57, 142);
     add(previousGame);
+
+    textArea2.setXY(276, 105);
+    textArea2.setColor(touchgfx::Color::getColorFromRGB(12, 27, 55));
+    textArea2.setLinespacing(0);
+    textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GOX7));
+    add(textArea2);
 }
 
 BattleShipViewBase::~BattleShipViewBase()

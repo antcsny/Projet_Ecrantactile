@@ -7,7 +7,8 @@ extern int playerID;
 
 MainMenuView::MainMenuView()
 {
-
+	nextGame.setTouchable(1);
+	previousGame.setTouchable(1);
 }
 
 void MainMenuView::setupScreen()
@@ -24,7 +25,8 @@ void MainMenuView::multiplayer_game(){
 	multiplayerMenu.setVisible(true);
 	multiplayerMenu.invalidate();
 	singleplayer.setTouchable(false);
-
+	nextGame.setTouchable(0);
+	previousGame.setTouchable(0);
 }
 
 void MainMenuView::singleplayer_game(){

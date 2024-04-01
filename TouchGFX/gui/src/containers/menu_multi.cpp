@@ -8,11 +8,11 @@
 extern char recu;
 extern uint8_t rx_data;
 extern UART_HandleTypeDef huart1;
-menu_multiBase obj;
-const TickType_t loopxDelay = 500 / portTICK_PERIOD_MS, xDelay = 50 / portTICK_PERIOD_MS;
-char status;
 extern int playerID;
+menu_multiBase obj;
 
+const TickType_t loopxDelay = 500 / portTICK_PERIOD_MS, xDelay = 5 / portTICK_PERIOD_MS;	// freertos delays
+/* Freertos Tasks definitions, see associated functions below */
 osThreadId_t hostTaskHandle;
 const osThreadAttr_t hostTask_attributes = {
   .name = "HostPollingTask",
@@ -21,7 +21,7 @@ const osThreadAttr_t hostTask_attributes = {
 };
 osThreadId_t joinTaskHandle;
 const osThreadAttr_t joinTask_attributes = {
-  .name = "JoinPollingTask",
+  .name = "JoinTask",
   .stack_size = 1024 * 4,
   .priority = (osPriority_t) osPriorityBelowNormal,
 };
