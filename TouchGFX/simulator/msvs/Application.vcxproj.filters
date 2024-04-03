@@ -190,29 +190,11 @@
     <Filter Include="Header Files\gui\morpion_screen">
       <UniqueIdentifier>468340B6-D0E6-3F3B-7B78-C5A12D469A79</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\mainmenu_screen">
+    <Filter Include="Header Files\gui\menumorpion_screen">
       <UniqueIdentifier>F77A197E-D015-E628-0842-BF2CBE1AD9C2</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\mainmenu_screen">
+    <Filter Include="Source Files\gui\menumorpion_screen">
       <UniqueIdentifier>17F3BF6A-3B59-1BA6-BEF3-975B4E558462</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\mainmenu_screen">
-      <UniqueIdentifier>0128382B-8253-A310-DB70-815F84E7E07F</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\mainmenu_screen">
-      <UniqueIdentifier>FDB4CF48-ABC4-0EEC-F9A5-A5F52A5A1E0B</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\battleship_screen">
-      <UniqueIdentifier>FD833183-0A2C-BEDE-DAFE-859A373528BB</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\battleship_screen">
-      <UniqueIdentifier>37E72D90-3361-ED84-2923-F44CD3AC50A9</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\battleship_screen">
-      <UniqueIdentifier>1EEEF756-9AD4-830F-BF4D-9B977887D914</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\battleship_screen">
-      <UniqueIdentifier>ADB9DA74-917B-31FD-E2AE-E286FAA19385</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\gui\credits_screen">
       <UniqueIdentifier>35A361E5-E3DD-60F3-4884-B47594E23C82</UniqueIdentifier>
@@ -237,6 +219,30 @@
     </Filter>
     <Filter Include="Source Files\generated\gui_generated\morpion_screen">
       <UniqueIdentifier>E2E203E7-5186-FEE5-7511-7049EDD10ED0</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\menumorpion_screen">
+      <UniqueIdentifier>95E66713-DF46-F251-D284-28BCB7FE72B6</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\menumorpion_screen">
+      <UniqueIdentifier>88FF0B1F-E16E-A31B-D043-0A1279E2C439</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\menubattleship_screen">
+      <UniqueIdentifier>37BF1E75-DB25-003E-722B-523B0CBA569B</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\menubattleship_screen">
+      <UniqueIdentifier>1FC628A7-3F91-9F11-953B-6098D08C0FE2</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\menumorpion_screen">
+      <UniqueIdentifier>79B1CEB0-176B-E1C8-9B34-66B94023F066</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\menumorpion_screen">
+      <UniqueIdentifier>18759796-E49A-BDE7-65DE-A427EDFC1E63</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\menubattleship_screen">
+      <UniqueIdentifier>58B6EF8B-FB5D-D46D-A505-A346048BD46C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\menubattleship_screen">
+      <UniqueIdentifier>51D55625-0895-7E77-4294-17C5F7F866B5</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -288,14 +294,8 @@
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp">
       <Filter>Source Files\generated\simulator\video</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\mainmenu_screen\MainMenuPresenter.cpp">
-      <Filter>Source Files\gui\mainmenu_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\mainmenu_screen\MainMenuView.cpp">
-      <Filter>Source Files\gui\mainmenu_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\mainmenu_screen\MainMenuViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\mainmenu_screen</Filter>
+    <ClCompile Include="..\..\gui\src\menumorpion_screen\MenuMorpionView.cpp">
+      <Filter>Source Files\gui\menumorpion_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\containers\nowin.cpp">
       <Filter>Source Files\gui\containers</Filter>
@@ -320,15 +320,6 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\menu_multiBase.cpp">
       <Filter>Source Files\generated\gui_generated\containers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\battleship_screen\BattleShipPresenter.cpp">
-      <Filter>Source Files\gui\battleship_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\battleship_screen\BattleShipView.cpp">
-      <Filter>Source Files\gui\battleship_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\battleship_screen\BattleShipViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\battleship_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\containers\CustomContainer1.cpp">
       <Filter>Source Files\gui\containers</Filter>
@@ -359,6 +350,24 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\morpion_screen\MorpionViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\morpion_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\menubattleship_screen\MenuBattleShipPresenter.cpp">
+      <Filter>Source Files\gui\menubattleship_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\menubattleship_screen\MenuBattleShipView.cpp">
+      <Filter>Source Files\gui\menubattleship_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\menubattleship_screen\MenuBattleShipViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\menubattleship_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\menumorpion_screen\MenuMorpionPresenter.cpp">
+      <Filter>Source Files\gui\menumorpion_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\menumorpion_screen\MenuMorpionView.cpp">
+      <Filter>Source Files\gui\menumorpion_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\menumorpion_screen\MenuMorpionViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\menumorpion_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -820,14 +829,8 @@
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp">
       <Filter>Header Files\generated\simulator\include\simulator\video</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\mainmenu_screen\MainMenuPresenter.hpp">
-      <Filter>Header Files\gui\mainmenu_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\mainmenu_screen\MainMenuView.hpp">
-      <Filter>Header Files\gui\mainmenu_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\mainmenu_screen\MainMenuViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\mainmenu_screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\menumorpion_screen\MenuMorpionView.hpp">
+      <Filter>Header Files\gui\menumorpion_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\containers\nowin.hpp">
       <Filter>Header Files\gui\containers</Filter>
@@ -852,15 +855,6 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\menu_multiBase.hpp">
       <Filter>Header Files\generated\gui_generated\containers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\battleship_screen\BattleShipPresenter.hpp">
-      <Filter>Header Files\gui\battleship_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\battleship_screen\BattleShipView.hpp">
-      <Filter>Header Files\gui\battleship_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\battleship_screen\BattleShipViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\battleship_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\containers\CustomContainer1.hpp">
       <Filter>Header Files\gui\containers</Filter>
@@ -891,6 +885,24 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\morpion_screen\MorpionViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\morpion_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\menubattleship_screen\MenuBattleShipPresenter.hpp">
+      <Filter>Header Files\gui\menubattleship_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\menubattleship_screen\MenuBattleShipView.hpp">
+      <Filter>Header Files\gui\menubattleship_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\menubattleship_screen\MenuBattleShipViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\menubattleship_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\menumorpion_screen\MenuMorpionPresenter.hpp">
+      <Filter>Header Files\gui\menumorpion_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\menumorpion_screen\MenuMorpionView.hpp">
+      <Filter>Header Files\gui\menumorpion_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\menumorpion_screen\MenuMorpionViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\menumorpion_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

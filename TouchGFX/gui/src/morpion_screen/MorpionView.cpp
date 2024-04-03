@@ -1,7 +1,7 @@
 #include <gui/morpion_screen/MorpionView.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
-#include <gui/mainmenu_screen/MainMenuView.hpp>
-#include <gui/mainmenu_screen/MainMenuPresenter.hpp>
+#include <gui/menumorpion_screen/MenuMorpionView.hpp>
+#include <gui/menumorpion_screen/MenuMorpionPresenter.hpp>
 #include <main.h>
 #include "cmsis_os.h"
 #include <stm32h7xx_hal.h>
@@ -204,7 +204,7 @@ void MorpionView::quit_game(){
 		vTaskDelay(xDelay);
 		__HAL_UART_DISABLE(&huart1);
 	}
-	application().gotoMainMenuScreenSlideTransitionNorth();
+	application().gotoMenuMorpionScreenSlideTransitionNorth();
 }
 
 void MorpionView::initialisation(){

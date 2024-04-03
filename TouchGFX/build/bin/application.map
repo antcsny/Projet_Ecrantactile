@@ -29,13 +29,13 @@ Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(TextArea.o)
 Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(Box.o)
                               TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/morpion_screen/MorpionViewBase.o (vtable for touchgfx::Box)
 Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(Button.o)
-                              TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o (touchgfx::Button::setBitmaps(touchgfx::Bitmap const&, touchgfx::Bitmap const&))
+                              TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o (touchgfx::Button::setBitmaps(touchgfx::Bitmap const&, touchgfx::Bitmap const&))
 Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(BoxWithBorder.o)
                               TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/morpion_screen/MorpionViewBase.o (vtable for touchgfx::BoxWithBorder)
 Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(Image.o)
                               TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/morpion_screen/MorpionViewBase.o (touchgfx::Image::setBitmap(touchgfx::Bitmap const&))
 Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(ButtonWithLabel.o)
-                              TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o (touchgfx::ButtonWithLabel::ButtonWithLabel())
+                              TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o (touchgfx::ButtonWithLabel::ButtonWithLabel())
 Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(Outline.o)
                               Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(CWRVectorRenderer.o) (touchgfx::Outline::~Outline())
 Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(CanvasWidgetRenderer.o)
@@ -49,7 +49,7 @@ Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(DisplayTransformati
 Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(Application.o)
                               TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/common/FrontendApplication.o (touchgfx::Application::requestRedraw())
 Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(TypedText.o)
-                              TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o (touchgfx::TypedText::numberOfTypedTexts)
+                              TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o (touchgfx::TypedText::numberOfTypedTexts)
 Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(Font.o)
                               TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/texts/src/Texts.o (touchgfx::Font::getStringWidthLTR(unsigned char, unsigned short const*, std::__va_list) const)
 Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(Drawable.o)
@@ -1176,199 +1176,199 @@ Discarded input sections
  .debug_macro   0x00000000      0x183 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
  .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
  .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000       0x14 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .text          0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .data          0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .bss           0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000       0x14 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .text          0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .data          0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .bss           0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
  .text._ZN8touchgfx6Screen15afterTransitionEv
-                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
+                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
  .text._ZN8touchgfx6Screen15handleTickEventEv
-                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
+                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
  .text._ZN8touchgfx6Screen14handleKeyEventEh
-                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000      0xb4a TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000      0x168 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000      0x3f4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000      0x17b TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x28 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x41 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x12 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x22 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x18 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x94 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x35 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x34 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x57 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0xef TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x6a TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000      0x1df TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x91 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000      0x353 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x1f TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x43 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x20 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x52 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x40 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x40 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0xd7 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x3d TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000      0x183 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000      0x18e TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x00000000       0x35 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .group         0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .text          0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .data          0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .bss           0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000      0xb4a TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000      0x168 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000      0x3f4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000      0x17b TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x28 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x41 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x12 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x22 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x18 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x94 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x35 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x34 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x57 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0xef TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x6a TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000      0x1df TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x91 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000      0x353 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x1f TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x43 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x20 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x52 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x40 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x40 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0xd7 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x3d TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000      0x183 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
+                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000      0xb4a TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000      0x168 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000      0x3f4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000      0x17b TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x28 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x41 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x12 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x22 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x18 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x94 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x35 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x34 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x57 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0xef TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x6a TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000      0x1df TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x91 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000      0x353 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x1f TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x43 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x20 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x52 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x40 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x40 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0xd7 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x3d TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000      0x183 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000      0x18e TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x00000000       0x35 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .group         0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .text          0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .data          0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .bss           0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000      0xb4a TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000      0x168 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000      0x3f4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000      0x17b TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x28 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x41 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x12 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x22 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x18 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x94 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x35 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x34 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x57 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0xef TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x6a TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000      0x1df TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x91 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000      0x353 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x1f TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x43 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x20 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x52 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x40 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x40 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0xd7 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x3d TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000      0x183 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
  .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/model/Model.o
  .text          0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/model/Model.o
  .data          0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/model/Model.o
@@ -2521,177 +2521,177 @@ Discarded input sections
  .debug_macro   0x00000000      0x183 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
  .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
  .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .text          0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .data          0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .bss           0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .group         0x00000000        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .text          0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .data          0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .bss           0x00000000        0x0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZNK8touchgfx8Drawable17invalidateContentEv
-                0x00000000        0xe TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0xe TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx8Drawable13getFirstChildEv
-                0x00000000        0x4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx8Drawable4setXEs
-                0x00000000        0x4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx8Drawable4setYEs
-                0x00000000        0x4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx8Drawable8setWidthEs
-                0x00000000        0x4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx8Drawable9setHeightEs
-                0x00000000        0x4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx8Drawable20childGeometryChangedEv
-                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx8Drawable16handleClickEventERKNS_10ClickEventE
-                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx8Drawable18handleGestureEventERKNS_12GestureEventE
-                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx8Drawable15handleDragEventERKNS_9DragEventE
-                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx8Drawable15handleTickEventEv
-                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx8Drawable6moveToEss
-                0x00000000       0x18 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000       0x18 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx8Drawable14setupDrawChainERKNS_4RectEPPS0_
-                0x00000000       0x14 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000       0x14 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx6Screen11setupScreenEv
-                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx6Screen15afterTransitionEv
-                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx6Screen14tearDownScreenEv
-                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx6Screen15handleTickEventEv
-                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx6Screen14handleKeyEventEh
-                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx6Widget12getLastChildEssPPNS_8DrawableE
-                0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx9TypedTextD2Ev
-                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .text._ZN8touchgfx4ViewI17MainMenuPresenterED2Ev
-                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .text._ZN8touchgfx4ViewI17MenuMorpionPresenterED2Ev
+                0x00000000        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx9TypedTextD0Ev
-                0x00000000        0xe TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .text._ZN8touchgfx4ViewI17MainMenuPresenterED0Ev
-                0x00000000        0xe TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000        0xe TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .text._ZN8touchgfx4ViewI17MenuMorpionPresenterED0Ev
+                0x00000000        0xe TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx8DrawableC2Ev
-                0x00000000       0x30 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000       0x30 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx8Drawable5setXYEss
-                0x00000000       0x1a TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000       0x1a TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .text._ZN8touchgfx8TextAreaC2Ev
-                0x00000000       0x4c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000       0x4c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .rodata._ZTVN8touchgfx9TypedTextE
-                0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000      0xb4a TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000      0x168 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000      0x3f4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000      0x17b TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x28 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x41 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x12 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x22 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x18 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x94 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x35 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x34 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x57 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0xef TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x6a TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000      0x1df TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x91 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000      0x353 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x1f TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x43 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x20 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x52 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x40 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x40 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0xd7 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x3d TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000      0x183 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
- .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000      0xb4a TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000      0x168 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000      0x3f4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000      0x17b TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x28 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x41 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x12 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x22 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x18 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x94 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x35 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x34 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x57 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0xef TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x6a TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000      0x1df TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x91 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000      0x353 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x1f TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x43 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x20 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x52 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x40 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x40 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0xd7 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x3d TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000      0x183 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+ .debug_macro   0x00000000       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
  .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
  .group         0x00000000        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
@@ -15123,8 +15123,8 @@ LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Cercle.o
 LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Croix.o
 LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Grille.o
 LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
-LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
-LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
+LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
 LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/model/Model.o
 LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/common/FrontendApplication.o
 LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/morpion_screen/MorpionViewBase.o
@@ -15134,7 +15134,7 @@ LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/contain
 LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/GrilleBase.o
 LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/nowinBase.o
 LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
-LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
 LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
 LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/Font_verdana_40_4bpp_0.o
 LOAD TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/Font_verdana_20_4bpp_0.o
@@ -15471,42 +15471,42 @@ LOAD d:/touchgfx/4.22.1/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-e
  .text._ZN5win_a10initializeEv
                 0x08000960        0x4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
                 0x08000960                win_a::initialize()
- .text._ZN12MainMenuView14tearDownScreenEv
-                0x08000964        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
-                0x08000964                MainMenuView::tearDownScreen()
+ .text._ZN12MenuMorpionView14tearDownScreenEv
+                0x08000964        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+                0x08000964                MenuMorpionView::tearDownScreen()
  *fill*         0x08000966        0x2 
- .text._ZN12MainMenuViewD2Ev
-                0x08000968       0x14 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
-                0x08000968                MainMenuView::~MainMenuView()
-                0x08000968                MainMenuView::~MainMenuView()
- .text._ZN12MainMenuViewD0Ev
-                0x0800097c       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
-                0x0800097c                MainMenuView::~MainMenuView()
+ .text._ZN12MenuMorpionViewD2Ev
+                0x08000968       0x14 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+                0x08000968                MenuMorpionView::~MenuMorpionView()
+                0x08000968                MenuMorpionView::~MenuMorpionView()
+ .text._ZN12MenuMorpionViewD0Ev
+                0x0800097c       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+                0x0800097c                MenuMorpionView::~MenuMorpionView()
  *fill*         0x08000992        0x2 
- .text._ZN12MainMenuViewC2Ev
-                0x08000994       0x14 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
-                0x08000994                MainMenuView::MainMenuView()
-                0x08000994                MainMenuView::MainMenuView()
- .text._ZN12MainMenuView11setupScreenEv
-                0x080009a8        0x4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
-                0x080009a8                MainMenuView::setupScreen()
- .text._ZN17MainMenuPresenterD2Ev
-                0x080009ac        0x6 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
-                0x080009ac                MainMenuPresenter::~MainMenuPresenter()
-                0x080009ac                MainMenuPresenter::~MainMenuPresenter()
-                0x080009ae                non-virtual thunk to MainMenuPresenter::~MainMenuPresenter()
- .text._ZN17MainMenuPresenter8activateEv
-                0x080009b2        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
-                0x080009b2                MainMenuPresenter::deactivate()
-                0x080009b2                MainMenuPresenter::activate()
- .text._ZN17MainMenuPresenterD0Ev
-                0x080009b4       0x14 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
-                0x080009b4                MainMenuPresenter::~MainMenuPresenter()
-                0x080009c2                non-virtual thunk to MainMenuPresenter::~MainMenuPresenter()
- .text._ZN17MainMenuPresenterC2ER12MainMenuView
-                0x080009c8       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
-                0x080009c8                MainMenuPresenter::MainMenuPresenter(MainMenuView&)
-                0x080009c8                MainMenuPresenter::MainMenuPresenter(MainMenuView&)
+ .text._ZN12MenuMorpionViewC2Ev
+                0x08000994       0x14 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+                0x08000994                MenuMorpionView::MenuMorpionView()
+                0x08000994                MenuMorpionView::MenuMorpionView()
+ .text._ZN12MenuMorpionView11setupScreenEv
+                0x080009a8        0x4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+                0x080009a8                MenuMorpionView::setupScreen()
+ .text._ZN17MenuMorpionPresenterD2Ev
+                0x080009ac        0x6 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+                0x080009ac                MenuMorpionPresenter::~MenuMorpionPresenter()
+                0x080009ac                MenuMorpionPresenter::~MenuMorpionPresenter()
+                0x080009ae                non-virtual thunk to MenuMorpionPresenter::~MenuMorpionPresenter()
+ .text._ZN17MenuMorpionPresenter8activateEv
+                0x080009b2        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+                0x080009b2                MenuMorpionPresenter::deactivate()
+                0x080009b2                MenuMorpionPresenter::activate()
+ .text._ZN17MenuMorpionPresenterD0Ev
+                0x080009b4       0x14 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+                0x080009b4                MenuMorpionPresenter::~MenuMorpionPresenter()
+                0x080009c2                non-virtual thunk to MenuMorpionPresenter::~MenuMorpionPresenter()
+ .text._ZN17MenuMorpionPresenterC2ER12MenuMorpionView
+                0x080009c8       0x1c TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+                0x080009c8                MenuMorpionPresenter::MenuMorpionPresenter(MenuMorpionView&)
+                0x080009c8                MenuMorpionPresenter::MenuMorpionPresenter(MenuMorpionView&)
  .text._ZN5ModelC2Ev
                 0x080009e4        0x6 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/model/Model.o
                 0x080009e4                Model::Model()
@@ -15783,40 +15783,40 @@ LOAD d:/touchgfx/4.22.1/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-e
                 0x08001e00      0x174 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
                 0x08001e00                win_aBase::win_aBase()
                 0x08001e00                win_aBase::win_aBase()
- .text._ZN16MainMenuViewBaseD2Ev
-                0x08001f74        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
-                0x08001f74                MainMenuViewBase::~MainMenuViewBase()
-                0x08001f74                MainMenuViewBase::~MainMenuViewBase()
- .text._ZN16MainMenuViewBase11setupScreenEv
-                0x08001f76        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
-                0x08001f76                MainMenuViewBase::setupScreen()
- .text._ZN8touchgfx8CallbackI16MainMenuViewBaseRKNS_14AbstractButtonEvvED2Ev
-                0x08001f78        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
-                0x08001f78                touchgfx::Callback<MainMenuViewBase, touchgfx::AbstractButton const&, void, void>::~Callback()
-                0x08001f78                touchgfx::Callback<MainMenuViewBase, touchgfx::AbstractButton const&, void, void>::~Callback()
- .text._ZN8touchgfx8CallbackI16MainMenuViewBaseRKNS_14AbstractButtonEvvE7executeES4_
-                0x08001f7a       0x1e TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
-                0x08001f7a                touchgfx::Callback<MainMenuViewBase, touchgfx::AbstractButton const&, void, void>::execute(touchgfx::AbstractButton const&)
- .text._ZNK8touchgfx8CallbackI16MainMenuViewBaseRKNS_14AbstractButtonEvvE7isValidEv
-                0x08001f98       0x18 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
-                0x08001f98                touchgfx::Callback<MainMenuViewBase, touchgfx::AbstractButton const&, void, void>::isValid() const
- .text._ZN8touchgfx8CallbackI16MainMenuViewBaseRKNS_14AbstractButtonEvvED0Ev
-                0x08001fb0        0xe TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
-                0x08001fb0                touchgfx::Callback<MainMenuViewBase, touchgfx::AbstractButton const&, void, void>::~Callback()
- .text._ZN16MainMenuViewBaseD0Ev
-                0x08001fbe       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
-                0x08001fbe                MainMenuViewBase::~MainMenuViewBase()
+ .text._ZN16MenuMorpionViewBaseD2Ev
+                0x08001f74        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+                0x08001f74                MenuMorpionViewBase::~MenuMorpionViewBase()
+                0x08001f74                MenuMorpionViewBase::~MenuMorpionViewBase()
+ .text._ZN16MenuMorpionViewBase11setupScreenEv
+                0x08001f76        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+                0x08001f76                MenuMorpionViewBase::setupScreen()
+ .text._ZN8touchgfx8CallbackI16MenuMorpionViewBaseRKNS_14AbstractButtonEvvED2Ev
+                0x08001f78        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+                0x08001f78                touchgfx::Callback<MenuMorpionViewBase, touchgfx::AbstractButton const&, void, void>::~Callback()
+                0x08001f78                touchgfx::Callback<MenuMorpionViewBase, touchgfx::AbstractButton const&, void, void>::~Callback()
+ .text._ZN8touchgfx8CallbackI16MenuMorpionViewBaseRKNS_14AbstractButtonEvvE7executeES4_
+                0x08001f7a       0x1e TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+                0x08001f7a                touchgfx::Callback<MenuMorpionViewBase, touchgfx::AbstractButton const&, void, void>::execute(touchgfx::AbstractButton const&)
+ .text._ZNK8touchgfx8CallbackI16MenuMorpionViewBaseRKNS_14AbstractButtonEvvE7isValidEv
+                0x08001f98       0x18 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+                0x08001f98                touchgfx::Callback<MenuMorpionViewBase, touchgfx::AbstractButton const&, void, void>::isValid() const
+ .text._ZN8touchgfx8CallbackI16MenuMorpionViewBaseRKNS_14AbstractButtonEvvED0Ev
+                0x08001fb0        0xe TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+                0x08001fb0                touchgfx::Callback<MenuMorpionViewBase, touchgfx::AbstractButton const&, void, void>::~Callback()
+ .text._ZN16MenuMorpionViewBaseD0Ev
+                0x08001fbe       0x10 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+                0x08001fbe                MenuMorpionViewBase::~MenuMorpionViewBase()
  *fill*         0x08001fce        0x2 
- .text._ZN16MainMenuViewBase21buttonCallbackHandlerERKN8touchgfx14AbstractButtonE
-                0x08001fd0       0x50 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
-                0x08001fd0                MainMenuViewBase::buttonCallbackHandler(touchgfx::AbstractButton const&)
+ .text._ZN16MenuMorpionViewBase21buttonCallbackHandlerERKN8touchgfx14AbstractButtonE
+                0x08001fd0       0x50 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+                0x08001fd0                MenuMorpionViewBase::buttonCallbackHandler(touchgfx::AbstractButton const&)
  .text._ZN8touchgfx15ButtonWithLabel18updateTextPositionEv
-                0x08002020       0x88 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x08002020       0x88 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
                 0x08002020                touchgfx::ButtonWithLabel::updateTextPosition()
- .text._ZN16MainMenuViewBaseC2Ev
-                0x080020a8      0x234 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
-                0x080020a8                MainMenuViewBase::MainMenuViewBase()
-                0x080020a8                MainMenuViewBase::MainMenuViewBase()
+ .text._ZN16MenuMorpionViewBaseC2Ev
+                0x080020a8      0x234 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+                0x080020a8                MenuMorpionViewBase::MenuMorpionViewBase()
+                0x080020a8                MenuMorpionViewBase::MenuMorpionViewBase()
  .text._ZN8touchgfx11Application19changeToStartScreenEv
                 0x080022dc        0x2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
                 0x080022dc                touchgfx::Application::changeToStartScreen()
@@ -15905,30 +15905,30 @@ LOAD d:/touchgfx/4.22.1/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-e
  .text._ZN23FrontendApplicationBase39gotoMorpionScreenSlideTransitionSouthEv
                 0x080025a8       0x20 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
                 0x080025a8                FrontendApplicationBase::gotoMorpionScreenSlideTransitionSouth()
- .text._ZN23FrontendApplicationBase30gotoMainMenuScreenNoTransitionEv
+ .text._ZN23FrontendApplicationBase30gotoMenuMorpionScreenNoTransitionEv
                 0x080025c8       0x20 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
-                0x080025c8                FrontendApplicationBase::gotoMainMenuScreenNoTransition()
- .text._ZN23FrontendApplicationBase38gotoMainMenuScreenSlideTransitionNorthEv
+                0x080025c8                FrontendApplicationBase::gotoMenuMorpionScreenNoTransition()
+ .text._ZN23FrontendApplicationBase38gotoMenuMorpionScreenSlideTransitionNorthEv
                 0x080025e8       0x20 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
-                0x080025e8                FrontendApplicationBase::gotoMainMenuScreenSlideTransitionNorth()
+                0x080025e8                FrontendApplicationBase::gotoMenuMorpionScreenSlideTransitionNorth()
  .text._ZN8touchgfx14makeTransitionI13MorpionView18MorpionPresenterNS_15SlideTransitionILNS_9DirectionE1EEE5ModelEEPT0_PPNS_6ScreenEPPNS_9PresenterERNS_7MVPHeapEPPNS_10TransitionEPT2_
                 0x08002608      0x198 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
                 0x08002608                MorpionPresenter* touchgfx::makeTransition<MorpionView, MorpionPresenter, touchgfx::SlideTransition<(touchgfx::Direction)1>, Model>(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, Model*)
  .text._ZN23FrontendApplicationBase43gotoMorpionScreenSlideTransitionSouthImplEv
                 0x080027a0       0x28 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
                 0x080027a0                FrontendApplicationBase::gotoMorpionScreenSlideTransitionSouthImpl()
- .text._ZN8touchgfx14makeTransitionI12MainMenuView17MainMenuPresenterNS_12NoTransitionE5ModelEEPT0_PPNS_6ScreenEPPNS_9PresenterERNS_7MVPHeapEPPNS_10TransitionEPT2_
+ .text._ZN8touchgfx14makeTransitionI12MenuMorpionView17MenuMorpionPresenterNS_12NoTransitionE5ModelEEPT0_PPNS_6ScreenEPPNS_9PresenterERNS_7MVPHeapEPPNS_10TransitionEPT2_
                 0x080027c8      0x140 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
-                0x080027c8                MainMenuPresenter* touchgfx::makeTransition<MainMenuView, MainMenuPresenter, touchgfx::NoTransition, Model>(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, Model*)
- .text._ZN23FrontendApplicationBase34gotoMainMenuScreenNoTransitionImplEv
+                0x080027c8                MenuMorpionPresenter* touchgfx::makeTransition<MenuMorpionView, MenuMorpionPresenter, touchgfx::NoTransition, Model>(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, Model*)
+ .text._ZN23FrontendApplicationBase34gotoMenuMorpionScreenNoTransitionImplEv
                 0x08002908       0x28 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
-                0x08002908                FrontendApplicationBase::gotoMainMenuScreenNoTransitionImpl()
- .text._ZN8touchgfx14makeTransitionI12MainMenuView17MainMenuPresenterNS_15SlideTransitionILNS_9DirectionE0EEE5ModelEEPT0_PPNS_6ScreenEPPNS_9PresenterERNS_7MVPHeapEPPNS_10TransitionEPT2_
+                0x08002908                FrontendApplicationBase::gotoMenuMorpionScreenNoTransitionImpl()
+ .text._ZN8touchgfx14makeTransitionI12MenuMorpionView17MenuMorpionPresenterNS_15SlideTransitionILNS_9DirectionE0EEE5ModelEEPT0_PPNS_6ScreenEPPNS_9PresenterERNS_7MVPHeapEPPNS_10TransitionEPT2_
                 0x08002930      0x194 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
-                0x08002930                MainMenuPresenter* touchgfx::makeTransition<MainMenuView, MainMenuPresenter, touchgfx::SlideTransition<(touchgfx::Direction)0>, Model>(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, Model*)
- .text._ZN23FrontendApplicationBase42gotoMainMenuScreenSlideTransitionNorthImplEv
+                0x08002930                MenuMorpionPresenter* touchgfx::makeTransition<MenuMorpionView, MenuMorpionPresenter, touchgfx::SlideTransition<(touchgfx::Direction)0>, Model>(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, Model*)
+ .text._ZN23FrontendApplicationBase42gotoMenuMorpionScreenSlideTransitionNorthImplEv
                 0x08002ac4       0x28 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
-                0x08002ac4                FrontendApplicationBase::gotoMainMenuScreenSlideTransitionNorthImpl()
+                0x08002ac4                FrontendApplicationBase::gotoMenuMorpionScreenSlideTransitionNorthImpl()
  .text._ZNK8touchgfx4Font8getGlyphEt
                 0x08002aec       0x1e TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/GeneratedFont.o
                 0x08002aec                touchgfx::Font::getGlyph(unsigned short) const
@@ -16232,18 +16232,18 @@ LOAD d:/touchgfx/4.22.1/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-e
  .text._ZNK8touchgfx9PartitionINS_4meta8TypeListI13MorpionViewNS2_INS1_3NilES4_EEEELt1EE7elementEt
                 0x08003724        0xc TouchGFX/build/STM32H743I-EVAL/TouchGFX/target/generated/TouchGFXConfiguration.o
                 0x08003724                touchgfx::Partition<touchgfx::meta::TypeList<MorpionView, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::element(unsigned short) const
- .text._ZNK8touchgfx9PartitionINS_4meta8TypeListI17MainMenuPresenterNS2_INS1_3NilES4_EEEELt1EE8capacityEv
+ .text._ZNK8touchgfx9PartitionINS_4meta8TypeListI17MenuMorpionPresenterNS2_INS1_3NilES4_EEEELt1EE8capacityEv
                 0x08003730        0x4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/target/generated/TouchGFXConfiguration.o
-                0x08003730                touchgfx::Partition<touchgfx::meta::TypeList<MainMenuPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::capacity() const
- .text._ZN8touchgfx9PartitionINS_4meta8TypeListI17MainMenuPresenterNS2_INS1_3NilES4_EEEELt1EE12element_sizeEv
+                0x08003730                touchgfx::Partition<touchgfx::meta::TypeList<MenuMorpionPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::capacity() const
+ .text._ZN8touchgfx9PartitionINS_4meta8TypeListI17MenuMorpionPresenterNS2_INS1_3NilES4_EEEELt1EE12element_sizeEv
                 0x08003734        0x4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/target/generated/TouchGFXConfiguration.o
-                0x08003734                touchgfx::Partition<touchgfx::meta::TypeList<MainMenuPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::element_size()
- .text._ZN8touchgfx9PartitionINS_4meta8TypeListI17MainMenuPresenterNS2_INS1_3NilES4_EEEELt1EE7elementEt
+                0x08003734                touchgfx::Partition<touchgfx::meta::TypeList<MenuMorpionPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::element_size()
+ .text._ZN8touchgfx9PartitionINS_4meta8TypeListI17MenuMorpionPresenterNS2_INS1_3NilES4_EEEELt1EE7elementEt
                 0x08003738        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/target/generated/TouchGFXConfiguration.o
-                0x08003738                touchgfx::Partition<touchgfx::meta::TypeList<MainMenuPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::element(unsigned short)
- .text._ZNK8touchgfx9PartitionINS_4meta8TypeListI17MainMenuPresenterNS2_INS1_3NilES4_EEEELt1EE7elementEt
+                0x08003738                touchgfx::Partition<touchgfx::meta::TypeList<MenuMorpionPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::element(unsigned short)
+ .text._ZNK8touchgfx9PartitionINS_4meta8TypeListI17MenuMorpionPresenterNS2_INS1_3NilES4_EEEELt1EE7elementEt
                 0x08003740        0x8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/target/generated/TouchGFXConfiguration.o
-                0x08003740                touchgfx::Partition<touchgfx::meta::TypeList<MainMenuPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::element(unsigned short) const
+                0x08003740                touchgfx::Partition<touchgfx::meta::TypeList<MenuMorpionPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::element(unsigned short) const
  .text._ZN16FrontendHeapBase15gotoStartScreenER19FrontendApplication
                 0x08003748        0x6 TouchGFX/build/STM32H743I-EVAL/TouchGFX/target/generated/TouchGFXConfiguration.o
                 0x08003748                FrontendHeapBase::gotoStartScreen(FrontendApplication&)
@@ -16263,13 +16263,13 @@ LOAD d:/touchgfx/4.22.1/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-e
                 0x0800378c       0x16 TouchGFX/build/STM32H743I-EVAL/TouchGFX/target/generated/TouchGFXConfiguration.o
                 0x0800378c                touchgfx::Partition<touchgfx::meta::TypeList<MorpionView, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::~Partition()
  *fill*         0x080037a2        0x2 
- .text._ZN8touchgfx9PartitionINS_4meta8TypeListI17MainMenuPresenterNS2_INS1_3NilES4_EEEELt1EED2Ev
+ .text._ZN8touchgfx9PartitionINS_4meta8TypeListI17MenuMorpionPresenterNS2_INS1_3NilES4_EEEELt1EED2Ev
                 0x080037a4       0x14 TouchGFX/build/STM32H743I-EVAL/TouchGFX/target/generated/TouchGFXConfiguration.o
-                0x080037a4                touchgfx::Partition<touchgfx::meta::TypeList<MainMenuPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::~Partition()
-                0x080037a4                touchgfx::Partition<touchgfx::meta::TypeList<MainMenuPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::~Partition()
- .text._ZN8touchgfx9PartitionINS_4meta8TypeListI17MainMenuPresenterNS2_INS1_3NilES4_EEEELt1EED0Ev
+                0x080037a4                touchgfx::Partition<touchgfx::meta::TypeList<MenuMorpionPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::~Partition()
+                0x080037a4                touchgfx::Partition<touchgfx::meta::TypeList<MenuMorpionPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::~Partition()
+ .text._ZN8touchgfx9PartitionINS_4meta8TypeListI17MenuMorpionPresenterNS2_INS1_3NilES4_EEEELt1EED0Ev
                 0x080037b8       0x14 TouchGFX/build/STM32H743I-EVAL/TouchGFX/target/generated/TouchGFXConfiguration.o
-                0x080037b8                touchgfx::Partition<touchgfx::meta::TypeList<MainMenuPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::~Partition()
+                0x080037b8                touchgfx::Partition<touchgfx::meta::TypeList<MenuMorpionPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>::~Partition()
  .text._ZN12FrontendHeapD2Ev
                 0x080037cc       0x2c TouchGFX/build/STM32H743I-EVAL/TouchGFX/target/generated/TouchGFXConfiguration.o
                 0x080037cc                FrontendHeap::~FrontendHeap()
@@ -19170,12 +19170,12 @@ LOAD d:/touchgfx/4.22.1/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-e
  .rodata._ZTV5win_a
                 0x08023dec       0x94 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
                 0x08023dec                vtable for win_a
- .rodata._ZTV12MainMenuView
-                0x08023e80       0x34 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
-                0x08023e80                vtable for MainMenuView
- .rodata._ZTV17MainMenuPresenter
-                0x08023eb4       0x28 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
-                0x08023eb4                vtable for MainMenuPresenter
+ .rodata._ZTV12MenuMorpionView
+                0x08023e80       0x34 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+                0x08023e80                vtable for MenuMorpionView
+ .rodata._ZTV17MenuMorpionPresenter
+                0x08023eb4       0x28 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
+                0x08023eb4                vtable for MenuMorpionPresenter
  .rodata._ZTV19FrontendApplication
                 0x08023edc       0x54 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/common/FrontendApplication.o
                 0x08023edc                vtable for FrontendApplication
@@ -19218,17 +19218,17 @@ LOAD d:/touchgfx/4.22.1/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-e
  .rodata._ZTV9win_aBase
                 0x08024454       0x94 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
                 0x08024454                vtable for win_aBase
- .rodata._ZTVN8touchgfx8CallbackI16MainMenuViewBaseRKNS_14AbstractButtonEvvEE
-                0x080244e8       0x18 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
-                0x080244e8                vtable for touchgfx::Callback<MainMenuViewBase, touchgfx::AbstractButton const&, void, void>
+ .rodata._ZTVN8touchgfx8CallbackI16MenuMorpionViewBaseRKNS_14AbstractButtonEvvEE
+                0x080244e8       0x18 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+                0x080244e8                vtable for touchgfx::Callback<MenuMorpionViewBase, touchgfx::AbstractButton const&, void, void>
  .rodata._ZN8touchgfx15ButtonWithLabel18updateTextPositionEv.str1.1
-                0x08024500       0x83 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x08024500       0x83 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  *fill*         0x08024583        0x1 
- .rodata._ZTV16MainMenuViewBase
-                0x08024584       0x34 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
-                0x08024584                vtable for MainMenuViewBase
+ .rodata._ZTV16MenuMorpionViewBase
+                0x08024584       0x34 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
+                0x08024584                vtable for MenuMorpionViewBase
  .rodata._ZZNK8touchgfx9TypedText7getFontEvE19__PRETTY_FUNCTION__
-                0x080245b8       0x3b TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x080245b8       0x3b TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  *fill*         0x080245f3        0x1 
  .rodata._ZTVN8touchgfx8CallbackI23FrontendApplicationBasevvvEE
                 0x080245f4       0x18 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
@@ -19247,9 +19247,9 @@ LOAD d:/touchgfx/4.22.1/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-e
                 0x080246a8                vtable for touchgfx::SlideTransition<(touchgfx::Direction)1>
  .rodata._ZN8touchgfx14makeTransitionI13MorpionView18MorpionPresenterNS_15SlideTransitionILNS_9DirectionE1EEE5ModelEEPT0_PPNS_6ScreenEPPNS_9PresenterERNS_7MVPHeapEPPNS_10TransitionEPT2_.str1.1
                 0x080246cc      0x215 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
- .rodata._ZZN8touchgfx14makeTransitionI12MainMenuView17MainMenuPresenterNS_12NoTransitionE5ModelEEPT0_PPNS_6ScreenEPPNS_9PresenterERNS_7MVPHeapEPPNS_10TransitionEPT2_E19__PRETTY_FUNCTION__
+ .rodata._ZZN8touchgfx14makeTransitionI12MenuMorpionView17MenuMorpionPresenterNS_12NoTransitionE5ModelEEPT0_PPNS_6ScreenEPPNS_9PresenterERNS_7MVPHeapEPPNS_10TransitionEPT2_E19__PRETTY_FUNCTION__
                 0x080248e1      0x106 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
- .rodata._ZZN8touchgfx14makeTransitionI12MainMenuView17MainMenuPresenterNS_15SlideTransitionILNS_9DirectionE0EEE5ModelEEPT0_PPNS_6ScreenEPPNS_9PresenterERNS_7MVPHeapEPPNS_10TransitionEPT2_E19__PRETTY_FUNCTION__
+ .rodata._ZZN8touchgfx14makeTransitionI12MenuMorpionView17MenuMorpionPresenterNS_15SlideTransitionILNS_9DirectionE0EEE5ModelEEPT0_PPNS_6ScreenEPPNS_9PresenterERNS_7MVPHeapEPPNS_10TransitionEPT2_E19__PRETTY_FUNCTION__
                 0x080249e7      0x121 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
  .rodata._ZZN8touchgfx14makeTransitionI13MorpionView18MorpionPresenterNS_15SlideTransitionILNS_9DirectionE1EEE5ModelEEPT0_PPNS_6ScreenEPPNS_9PresenterERNS_7MVPHeapEPPNS_10TransitionEPT2_E19__PRETTY_FUNCTION__
                 0x08024b08      0x123 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
@@ -19295,9 +19295,9 @@ LOAD d:/touchgfx/4.22.1/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-e
  .rodata._ZZN8touchgfx10OSWrappers10initializeEvE19__PRETTY_FUNCTION__
                 0x0802527b       0x2f TouchGFX/build/STM32H743I-EVAL/TouchGFX/target/generated/OSWrappers.o
  *fill*         0x080252aa        0x2 
- .rodata._ZTVN8touchgfx9PartitionINS_4meta8TypeListI17MainMenuPresenterNS2_INS1_3NilES4_EEEELt1EEE
+ .rodata._ZTVN8touchgfx9PartitionINS_4meta8TypeListI17MenuMorpionPresenterNS2_INS1_3NilES4_EEEELt1EEE
                 0x080252ac       0x34 TouchGFX/build/STM32H743I-EVAL/TouchGFX/target/generated/TouchGFXConfiguration.o
-                0x080252ac                vtable for touchgfx::Partition<touchgfx::meta::TypeList<MainMenuPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>
+                0x080252ac                vtable for touchgfx::Partition<touchgfx::meta::TypeList<MenuMorpionPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>
  .rodata._ZTVN8touchgfx9PartitionINS_4meta8TypeListI13MorpionViewNS2_INS1_3NilES4_EEEELt1EEE
                 0x080252e0       0x34 TouchGFX/build/STM32H743I-EVAL/TouchGFX/target/generated/TouchGFXConfiguration.o
                 0x080252e0                vtable for touchgfx::Partition<touchgfx::meta::TypeList<MorpionView, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, (unsigned short)1>
@@ -20143,9 +20143,9 @@ FontSearchFlashSection
  .ARM.attributes
                 0x000001d5       0x37 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
  .ARM.attributes
-                0x0000020c       0x37 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
+                0x0000020c       0x37 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
  .ARM.attributes
-                0x00000243       0x37 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
+                0x00000243       0x37 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
  .ARM.attributes
                 0x0000027a       0x37 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/model/Model.o
  .ARM.attributes
@@ -20165,7 +20165,7 @@ FontSearchFlashSection
  .ARM.attributes
                 0x00000432       0x37 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
  .ARM.attributes
-                0x00000469       0x37 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000469       0x37 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .ARM.attributes
                 0x000004a0       0x37 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
  .ARM.attributes
@@ -20566,8 +20566,8 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_info    0x00007500     0x1b23 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Croix.o
  .debug_info    0x00009023     0x12f6 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Grille.o
  .debug_info    0x0000a319     0x131a TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
- .debug_info    0x0000b633     0x1127 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_info    0x0000c75a      0xb0d TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
+ .debug_info    0x0000b633     0x1127 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_info    0x0000c75a      0xb0d TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
  .debug_info    0x0000d267      0x1bc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/model/Model.o
  .debug_info    0x0000d423     0x1d60 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/common/FrontendApplication.o
  .debug_info    0x0000f183     0x932a TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/morpion_screen/MorpionViewBase.o
@@ -20577,7 +20577,7 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_info    0x00027169     0x3314 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/GrilleBase.o
  .debug_info    0x0002a47d     0x3b9b TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/nowinBase.o
  .debug_info    0x0002e018     0x4678 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
- .debug_info    0x00032690     0x5b5c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+ .debug_info    0x00032690     0x5b5c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .debug_info    0x000381ec     0x7028 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
  .debug_info    0x0003f214      0x1de TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/Font_verdana_40_4bpp_0.o
  .debug_info    0x0003f3f2      0x1de TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/Font_verdana_20_4bpp_0.o
@@ -20660,8 +20660,8 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_abbrev  0x00001985      0x57f TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Croix.o
  .debug_abbrev  0x00001f04      0x471 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Grille.o
  .debug_abbrev  0x00002375      0x471 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
- .debug_abbrev  0x000027e6      0x4ca TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_abbrev  0x00002cb0      0x3e6 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
+ .debug_abbrev  0x000027e6      0x4ca TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_abbrev  0x00002cb0      0x3e6 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
  .debug_abbrev  0x00003096      0x166 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/model/Model.o
  .debug_abbrev  0x000031fc      0x685 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/common/FrontendApplication.o
  .debug_abbrev  0x00003881      0xc0f TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/morpion_screen/MorpionViewBase.o
@@ -20671,7 +20671,7 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_abbrev  0x000064c2      0x81c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/GrilleBase.o
  .debug_abbrev  0x00006cde      0x938 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/nowinBase.o
  .debug_abbrev  0x00007616      0x9c4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
- .debug_abbrev  0x00007fda      0xac8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+ .debug_abbrev  0x00007fda      0xac8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .debug_abbrev  0x00008aa2      0xb8a TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
  .debug_abbrev  0x0000962c       0xa6 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/Font_verdana_40_4bpp_0.o
  .debug_abbrev  0x000096d2       0xa6 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/Font_verdana_20_4bpp_0.o
@@ -20754,8 +20754,8 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_loc     0x00001628      0x141 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Croix.o
  .debug_loc     0x00001769      0x141 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Grille.o
  .debug_loc     0x000018aa      0x141 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
- .debug_loc     0x000019eb       0x91 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_loc     0x00001a7c       0x33 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
+ .debug_loc     0x000019eb       0x91 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_loc     0x00001a7c       0x33 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
  .debug_loc     0x00001aaf      0x14f TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/common/FrontendApplication.o
  .debug_loc     0x00001bfe     0x2245 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/morpion_screen/MorpionViewBase.o
  .debug_loc     0x00003e43      0x5f2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/CroixBase.o
@@ -20764,7 +20764,7 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_loc     0x00004cf3      0x4f4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/GrilleBase.o
  .debug_loc     0x000051e7      0x39c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/nowinBase.o
  .debug_loc     0x00005583      0x48a TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
- .debug_loc     0x00005a0d      0xa93 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+ .debug_loc     0x00005a0d      0xa93 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .debug_loc     0x000064a0      0xdba TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
  .debug_loc     0x0000725a      0x58f TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/GeneratedFont.o
  .debug_loc     0x000077e9       0x1e TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/Table_verdana_10_4bpp.o
@@ -20840,9 +20840,9 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_aranges
                 0x00000408       0x98 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
  .debug_aranges
-                0x000004a0       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
+                0x000004a0       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
  .debug_aranges
-                0x000004f8       0x40 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
+                0x000004f8       0x40 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
  .debug_aranges
                 0x00000538       0x28 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/model/Model.o
  .debug_aranges
@@ -20862,7 +20862,7 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_aranges
                 0x00000ba0       0xd0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
  .debug_aranges
-                0x00000c70      0x138 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+                0x00000c70      0x138 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .debug_aranges
                 0x00000da8      0x168 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
  .debug_aranges
@@ -21017,8 +21017,8 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_ranges  0x00000398       0x88 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Croix.o
  .debug_ranges  0x00000420       0x88 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Grille.o
  .debug_ranges  0x000004a8       0x88 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
- .debug_ranges  0x00000530       0x48 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_ranges  0x00000578       0x48 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
+ .debug_ranges  0x00000530       0x48 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_ranges  0x00000578       0x48 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
  .debug_ranges  0x000005c0       0x18 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/model/Model.o
  .debug_ranges  0x000005d8       0x48 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/common/FrontendApplication.o
  .debug_ranges  0x00000620      0x608 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/morpion_screen/MorpionViewBase.o
@@ -21028,7 +21028,7 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_ranges  0x000013d0      0x188 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/GrilleBase.o
  .debug_ranges  0x00001558      0x290 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/nowinBase.o
  .debug_ranges  0x000017e8      0x280 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
- .debug_ranges  0x00001a68      0x450 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+ .debug_ranges  0x00001a68      0x450 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .debug_ranges  0x00001eb8      0x310 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
  .debug_ranges  0x000021c8       0xb0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/GeneratedFont.o
  .debug_ranges  0x00002278       0x20 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/Table_verdana_10_4bpp.o
@@ -21145,8 +21145,8 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_macro   0x00003d04      0x4b3 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Croix.o
  .debug_macro   0x000041b7      0x3f8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Grille.o
  .debug_macro   0x000045af      0x416 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
- .debug_macro   0x000049c5      0x6ba TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_macro   0x0000507f      0x452 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
+ .debug_macro   0x000049c5      0x6ba TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_macro   0x0000507f      0x452 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
  .debug_macro   0x000054d1       0x25 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/model/Model.o
  .debug_macro   0x000054f6      0x3d0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/common/FrontendApplication.o
  .debug_macro   0x000058c6      0x699 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/morpion_screen/MorpionViewBase.o
@@ -21156,7 +21156,7 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_macro   0x00006cf9      0x3f8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/GrilleBase.o
  .debug_macro   0x000070f1      0x416 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/nowinBase.o
  .debug_macro   0x00007507      0x42a TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
- .debug_macro   0x00007931      0x466 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+ .debug_macro   0x00007931      0x466 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .debug_macro   0x00007d97      0x712 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
  .debug_macro   0x000084a9       0xb3 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/Font_verdana_40_4bpp_0.o
  .debug_macro   0x0000855c       0xb3 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/Font_verdana_20_4bpp_0.o
@@ -21355,8 +21355,8 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_line    0x00005189      0xf05 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Croix.o
  .debug_line    0x0000608e      0xcd1 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Grille.o
  .debug_line    0x00006d5f      0xcf2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
- .debug_line    0x00007a51     0x13dc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_line    0x00008e2d      0xcc3 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
+ .debug_line    0x00007a51     0x13dc TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_line    0x00008e2d      0xcc3 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
  .debug_line    0x00009af0       0xa1 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/model/Model.o
  .debug_line    0x00009b91      0xbb1 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/common/FrontendApplication.o
  .debug_line    0x0000a742     0x1df9 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/morpion_screen/MorpionViewBase.o
@@ -21366,7 +21366,7 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_line    0x0000f562      0xe39 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/GrilleBase.o
  .debug_line    0x0001039b      0xeb3 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/nowinBase.o
  .debug_line    0x0001124e      0xf4c TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
- .debug_line    0x0001219a     0x1254 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+ .debug_line    0x0001219a     0x1254 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .debug_line    0x000133ee     0x1be2 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
  .debug_line    0x00014fd0      0x288 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/Font_verdana_40_4bpp_0.o
  .debug_line    0x00015258      0x288 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/Font_verdana_20_4bpp_0.o
@@ -21457,9 +21457,9 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
                                0xa548 (size before relaxing)
  .debug_str     0x0000c530       0xb8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
                                0xa591 (size before relaxing)
- .debug_str     0x0000c5e8      0x1c0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
+ .debug_str     0x0000c5e8      0x1c0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
                                0xb3ab (size before relaxing)
- .debug_str     0x0000c7a8      0x16d TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
+ .debug_str     0x0000c7a8      0x16d TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
                                0x9f1d (size before relaxing)
  .debug_str     0x0000c915       0x2f TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/model/Model.o
                                0x322e (size before relaxing)
@@ -21479,7 +21479,7 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
                                0xcd98 (size before relaxing)
  .debug_str     0x00013b29       0xd5 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
                                0xdde9 (size before relaxing)
- .debug_str     0x00013bfe      0xcd7 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+ .debug_str     0x00013bfe      0xcd7 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
                                0xed30 (size before relaxing)
  .debug_str     0x000148d5     0x3170 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
                               0x110ef (size before relaxing)
@@ -21636,8 +21636,8 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Croix.o
  .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Grille.o
  .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
- .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
+ .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
  .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/model/Model.o
  .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/common/FrontendApplication.o
  .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/morpion_screen/MorpionViewBase.o
@@ -21647,7 +21647,7 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/GrilleBase.o
  .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/nowinBase.o
  .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
- .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+ .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
  .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/Font_verdana_40_4bpp_0.o
  .comment       0x0000007f       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/Font_verdana_20_4bpp_0.o
@@ -21767,8 +21767,8 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_frame   0x00000608      0x134 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Croix.o
  .debug_frame   0x0000073c      0x134 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/Grille.o
  .debug_frame   0x00000870      0x134 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/containers/win_a.o
- .debug_frame   0x000009a4       0xa8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o
- .debug_frame   0x00000a4c       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.o
+ .debug_frame   0x000009a4       0xa8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o
+ .debug_frame   0x00000a4c       0x80 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.o
  .debug_frame   0x00000acc       0x30 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/model/Model.o
  .debug_frame   0x00000afc       0xb4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/common/FrontendApplication.o
  .debug_frame   0x00000bb0      0x568 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/morpion_screen/MorpionViewBase.o
@@ -21778,7 +21778,7 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_frame   0x00001610      0x188 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/GrilleBase.o
  .debug_frame   0x00001798      0x1a4 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/nowinBase.o
  .debug_frame   0x0000193c      0x1cc TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/containers/win_aBase.o
- .debug_frame   0x00001b08      0x2e0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.o
+ .debug_frame   0x00001b08      0x2e0 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.o
  .debug_frame   0x00001de8      0x3d8 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
  .debug_frame   0x000021c0      0x170 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/GeneratedFont.o
  .debug_frame   0x00002330       0x58 TouchGFX/build/STM32H743I-EVAL/TouchGFX/generated/fonts/src/Table_verdana_10_4bpp.o

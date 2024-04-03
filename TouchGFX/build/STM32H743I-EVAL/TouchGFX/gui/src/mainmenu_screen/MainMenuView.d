@@ -1,7 +1,7 @@
-TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o: \
- TouchGFX/gui/src/mainmenu_screen/MainMenuView.cpp \
- TouchGFX/gui/include/gui/mainmenu_screen/MainMenuView.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/mainmenu_screen/MainMenuViewBase.hpp \
+TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.o: \
+ TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.cpp \
+ TouchGFX/gui/include/gui/menumorpion_screen/MenuMorpionView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/menumorpion_screen/MenuMorpionViewBase.hpp \
  TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
@@ -40,7 +40,7 @@ TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o: 
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  TouchGFX/gui/include/gui/model/Model.hpp \
  Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- TouchGFX/gui/include/gui/mainmenu_screen/MainMenuPresenter.hpp \
+ TouchGFX/gui/include/gui/menumorpion_screen/MenuMorpionPresenter.hpp \
  TouchGFX/gui/include/gui/model/ModelListener.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
@@ -103,9 +103,9 @@ TouchGFX/build/STM32H743I-EVAL/TouchGFX/gui/src/mainmenu_screen/MainMenuView.o: 
  Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp \
  TouchGFX/gui/include/gui/morpion_screen/MorpionView.hpp
 
-TouchGFX/gui/include/gui/mainmenu_screen/MainMenuView.hpp:
+TouchGFX/gui/include/gui/menumorpion_screen/MenuMorpionView.hpp:
 
-TouchGFX/generated/gui_generated/include/gui_generated/mainmenu_screen/MainMenuViewBase.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/menumorpion_screen/MenuMorpionViewBase.hpp:
 
 TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
 
@@ -183,7 +183,7 @@ TouchGFX/gui/include/gui/model/Model.hpp:
 
 Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-TouchGFX/gui/include/gui/mainmenu_screen/MainMenuPresenter.hpp:
+TouchGFX/gui/include/gui/menumorpion_screen/MenuMorpionPresenter.hpp:
 
 TouchGFX/gui/include/gui/model/ModelListener.hpp:
 

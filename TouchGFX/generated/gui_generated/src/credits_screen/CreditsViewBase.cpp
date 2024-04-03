@@ -72,8 +72,8 @@ void CreditsViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonCo
     if (&src == &nextGame)
     {
         //rightGame
-        //When nextGame clicked change screen to MainMenu
-        //Go to MainMenu with screen transition towards East
-        application().gotoMainMenuScreenSlideTransitionEast();
+        //When nextGame clicked change screen to MenuMorpion
+        //Go to MenuMorpion with screen transition towards East
+        application().gotoMenuMorpionScreenSlideTransitionEast();
     }
 }

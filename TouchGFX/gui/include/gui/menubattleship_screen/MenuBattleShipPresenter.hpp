@@ -1,17 +1,17 @@
-#ifndef BATTLESHIPPRESENTER_HPP
-#define BATTLESHIPPRESENTER_HPP
+#ifndef MENUBATTLESHIPPRESENTER_HPP
+#define MENUBATTLESHIPPRESENTER_HPP
 
 #include <gui/model/ModelListener.hpp>
 #include <mvp/Presenter.hpp>
 
 using namespace touchgfx;
 
-class BattleShipView;
+class MenuBattleShipView;
 
-class BattleShipPresenter : public touchgfx::Presenter, public ModelListener
+class MenuBattleShipPresenter : public touchgfx::Presenter, public ModelListener
 {
 public:
-    BattleShipPresenter(BattleShipView& v);
+    MenuBattleShipPresenter(MenuBattleShipView& v);
 
     /**
      * The activate function is called automatically when this screen is "switched in"
@@ -25,12 +25,12 @@ public:
      */
     virtual void deactivate();
 
-    virtual ~BattleShipPresenter() {}
+    virtual ~MenuBattleShipPresenter() {}
 
 private:
-    BattleShipPresenter();
+    MenuBattleShipPresenter();
 
-    BattleShipView& view;
+    MenuBattleShipView& view;
 };
 
-#endif // BATTLESHIPPRESENTER_HPP
+#endif // MENUBATTLESHIPPRESENTER_HPP

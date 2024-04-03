@@ -121,9 +121,9 @@ build/MINGW32_NT-6.2/generated/simulator/src/mainBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
 <<<<<<< Updated upstream
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp \
- gui/include/gui/mainmenu_screen/MainMenuView.hpp \
- generated/gui_generated/include/gui_generated/mainmenu_screen/MainMenuViewBase.hpp \
- gui/include/gui/mainmenu_screen/MainMenuPresenter.hpp \
+ gui/include/gui/menumorpion_screen/MenuMorpionView.hpp \
+ generated/gui_generated/include/gui_generated/menumorpion_screen/MenuMorpionViewBase.hpp \
+ gui/include/gui/menumorpion_screen/MenuMorpionPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
@@ -384,11 +384,11 @@ generated/gui_generated/include/gui_generated/containers/CercleBase.hpp:
 <<<<<<< Updated upstream
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:
 
-gui/include/gui/mainmenu_screen/MainMenuView.hpp:
+gui/include/gui/menumorpion_screen/MenuMorpionView.hpp:
 
-generated/gui_generated/include/gui_generated/mainmenu_screen/MainMenuViewBase.hpp:
+generated/gui_generated/include/gui_generated/menumorpion_screen/MenuMorpionViewBase.hpp:
 
-gui/include/gui/mainmenu_screen/MainMenuPresenter.hpp:
+gui/include/gui/menumorpion_screen/MenuMorpionPresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 

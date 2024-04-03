@@ -16,10 +16,10 @@
 
 #include <gui/morpion_screen/MorpionView.hpp>
 #include <gui/morpion_screen/MorpionPresenter.hpp>
-#include <gui/mainmenu_screen/MainMenuView.hpp>
-#include <gui/mainmenu_screen/MainMenuPresenter.hpp>
-#include <gui/battleship_screen/BattleShipView.hpp>
-#include <gui/battleship_screen/BattleShipPresenter.hpp>
+#include <gui/menumorpion_screen/MenuMorpionView.hpp>
+#include <gui/menumorpion_screen/MenuMorpionPresenter.hpp>
+#include <gui/menubattleship_screen/MenuBattleShipView.hpp>
+#include <gui/menubattleship_screen/MenuBattleShipPresenter.hpp>
 #include <gui/credits_screen/CreditsView.hpp>
 #include <gui/credits_screen/CreditsPresenter.hpp>
 
@@ -45,8 +45,8 @@ public:
      * @note All view types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< MorpionView,
-            touchgfx::meta::TypeList< MainMenuView,
-            touchgfx::meta::TypeList< BattleShipView,
+            touchgfx::meta::TypeList< MenuMorpionView,
+            touchgfx::meta::TypeList< MenuBattleShipView,
             touchgfx::meta::TypeList< CreditsView,
             touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
@@ -61,8 +61,8 @@ public:
      * @note All presenter types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< MorpionPresenter,
-            touchgfx::meta::TypeList< MainMenuPresenter,
-            touchgfx::meta::TypeList< BattleShipPresenter,
+            touchgfx::meta::TypeList< MenuMorpionPresenter,
+            touchgfx::meta::TypeList< MenuBattleShipPresenter,
             touchgfx::meta::TypeList< CreditsPresenter,
             touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;
@@ -91,7 +91,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoMainMenuScreenNoTransition();
+        app.gotoMenuMorpionScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)

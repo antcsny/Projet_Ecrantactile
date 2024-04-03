@@ -32,11 +32,11 @@ Drawable.hpp:413:10:void touchgfx::Drawable::setWidthHeight(int16_t, int16_t)	16
 HAL.hpp:268:17:static touchgfx::LCD& touchgfx::HAL::lcd()	0	static
 FrontendApplicationBase.cpp:19:1:FrontendApplicationBase::FrontendApplicationBase(Model&, FrontendHeap&)	24	static
 FrontendApplicationBase.cpp:37:6:void FrontendApplicationBase::gotoMorpionScreenSlideTransitionSouth()	0	static
-FrontendApplicationBase.cpp:50:6:void FrontendApplicationBase::gotoMainMenuScreenNoTransition()	0	static
-FrontendApplicationBase.cpp:61:6:void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionNorth()	0	static
+FrontendApplicationBase.cpp:50:6:void FrontendApplicationBase::gotoMenuMorpionScreenNoTransition()	0	static
+FrontendApplicationBase.cpp:61:6:void FrontendApplicationBase::gotoMenuMorpionScreenSlideTransitionNorth()	0	static
 MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = MorpionView; PresenterType = MorpionPresenter; TransType = touchgfx::SlideTransition<(touchgfx::Direction)1>; ModelType = Model]	40	static
 FrontendApplicationBase.cpp:43:6:void FrontendApplicationBase::gotoMorpionScreenSlideTransitionSouthImpl()	16	static
-MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = MainMenuView; PresenterType = MainMenuPresenter; TransType = touchgfx::NoTransition; ModelType = Model]	32	static
-FrontendApplicationBase.cpp:56:6:void FrontendApplicationBase::gotoMainMenuScreenNoTransitionImpl()	16	static
-MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = MainMenuView; PresenterType = MainMenuPresenter; TransType = touchgfx::SlideTransition<(touchgfx::Direction)0>; ModelType = Model]	40	static
-FrontendApplicationBase.cpp:67:6:void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionNorthImpl()	16	static
+MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = MenuMorpionView; PresenterType = MenuMorpionPresenter; TransType = touchgfx::NoTransition; ModelType = Model]	32	static
+FrontendApplicationBase.cpp:56:6:void FrontendApplicationBase::gotoMenuMorpionScreenNoTransitionImpl()	16	static
+MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = MenuMorpionView; PresenterType = MenuMorpionPresenter; TransType = touchgfx::SlideTransition<(touchgfx::Direction)0>; ModelType = Model]	40	static
+FrontendApplicationBase.cpp:67:6:void FrontendApplicationBase::gotoMenuMorpionScreenSlideTransitionNorthImpl()	16	static

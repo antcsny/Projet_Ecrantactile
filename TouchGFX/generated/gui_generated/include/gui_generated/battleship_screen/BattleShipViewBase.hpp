@@ -6,18 +6,18 @@
 
 #include <gui/common/FrontendApplication.hpp>
 #include <mvp/View.hpp>
-#include <gui/battleship_screen/BattleShipPresenter.hpp>
+#include <gui/menubattleship_screen/MenuBattleShipPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/BoxWithBorder.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/containers/buttons/Buttons.hpp>
 
-class BattleShipViewBase : public touchgfx::View<BattleShipPresenter>
+class MenuBattleShipViewBase : public touchgfx::View<MenuBattleShipPresenter>
 {
 public:
-    BattleShipViewBase();
-    virtual ~BattleShipViewBase();
+    MenuBattleShipViewBase();
+    virtual ~MenuBattleShipViewBase();
     virtual void setupScreen();
 
 protected:
@@ -40,7 +40,7 @@ private:
     /*
      * Callback Declarations
      */
-    touchgfx::Callback<BattleShipViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
+    touchgfx::Callback<MenuBattleShipViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
 
     /*
      * Callback Handler Declarations

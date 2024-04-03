@@ -11,10 +11,10 @@
 #include <platform/driver/lcd/LCD16bpp.hpp>
 #include <gui/morpion_screen/MorpionView.hpp>
 #include <gui/morpion_screen/MorpionPresenter.hpp>
-#include <gui/mainmenu_screen/MainMenuView.hpp>
-#include <gui/mainmenu_screen/MainMenuPresenter.hpp>
-#include <gui/battleship_screen/BattleShipView.hpp>
-#include <gui/battleship_screen/BattleShipPresenter.hpp>
+#include <gui/menumorpion_screen/MenuMorpionView.hpp>
+#include <gui/menumorpion_screen/MenuMorpionPresenter.hpp>
+#include <gui/menubattleship_screen/MenuBattleShipView.hpp>
+#include <gui/menubattleship_screen/MenuBattleShipPresenter.hpp>
 #include <gui/credits_screen/CreditsView.hpp>
 #include <gui/credits_screen/CreditsPresenter.hpp>
 
@@ -49,63 +49,63 @@ void FrontendApplicationBase::gotoMorpionScreenSlideTransitionSouthImpl()
     touchgfx::makeTransition<MorpionView, MorpionPresenter, touchgfx::SlideTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// MainMenu
+// MenuMorpion
 
-void FrontendApplicationBase::gotoMainMenuScreenNoTransition()
+void FrontendApplicationBase::gotoMenuMorpionScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMainMenuScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMenuMorpionScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoMainMenuScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoMenuMorpionScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<MainMenuView, MainMenuPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<MenuMorpionView, MenuMorpionPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionNorth()
+void FrontendApplicationBase::gotoMenuMorpionScreenSlideTransitionNorth()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMainMenuScreenSlideTransitionNorthImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMenuMorpionScreenSlideTransitionNorthImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionNorthImpl()
+void FrontendApplicationBase::gotoMenuMorpionScreenSlideTransitionNorthImpl()
 {
-    touchgfx::makeTransition<MainMenuView, MainMenuPresenter, touchgfx::SlideTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<MenuMorpionView, MenuMorpionPresenter, touchgfx::SlideTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionWest()
+void FrontendApplicationBase::gotoMenuMorpionScreenSlideTransitionWest()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMainMenuScreenSlideTransitionWestImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMenuMorpionScreenSlideTransitionWestImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionWestImpl()
+void FrontendApplicationBase::gotoMenuMorpionScreenSlideTransitionWestImpl()
 {
-    touchgfx::makeTransition<MainMenuView, MainMenuPresenter, touchgfx::SlideTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<MenuMorpionView, MenuMorpionPresenter, touchgfx::SlideTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionEast()
+void FrontendApplicationBase::gotoMenuMorpionScreenSlideTransitionEast()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMainMenuScreenSlideTransitionEastImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMenuMorpionScreenSlideTransitionEastImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoMainMenuScreenSlideTransitionEastImpl()
+void FrontendApplicationBase::gotoMenuMorpionScreenSlideTransitionEastImpl()
 {
-    touchgfx::makeTransition<MainMenuView, MainMenuPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<MenuMorpionView, MenuMorpionPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// BattleShip
+// MenuBattleShip
 
-void FrontendApplicationBase::gotoBattleShipScreenSlideTransitionEast()
+void FrontendApplicationBase::gotoMenuBattleShipScreenSlideTransitionEast()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoBattleShipScreenSlideTransitionEastImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMenuBattleShipScreenSlideTransitionEastImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoBattleShipScreenSlideTransitionEastImpl()
+void FrontendApplicationBase::gotoMenuBattleShipScreenSlideTransitionEastImpl()
 {
-    touchgfx::makeTransition<BattleShipView, BattleShipPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<MenuBattleShipView, MenuBattleShipPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // Credits

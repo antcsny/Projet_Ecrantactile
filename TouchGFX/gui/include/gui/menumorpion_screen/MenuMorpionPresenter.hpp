@@ -1,17 +1,17 @@
-#ifndef MAINMENUPRESENTER_HPP
-#define MAINMENUPRESENTER_HPP
+#ifndef MENUMORPIONPRESENTER_HPP
+#define MENUMORPIONPRESENTER_HPP
 
 #include <gui/model/ModelListener.hpp>
 #include <mvp/Presenter.hpp>
 
 using namespace touchgfx;
 
-class MainMenuView;
+class MenuMorpionView;
 
-class MainMenuPresenter : public touchgfx::Presenter, public ModelListener
+class MenuMorpionPresenter : public touchgfx::Presenter, public ModelListener
 {
 public:
-    MainMenuPresenter(MainMenuView& v);
+    MenuMorpionPresenter(MenuMorpionView& v);
 
     /**
      * The activate function is called automatically when this screen is "switched in"
@@ -25,12 +25,12 @@ public:
      */
     virtual void deactivate();
 
-    virtual ~MainMenuPresenter() {}
+    virtual ~MenuMorpionPresenter() {}
 
 private:
-    MainMenuPresenter();
+    MenuMorpionPresenter();
 
-    MainMenuView& view;
+    MenuMorpionView& view;
 };
 
-#endif // MAINMENUPRESENTER_HPP
+#endif // MENUMORPIONPRESENTER_HPP

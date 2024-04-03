@@ -300,7 +300,7 @@ void MorpionViewBase::transitionBegins()
 void MorpionViewBase::quit_game()
 {
     //game_quit
-    //When quit_game is called change screen to MainMenu
-    //Go to MainMenu with screen transition towards North
-    application().gotoMainMenuScreenSlideTransitionNorth();
+    //When quit_game is called change screen to MenuMorpion
+    //Go to MenuMorpion with screen transition towards North
+    application().gotoMenuMorpionScreenSlideTransitionNorth();
 }

@@ -1,15 +1,15 @@
 #ifndef MAINMENUVIEW_HPP
 #define MAINMENUVIEW_HPP
 
-#include <gui_generated/mainmenu_screen/MainMenuViewBase.hpp>
-#include <gui/mainmenu_screen/MainMenuPresenter.hpp>
+#include <gui_generated/menumorpion_screen/MenuMorpionViewBase.hpp>
+#include <gui/menumorpion_screen/MenuMorpionPresenter.hpp>
 #include <gui/morpion_screen/MorpionView.hpp>
 
-class MainMenuView : public MainMenuViewBase
+class MenuMorpionView : public MenuMorpionViewBase
 {
 public:
-    MainMenuView();
-    virtual ~MainMenuView() {}
+    MenuMorpionView();
+    virtual ~MenuMorpionView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
     virtual void multiplayer_game();

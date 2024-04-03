@@ -101,9 +101,9 @@ void menu_multiBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     if (&src == &cancel_button)
     {
         //Cancel
-        //When cancel_button clicked change screen to MainMenu
-        //Go to MainMenu with no screen transition
-        application().gotoMainMenuScreenNoTransition();
+        //When cancel_button clicked change screen to MenuMorpion
+        //Go to MenuMorpion with no screen transition
+        application().gotoMenuMorpionScreenNoTransition();
     }
     if (&src == &cancel_action_button)
     {

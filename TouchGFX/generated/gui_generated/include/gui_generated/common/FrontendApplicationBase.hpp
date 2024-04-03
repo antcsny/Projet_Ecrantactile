@@ -17,23 +17,23 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gotoMainMenuScreenNoTransition();
+        gotoMenuMorpionScreenNoTransition();
     }
 
     // Morpion
     void gotoMorpionScreenSlideTransitionSouth();
 
-    // MainMenu
-    void gotoMainMenuScreenNoTransition();
+    // MenuMorpion
+    void gotoMenuMorpionScreenNoTransition();
 
-    void gotoMainMenuScreenSlideTransitionNorth();
+    void gotoMenuMorpionScreenSlideTransitionNorth();
 
-    void gotoMainMenuScreenSlideTransitionWest();
+    void gotoMenuMorpionScreenSlideTransitionWest();
 
-    void gotoMainMenuScreenSlideTransitionEast();
+    void gotoMenuMorpionScreenSlideTransitionEast();
 
-    // BattleShip
-    void gotoBattleShipScreenSlideTransitionEast();
+    // MenuBattleShip
+    void gotoMenuBattleShipScreenSlideTransitionEast();
 
     // Credits
     void gotoCreditsScreenSlideTransitionWest();
@@ -46,17 +46,17 @@ protected:
     // Morpion
     void gotoMorpionScreenSlideTransitionSouthImpl();
 
-    // MainMenu
-    void gotoMainMenuScreenNoTransitionImpl();
+    // MenuMorpion
+    void gotoMenuMorpionScreenNoTransitionImpl();
 
-    void gotoMainMenuScreenSlideTransitionNorthImpl();
+    void gotoMenuMorpionScreenSlideTransitionNorthImpl();
 
-    void gotoMainMenuScreenSlideTransitionWestImpl();
+    void gotoMenuMorpionScreenSlideTransitionWestImpl();
 
-    void gotoMainMenuScreenSlideTransitionEastImpl();
+    void gotoMenuMorpionScreenSlideTransitionEastImpl();
 
-    // BattleShip
-    void gotoBattleShipScreenSlideTransitionEastImpl();
+    // MenuBattleShip
+    void gotoMenuBattleShipScreenSlideTransitionEastImpl();
 
     // Credits
     void gotoCreditsScreenSlideTransitionWestImpl();

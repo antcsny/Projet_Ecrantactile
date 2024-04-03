@@ -1,7 +1,7 @@
-build/MINGW32_NT-6.2/gui/src/mainmenu_screen/MainMenuView.o: \
- gui/src/mainmenu_screen/MainMenuView.cpp \
- gui/include/gui/mainmenu_screen/MainMenuView.hpp \
- generated/gui_generated/include/gui_generated/mainmenu_screen/MainMenuViewBase.hpp \
+build/MINGW32_NT-6.2/gui/src/menumorpion_screen/MenuMorpionView.o: \
+ gui/src/menumorpion_screen/MenuMorpionView.cpp \
+ gui/include/gui/menumorpion_screen/MenuMorpionView.hpp \
+ generated/gui_generated/include/gui_generated/menumorpion_screen/MenuMorpionViewBase.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
  generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
@@ -40,7 +40,7 @@ build/MINGW32_NT-6.2/gui/src/mainmenu_screen/MainMenuView.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  gui/include/gui/model/Model.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- gui/include/gui/mainmenu_screen/MainMenuPresenter.hpp \
+ gui/include/gui/menumorpion_screen/MenuMorpionPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
@@ -97,9 +97,9 @@ build/MINGW32_NT-6.2/gui/src/mainmenu_screen/MainMenuView.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp \
  gui/include/gui/morpion_screen/MorpionView.hpp
 
-gui/include/gui/mainmenu_screen/MainMenuView.hpp:
+gui/include/gui/menumorpion_screen/MenuMorpionView.hpp:
 
-generated/gui_generated/include/gui_generated/mainmenu_screen/MainMenuViewBase.hpp:
+generated/gui_generated/include/gui_generated/menumorpion_screen/MenuMorpionViewBase.hpp:
 
 gui/include/gui/common/FrontendApplication.hpp:
 
@@ -177,7 +177,7 @@ gui/include/gui/model/Model.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-gui/include/gui/mainmenu_screen/MainMenuPresenter.hpp:
+gui/include/gui/menumorpion_screen/MenuMorpionPresenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
 

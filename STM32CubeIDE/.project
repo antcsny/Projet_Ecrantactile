@@ -370,16 +370,6 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/BattleShipPresenter.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/battleship_screen/BattleShipPresenter.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/gui/BattleShipView.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/battleship_screen/BattleShipView.cpp</locationURI>
-		</link>
-		<link>
 			<name>Application/User/gui/FrontendApplication.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/common/FrontendApplication.cpp</locationURI>
@@ -435,29 +425,34 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/credits_screen/CreditsView.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/MainMenuPresenter.cpp</name>
+			<name>Application/User/gui/MenuMorpionView.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/mainmenu_screen/MainMenuPresenter.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/MainMenuView.cpp</name>
+			<name>Application/User/gui/MenuBattleShipPresenter.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/mainmenu_screen/MainMenuView.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/menubattleship_screen/MenuBattleShipPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/MenuBattleShipView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/menubattleship_screen/MenuBattleShipView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/MenuMorpionPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/menumorpion_screen/MenuMorpionPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/MenuMorpionView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/menumorpion_screen/MenuMorpionView.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/Model.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/model/Model.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/gui/MorpionPresenter.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/morpion_screen/MorpionPresenter.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/gui/MorpionView.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/morpion_screen/MorpionView.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/MorpionPresenter.cpp</name>
@@ -570,11 +565,6 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/UnmappedDataFont.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/BattleShipViewBase.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/battleship_screen/BattleShipViewBase.cpp</locationURI>
-		</link>
-		<link>
 			<name>Application/User/generated/FrontendApplicationBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp</locationURI>
@@ -625,9 +615,14 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/credits_screen/CreditsViewBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/MainMenuViewBase.cpp</name>
+			<name>Application/User/generated/MenuBattleShipViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/mainmenu_screen/MainMenuViewBase.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/menubattleship_screen/MenuBattleShipViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/MenuMorpionViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/menumorpion_screen/MenuMorpionViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/MorpionViewBase.cpp</name>

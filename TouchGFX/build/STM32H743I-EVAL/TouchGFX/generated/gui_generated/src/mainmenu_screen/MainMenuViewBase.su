@@ -18,19 +18,19 @@ Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
 Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
 Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
 TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	0	static
-View.hpp:36:7:touchgfx::View<MainMenuPresenter>::~View()	0	static
-MainMenuViewBase.cpp:49:1:MainMenuViewBase::~MainMenuViewBase()	0	static
-MainMenuViewBase.cpp:54:6:virtual void MainMenuViewBase::setupScreen()	0	static
-Callback.hpp:357:8:touchgfx::Callback<MainMenuViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
-Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = MainMenuViewBase; T1 = const touchgfx::AbstractButton&]	8	static
-Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = MainMenuViewBase; T1 = const touchgfx::AbstractButton&]	0	static
+View.hpp:36:7:touchgfx::View<MenuMorpionPresenter>::~View()	0	static
+MenuMorpionViewBase.cpp:49:1:MenuMorpionViewBase::~MenuMorpionViewBase()	0	static
+MenuMorpionViewBase.cpp:54:6:virtual void MenuMorpionViewBase::setupScreen()	0	static
+Callback.hpp:357:8:touchgfx::Callback<MenuMorpionViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
+Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = MenuMorpionViewBase; T1 = const touchgfx::AbstractButton&]	8	static
+Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = MenuMorpionViewBase; T1 = const touchgfx::AbstractButton&]	0	static
 TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
-View.hpp:36:7:virtual touchgfx::View<MainMenuPresenter>::~View()	8	static
-Callback.hpp:357:8:virtual touchgfx::Callback<MainMenuViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
-MainMenuViewBase.cpp:49:1:virtual MainMenuViewBase::~MainMenuViewBase()	8	static
-MainMenuViewBase.cpp:59:6:void MainMenuViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	24	static
+View.hpp:36:7:virtual touchgfx::View<MenuMorpionPresenter>::~View()	8	static
+Callback.hpp:357:8:virtual touchgfx::Callback<MenuMorpionViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
+MenuMorpionViewBase.cpp:49:1:virtual MenuMorpionViewBase::~MenuMorpionViewBase()	8	static
+MenuMorpionViewBase.cpp:59:6:void MenuMorpionViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	24	static
 Drawable.hpp:48:5:touchgfx::Drawable::Drawable()	0	static
 Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
 ButtonWithLabel.hpp:132:10:void touchgfx::ButtonWithLabel::updateTextPosition()	24	static
 TextArea.hpp:43:5:touchgfx::TextArea::TextArea()	8	static
-MainMenuViewBase.cpp:9:1:MainMenuViewBase::MainMenuViewBase()	88	static
+MenuMorpionViewBase.cpp:9:1:MenuMorpionViewBase::MenuMorpionViewBase()	88	static

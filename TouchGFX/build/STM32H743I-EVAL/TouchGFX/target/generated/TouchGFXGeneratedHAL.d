@@ -105,9 +105,9 @@ TouchGFX/build/STM32H743I-EVAL/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  TouchGFX/gui/include/gui/containers/nowin.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/containers/nowinBase.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp \
- TouchGFX/gui/include/gui/mainmenu_screen/MainMenuView.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/mainmenu_screen/MainMenuViewBase.hpp \
- TouchGFX/gui/include/gui/mainmenu_screen/MainMenuPresenter.hpp \
+ TouchGFX/gui/include/gui/menumorpion_screen/MenuMorpionView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/menumorpion_screen/MenuMorpionViewBase.hpp \
+ TouchGFX/gui/include/gui/menumorpion_screen/MenuMorpionPresenter.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
@@ -369,11 +369,11 @@ TouchGFX/generated/gui_generated/include/gui_generated/containers/nowinBase.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:
 
-TouchGFX/gui/include/gui/mainmenu_screen/MainMenuView.hpp:
+TouchGFX/gui/include/gui/menumorpion_screen/MenuMorpionView.hpp:
 
-TouchGFX/generated/gui_generated/include/gui_generated/mainmenu_screen/MainMenuViewBase.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/menumorpion_screen/MenuMorpionViewBase.hpp:
 
-TouchGFX/gui/include/gui/mainmenu_screen/MainMenuPresenter.hpp:
+TouchGFX/gui/include/gui/menumorpion_screen/MenuMorpionPresenter.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 
