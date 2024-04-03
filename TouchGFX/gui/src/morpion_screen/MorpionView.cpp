@@ -14,6 +14,7 @@ int res = -1;
 char RXLoopActive=0;
 
 extern UART_HandleTypeDef huart1;
+extern char upd_screen;
 extern char recu;
 extern uint8_t rx_data;
 extern int playerID;
@@ -60,6 +61,8 @@ void MorpionView::tearDownScreen()
 
 void MorpionView::restart_button()
 {
+	if(playerID!=0)
+		uart1_send_frame(0x01,0x09);
 	initialisation();
 }
 
@@ -111,6 +114,9 @@ void MorpionView::PlayMove(Drawable& Button, char rxcmd)
 		MorpionView::buttonTouchable((turn)%2);
 		if(rxcmd==0)
 			uart1_send_frame(0x01,(posCol+posLin*3));
+	}
+	if(rxcmd==1){
+		upd_screen=1;
 	}
 
 	/*Le joueur a fini son tour*/
@@ -304,6 +310,7 @@ void RxTTTTask(void *argument){
 					break;
 				case 0x49:
 					objMp.initialisation();
+					upd_screen=10;
 					break;
 				case 0x4A:
 					objMp.quit_game();

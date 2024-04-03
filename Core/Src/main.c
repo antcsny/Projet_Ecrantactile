@@ -61,6 +61,7 @@ SDRAM_HandleTypeDef hsdram1;
 
 uint8_t rx_data;
 char recu=0;
+char upd_screen=0;
 int playerID;
 
 /* Definitions for defaultTask */

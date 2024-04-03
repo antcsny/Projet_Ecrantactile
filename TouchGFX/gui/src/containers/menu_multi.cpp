@@ -11,7 +11,7 @@ extern UART_HandleTypeDef huart1;
 extern int playerID;
 menu_multiBase obj;
 
-const TickType_t loopxDelay = 500 / portTICK_PERIOD_MS, xDelay = 5 / portTICK_PERIOD_MS;	// freertos delays
+const TickType_t loopxDelay = 500 / portTICK_PERIOD_MS, xDelay = 50 / portTICK_PERIOD_MS;	// freertos delays
 /* Freertos Tasks definitions, see associated functions below */
 osThreadId_t hostTaskHandle;
 const osThreadAttr_t hostTask_attributes = {
