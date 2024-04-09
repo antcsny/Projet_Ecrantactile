@@ -104,19 +104,17 @@ void MorpionView::PlayMove(Drawable& Button, char rxcmd)
 		draw.setVisible(true);
 		draw.invalidate();
 	}
-
-	if(playerID==1){
-		MorpionView::buttonTouchable((turn+1)%2);
-		if(rxcmd==0)
+	/* -------- Adaptation reseau -------- */
+	if(playerID=!0){
+		if(rxcmd==0)	// si Playmove pas appelé depuis l'uart
 			uart1_send_frame(0x01,(posCol+posLin*3));
 	}
-	if(playerID==2){
-		MorpionView::buttonTouchable((turn)%2);
-		if(rxcmd==0)
-			uart1_send_frame(0x01,(posCol+posLin*3));
-	}
-	if(rxcmd==1){
+	if(rxcmd==1){	// le joueur sur l'autre carte a joué
 		upd_screen=1;
+		MorpionView::buttonTouchable(1);	// on donne la possibilité de jouer
+	}
+	if(rxcmd==0){	// le joueur sur cette carte a joué
+		MorpionView::buttonTouchable(1);	// on empech de jouer à nouveau
 	}
 
 	/*Le joueur a fini son tour*/
@@ -193,6 +191,18 @@ void MorpionView::button_2_2()
 	MorpionView::PlayMove(Button_2_2,0);
 }
 
+void MorpionView::buttonTouchable(bool act){
+	Button_0_0.setTouchable(act);
+	Button_0_1.setTouchable(act);
+	Button_0_2.setTouchable(act);
+	Button_1_0.setTouchable(act);
+	Button_1_1.setTouchable(act);
+	Button_1_2.setTouchable(act);
+	Button_2_0.setTouchable(act);
+	Button_2_1.setTouchable(act);
+	Button_2_2.setTouchable(act);
+}
+
 void MorpionView::init()
 {
 	MorpionView::initialisation();
@@ -248,17 +258,6 @@ void MorpionView::initialisation(){
 	}
 }
 
-void MorpionView::buttonTouchable(bool act){
-	Button_0_0.setTouchable(act);
-	Button_0_1.setTouchable(act);
-	Button_0_2.setTouchable(act);
-	Button_1_0.setTouchable(act);
-	Button_1_1.setTouchable(act);
-	Button_1_2.setTouchable(act);
-	Button_2_0.setTouchable(act);
-	Button_2_1.setTouchable(act);
-	Button_2_2.setTouchable(act);
-}
 
 /* Brief uart1_send_frame : Function to send formated byte for the update of Morpion
 * 00 : game gestion
