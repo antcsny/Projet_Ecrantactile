@@ -220,14 +220,14 @@ void MorpionView::quit_game(){
 void MorpionView::initialisation(){
 	if(playerID!=0){
 		vTaskDelay(xDelay);
-		if(playerID==1){objMp.buttonTouchable(1);}
-		if(playerID==2){objMp.buttonTouchable(0);}
+		if(playerID==1){MorpionView::buttonTouchable(1);}
+		if(playerID==2){MorpionView::buttonTouchable(0);}
 		__HAL_UART_ENABLE(&huart1);
 		HAL_UART_Receive_IT(&huart1,&rx_data,1);
 		RxTTTTaskHandle = osThreadNew(RxTTTTask, NULL, &rxtttTask_attributes);
 	}
 	else
-		objMp.buttonTouchable(1);
+		MorpionView::buttonTouchable(1);
 	Croix_1.moveTo(-156,-26);
 	Croix_2.moveTo(-156,-26);
 	Croix_3.moveTo(-156,-26);
