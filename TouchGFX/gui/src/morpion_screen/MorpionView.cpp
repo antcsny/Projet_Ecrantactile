@@ -70,6 +70,7 @@ void MorpionView::PlayMove(Drawable& Button, char rxcmd)
 {
 	int X= Button.getX(),Y= Button.getY();
 	int posCol=(X-80)/162, posLin=(Y-134)/112;
+	Button.setTouchable(0);
 	if(turn%2==0){
 		Croix[turn/2]->moveTo(X,Y);
 		tableau[posLin][posCol]='x';	// Joueur 1 : x
@@ -88,9 +89,9 @@ void MorpionView::PlayMove(Drawable& Button, char rxcmd)
 	}
 	turn++;
 	/* -------- Condition de victoire -------- */
-	res = MorpionView::verifier_victoire();
+	res = objMp.verifier_victoire();
 	if (res == 1){
-		MorpionView::buttonTouchable(0);
+		objMp.buttonTouchable(0);
 		if(turn%2==0){
 			win_p2.setVisible(true);
 			win_p2.invalidate();
@@ -105,18 +106,17 @@ void MorpionView::PlayMove(Drawable& Button, char rxcmd)
 		draw.invalidate();
 	}
 	/* -------- Adaptation reseau -------- */
-	if(playerID=!0){
+	if(playerID!=0){
 		if(rxcmd==0)	// si Playmove pas appelé depuis l'uart
 			uart1_send_frame(0x01,(posCol+posLin*3));
+		if(rxcmd==1){	// le joueur sur l'autre carte a joué
+			upd_screen=1;
+			objMp.buttonTouchable(1);	// on donne la possibilité de jouer
+		}
+		if(rxcmd==0){	// le joueur sur cette carte a joué
+			objMp.buttonTouchable(0);	// on empech de jouer à nouveau
+		}
 	}
-	if(rxcmd==1){	// le joueur sur l'autre carte a joué
-		upd_screen=1;
-		MorpionView::buttonTouchable(1);	// on donne la possibilité de jouer
-	}
-	if(rxcmd==0){	// le joueur sur cette carte a joué
-		MorpionView::buttonTouchable(1);	// on empech de jouer à nouveau
-	}
-
 	/*Le joueur a fini son tour*/
 }
 
@@ -220,14 +220,14 @@ void MorpionView::quit_game(){
 void MorpionView::initialisation(){
 	if(playerID!=0){
 		vTaskDelay(xDelay);
-		if(playerID==1){MorpionView::buttonTouchable(1);}
-		if(playerID==2){MorpionView::buttonTouchable(0);}
+		if(playerID==1){objMp.buttonTouchable(1);}
+		if(playerID==2){objMp.buttonTouchable(0);}
 		__HAL_UART_ENABLE(&huart1);
 		HAL_UART_Receive_IT(&huart1,&rx_data,1);
 		RxTTTTaskHandle = osThreadNew(RxTTTTask, NULL, &rxtttTask_attributes);
 	}
 	else
-		MorpionView::buttonTouchable(1);
+		objMp.buttonTouchable(1);
 	Croix_1.moveTo(-156,-26);
 	Croix_2.moveTo(-156,-26);
 	Croix_3.moveTo(-156,-26);
